@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://resources/bg.png" type="Texture" id=1]
+[ext_resource path="res://resources/fill.png" type="Texture" id=2]
+[ext_resource path="res://kroki/krokibar.gd" type="Script" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="krokibar" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="krokibar" type="TextureProgress" parent="krokibar"]
+margin_right = 396.0
+margin_bottom = 54.0004
+texture_under = ExtResource( 1 )
+texture_progress = ExtResource( 2 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UpdateTween" type="Tween" parent="krokibar"]
