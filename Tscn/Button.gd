@@ -6,7 +6,7 @@ extends Button
 # var b = "text"
 
 func _ready():
-	$button.connect("pushed",self,"click",[$button])
+	$button.connect("toggled",self,"click",[$button])
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func click(toggled, target):
