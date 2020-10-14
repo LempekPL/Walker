@@ -1,0 +1,16 @@
+{
+    "1": {
+        "name": "Burgerman",
+        "health": "100",
+        "extras": ["strength"],
+        "items": ["burger","fries"],
+        "icon": "burman.png"
+    },
+    "2": {
+        "name": "Burgerwoman",
+        "health": "100",
+        "extras": ["accuracy"],
+        "items": ["burger","fries"],
+        "icon": "burwoman.png"
+    }
+}
