@@ -6,6 +6,10 @@
 [node name="Main" type="Node2D"]
 
 [node name="BackGraund" type="Sprite" parent="."]
+<<<<<<< HEAD
+texture = ExtResource( 1 )
+centered = false
+=======
 position = Vector2( 365.959, 638.658 )
 scale = Vector2( 1.01133, 1 )
 texture = ExtResource( 1 )
@@ -13,3 +17,4 @@ texture = ExtResource( 1 )
 [node name="Node2D" parent="." instance=ExtResource( 2 )]
 position = Vector2( -280.784, -74.7847 )
 scale = Vector2( 1.4, 1.6 )
+>>>>>>> 049a8af2281aacdd4aabce6c5e0825cd9eb34377
