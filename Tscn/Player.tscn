@@ -9,7 +9,7 @@ animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "default",
-"speed": 0.5
+"speed": 0.2
 } ]
 
 [node name="Player" type="Node2D"]
@@ -18,3 +18,5 @@ animations = [ {
 position = Vector2( 345.472, 500.424 )
 scale = Vector2( 0.96796, 1.76896 )
 frames = SubResource( 1 )
+frame = 2
+playing = true
