@@ -5,6 +5,5 @@
 [node name="Main" type="Node2D"]
 
 [node name="BackGraund" type="Sprite" parent="."]
-position = Vector2( 364.372, 638.658 )
-scale = Vector2( 1.01133, 1 )
 texture = ExtResource( 1 )
+centered = false
