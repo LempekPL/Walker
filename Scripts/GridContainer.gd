@@ -5,12 +5,16 @@ extends GridContainer
 # var a = 2
 # var b = "text"
 var button
-
-
+var file
+var jsonR
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for i in 60: #dlugosc tablicy-1
+	file=File.new()
+	file.open("res://data/items/data.json", file.READ)
+	jsonR=JSON.parse(file.get_as_text()).result
+	for i in jsonR.size(): #dlugosc tablicy-1
 		button=Button.new()
+		button.text=jsonR[String(i+1)]["name"]
 		button.size_flags_horizontal=3
 		button.rect_min_size=Vector2(80, 80)
 		add_child(button)
