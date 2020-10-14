@@ -1,0 +1,62 @@
+[
+    {
+        "id":12,
+        "name": "Brokół",
+        "opis": "wielki zielony",
+        "hp": 10,
+        "atak":2,
+        "rzadkość":"częsty",
+        "szansa":10,
+        "gniazdo":"nogi"
+    },
+    {
+        "id":13,
+        "name": "woda mineralna",
+        "opis": "czysta źródlana",
+        "hp": 4,
+        "atak":50,
+        "rzadkość":"rzadki",
+        "szansa":20,
+        "gniazdo":"ciało"
+    },
+    {
+        "id":14,
+        "name": "pomidor",
+        "opis": "czerwony",
+        "hp": 5,
+        "atak":30,
+        "rzadkość":"częsty",
+        "szansa":20,
+        "gniazdo":"artefakt"
+    },
+    {
+        "id":15,
+        "name": "szpinak",
+        "opis": "zielony",
+        "hp": 15,
+        "atak":50,
+        "rzadkość":"legendarny",
+        "szansa":10,
+        "gniazdo":"artefakt"
+    },
+    {
+        "id":16,
+        "name": "maseczka",
+        "opis": "czysta źródlana",
+        "hp": 50,
+        "atak":0,
+        "rzadkość":"rzadki",
+        "szansa":20,
+        "gniazdo":"glowa"
+    },
+    {
+        "id":17,
+        "name": "maseczka",
+        "opis": "czysta źródlana",
+        "hp": 50,
+        "atak":0,
+        "rzadkość":"rzadki",
+        "szansa":20,
+        "gniazdo":"bron"
+    }
+]
