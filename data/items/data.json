@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Brokół",
+        "effects": ["speed","hp+20"]
+    },
+    {
+        "name": "Burger",
+        "effects": ["slowness","hp+20"]
+    }
+]

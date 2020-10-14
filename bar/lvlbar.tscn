@@ -18,7 +18,6 @@ margin_left = 312.62
 margin_top = 54.4756
 margin_right = 708.62
 margin_bottom = 108.476
-value = 1.0
 texture_under = ExtResource( 1 )
 texture_progress = ExtResource( 2 )
 script = ExtResource( 3 )
