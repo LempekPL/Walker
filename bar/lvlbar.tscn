@@ -4,8 +4,6 @@
 [ext_resource path="res://resources/fill.png" type="Texture" id=2]
 [ext_resource path="res://bar/lvlbar.gd" type="Script" id=3]
 
-
-
 [node name="Node2D" type="Node2D"]
 
 [node name="levelbar" type="Control" parent="."]
@@ -20,6 +18,7 @@ margin_left = 312.62
 margin_top = 54.4756
 margin_right = 708.62
 margin_bottom = 108.476
+value = 1.0
 texture_under = ExtResource( 1 )
 texture_progress = ExtResource( 2 )
 script = ExtResource( 3 )
