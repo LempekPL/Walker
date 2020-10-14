@@ -1,0 +1,125 @@
+[
+    {
+        "licznikId":11
+    },
+    {
+        "id":0,
+        "name": "Brokół",
+        "opis": "wielki zielony",
+        "hp": 10,
+        "atak":2,
+        "rzadkość":"częsty",
+        "szansa":10,
+        "gniazdo":"nogi"
+    },
+    {
+        "id":1,
+        "name": "woda mineralna",
+        "opis": "czysta źródlana",
+        "hp": 4,
+        "atak":50,
+        "rzadkość":"rzadki",
+        "szansa":20,
+        "gniazdo":"artefakt"
+    },
+    {
+        "id":2,
+        "name": "pomidor",
+        "opis": "czerwony",
+        "hp": 5,
+        "atak":30,
+        "rzadkość":"częsty",
+        "szansa":20,
+        "gniazdo":"nogi"
+    },
+    {
+        "id":3,
+        "name": "szpinak",
+        "opis": "zielony",
+        "hp": 15,
+        "atak":50,
+        "rzadkość":"legendarny",
+        "szansa":10,
+        "gniazdo":"artefakt"
+    },
+    {
+        "id":4,
+        "name": "maseczka",
+        "opis": "czysta źródlana",
+        "hp": 50,
+        "atak":0,
+        "rzadkość":"rzadki",
+        "szansa":20,
+        "gniazdo":"artefakt"
+    },
+    {
+        "id":5,
+        "name": "Brokół",
+        "opis": "wielki zielony",
+        "hp": 10,
+        "atak":2,
+        "rzadkość":"częsty",
+        "szansa":10,
+        "gniazdo":"artefakt"
+    },
+    {
+        "id":6,
+        "name": "woda mineralna",
+        "opis": "czysta źródlana",
+        "hp": 4,
+        "atak":50,
+        "rzadkość":"rzadki",
+        "szansa":20,
+        "gniazdo":"artefakt"
+    },
+    {
+        "id":7,
+        "name": "pomidor",
+        "opis": "czerwony",
+        "hp": 5,
+        "atak":30,
+        "rzadkość":"częsty",
+        "szansa":20,
+        "gniazdo":"nogi"
+    },
+    {
+        "id":8,
+        "name": "szpinak",
+        "opis": "zielony",
+        "hp": 15,
+        "atak":50,
+        "rzadkość":"legendarny",
+        "szansa":10,
+        "gniazdo":"artefakt"
+    },
+    {
+        "id":9,
+        "name": "maseczka",
+        "opis": "czysta źródlana",
+        "hp": 50,
+        "atak":0,
+        "rzadkość":"rzadki",
+        "szansa":20,
+        "gniazdo":"artefakt"
+    },
+    {
+        "id":10,
+        "name": "Brokół",
+        "opis": "wielki zielony",
+        "hp": 10,
+        "atak":2,
+        "rzadkość":"częsty",
+        "szansa":10,
+        "gniazdo":"nogi"
+    },
+    {
+        "id":11,
+        "name": "woda mineralna",
+        "opis": "czysta źródlana",
+        "hp": 4,
+        "atak":50,
+        "rzadkość":"rzadki",
+        "szansa":20,
+        "gniazdo":"nogi"
+    }
+]
