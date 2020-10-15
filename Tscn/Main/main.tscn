@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://resources/GUI.png" type="Texture" id=1]
+[ext_resource path="res://resources/Main/GUI.png" type="Texture" id=1]
 [ext_resource path="res://bar/lvlbar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://resources/PTC55F.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Tscn/Player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Tscn/buttons.gd" type="Script" id=5]
-[ext_resource path="res://Tscn/SwipeDetec.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Tscn/Main/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/Main/Main.gd" type="Script" id=5]
+[ext_resource path="res://Tscn/Main/SwipeDetec.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -58,4 +58,5 @@ position = Vector2( 0.258606, -5.88422 )
 
 [node name="SwipeDetector" parent="." instance=ExtResource( 6 )]
 [connection signal="pressed" from="Buttons/Shop" to="." method="_on_Shop_pressed"]
+[connection signal="pressed" from="Buttons/Fight" to="." method="_on_Fight_pressed"]
 [connection signal="swiped" from="SwipeDetector" to="." method="_on_SwipeDetector_swiped"]

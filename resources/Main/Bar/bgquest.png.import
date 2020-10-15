@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GUI.png-5427ea68ff688003897af45186807da8.stex"
+path="res://.import/bgquest.png-9d0153ccae6bae8a683c3a8254f3a3ef.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/GUI.png"
-dest_files=[ "res://.import/GUI.png-5427ea68ff688003897af45186807da8.stex" ]
+source_file="res://resources/Main/Bar/bgquest.png"
+dest_files=[ "res://.import/bgquest.png-9d0153ccae6bae8a683c3a8254f3a3ef.stex" ]
 
 [params]
 

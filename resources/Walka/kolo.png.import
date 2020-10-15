@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kolo.png-77939fb02b025ec7b74454a33de5e581.stex"
+path="res://.import/kolo.png-09ccde858770e8ee3d0a1e9154881aa4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/kolo.png"
-dest_files=[ "res://.import/kolo.png-77939fb02b025ec7b74454a33de5e581.stex" ]
+source_file="res://resources/Walka/kolo.png"
+dest_files=[ "res://.import/kolo.png-09ccde858770e8ee3d0a1e9154881aa4.stex" ]
 
 [params]
 

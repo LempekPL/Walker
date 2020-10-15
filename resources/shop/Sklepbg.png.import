@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ktos.png-f81c63f23c7db30aa417deb66e801f22.stex"
+path="res://.import/Sklepbg.png-62dd4491048739cb4b66f1c3cc15ccd0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/ktos.png"
-dest_files=[ "res://.import/ktos.png-f81c63f23c7db30aa417deb66e801f22.stex" ]
+source_file="res://resources/shop/Sklepbg.png"
+dest_files=[ "res://.import/Sklepbg.png-62dd4491048739cb4b66f1c3cc15ccd0.stex" ]
 
 [params]
 

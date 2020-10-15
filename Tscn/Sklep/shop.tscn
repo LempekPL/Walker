@@ -1,14 +1,14 @@
 [gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://shop/Sklepbg.png" type="Texture" id=1]
-[ext_resource path="res://shop/RichTextLabel.gd" type="Script" id=2]
+[ext_resource path="res://resources/shop/Sklepbg.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Sklep/RichTextLabel.gd" type="Script" id=2]
 [ext_resource path="res://resources/PTC55F.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://shop/dailychest.gd" type="Script" id=4]
-[ext_resource path="res://shop/shop.gd" type="Script" id=5]
-[ext_resource path="res://shop/buy2.gd" type="Script" id=6]
-[ext_resource path="res://shop/buy.gd" type="Script" id=7]
-[ext_resource path="res://Tscn/popup.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Tscn/popup.gd" type="Script" id=9]
+[ext_resource path="res://Scripts/Sklep/dailychest.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/Sklep/shop.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/Sklep/buy2.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Sklep/buy.gd" type="Script" id=7]
+[ext_resource path="res://Tscn/Sklep/popup.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scripts/Sklep/popup.gd" type="Script" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 28

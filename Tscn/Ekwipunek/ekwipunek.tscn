@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Scripts/PrzyciskiEkw1.gd" type="Script" id=1]
-[ext_resource path="res://Scripts/GridContainer.gd" type="Script" id=2]
-[ext_resource path="res://resources/background.png" type="Texture" id=3]
-[ext_resource path="res://Scripts/PrzyciskiEkw2.gd" type="Script" id=4]
-[ext_resource path="res://Tscn/SwipeDetec.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scripts/Ekwipunek/PrzyciskiEkw1.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Ekwipunek/GridContainer.gd" type="Script" id=2]
+[ext_resource path="res://resources/Main/background.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Ekwipunek/PrzyciskiEkw2.gd" type="Script" id=4]
+[ext_resource path="res://Tscn/Main/SwipeDetec.tscn" type="PackedScene" id=5]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node2D
@@ -28,7 +28,7 @@ func _ready():
 func _on_SwipeDetector_swiped(direction):
 
 	if direction == Vector2(-1, 0):
-		get_tree().change_scene(\"res://Tscn/main.tscn\")
+		get_tree().change_scene(\"res://Tscn/Main/main.tscn\")
 	pass # Replace with function body.
 "
 

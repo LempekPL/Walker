@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fill.png-63a896db678b69f64e99000f8d2bb2ec.stex"
+path="res://.import/ktos.png-67166c1752cf4115bc094983f2ecccda.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/fill.png"
-dest_files=[ "res://.import/fill.png-63a896db678b69f64e99000f8d2bb2ec.stex" ]
+source_file="res://resources/Walka/ktos.png"
+dest_files=[ "res://.import/ktos.png-67166c1752cf4115bc094983f2ecccda.stex" ]
 
 [params]
 
