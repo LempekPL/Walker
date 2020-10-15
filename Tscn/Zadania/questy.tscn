@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://resources/PTC55F.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://resources/Main/GUI.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Scripts/Zadania/questy.gd" type="Script" id=5]
 [ext_resource path="res://Tscn/Main/SwipeDetec.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Tscn/kroki/lvlbar.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Tscn/Zadania/questPopup.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 58
@@ -113,13 +114,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ToolButton" type="ToolButton" parent="VBoxContainer/TextureRect2/Button"]
-margin_right = 100.0
-margin_bottom = 100.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="TextureRect3" type="TextureRect" parent="VBoxContainer"]
 margin_top = 328.0
 margin_right = 680.0
@@ -153,13 +147,6 @@ margin_left = 540.0
 margin_top = 30.0
 margin_right = 640.0
 margin_bottom = 130.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ToolButton2" type="ToolButton" parent="VBoxContainer/TextureRect3/Button2"]
-margin_right = 100.0
-margin_bottom = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -201,12 +188,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ToolButton3" type="ToolButton" parent="VBoxContainer/TextureRect4/Button3"]
-margin_right = 100.0
-margin_bottom = 100.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="SwipeDetector" parent="." instance=ExtResource( 6 )]
+
+[node name="Popup" parent="." instance=ExtResource( 8 )]
+visible = false
+margin_right = 680.0
+margin_bottom = 0.0
+
+[node name="Popup2" parent="." instance=ExtResource( 8 )]
+visible = false
+
+[node name="Popup3" parent="." instance=ExtResource( 8 )]
+visible = false
+[connection signal="pressed" from="VBoxContainer/TextureRect2/Button" to="Popup" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TextureRect3/Button2" to="Popup2" method="_on_Button2_pressed"]
+[connection signal="pressed" from="VBoxContainer/TextureRect4/Button3" to="Popup3" method="_on_Button3_pressed"]
 [connection signal="swiped" from="SwipeDetector" to="." method="_on_SwipeDetector_swiped"]
