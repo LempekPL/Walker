@@ -53,7 +53,7 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="Background"]
-position = Vector2( 350, 350 )
+position = Vector2( 360, 350 )
 script = ExtResource( 7 )
 
 [node name="Background3" type="Sprite" parent="."]

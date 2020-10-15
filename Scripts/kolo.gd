@@ -15,7 +15,7 @@ var file
 var jsonR
 var angles
 var prz
-var v=0.01
+var v=0.1
 var label
 const RADIUS = 200
 func _ready():
@@ -45,9 +45,9 @@ func _ready():
 	for i in jsonR.size():
 		label=Label.new()
 		label.text=jsonR[i]["name"]
-		var angl=((prz[i][1]-prz[i][0])/2)+prz[i][0]
-		var x=sin(angl)*RADIUS
-		var y=cos(angl)*RADIUS
+		var angl=((prz[i][1]-prz[i][0])/2)+prz[i][0]+ (-15 if prz[i][0]>180 else 15)
+		var x=sin(angl*PI/180)*RADIUS
+		var y=cos(angl*PI/180)*RADIUS
 		label.rect_position=Vector2(x, y)
 		label.add_font_override("font", dynamic_font)
 		label.add_color_override("font_color", Color.red)
