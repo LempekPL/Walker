@@ -15,6 +15,9 @@ var file
 var jsonR
 var angles
 var prz
+var v=0.01
+var label
+const RADIUS = 200
 func _ready():
 	file=File.new();
 	file.open("res://data/items/ekwipunek.json", file.READ)
@@ -31,24 +34,37 @@ func _ready():
 		prz[i]=[licznik+1.0,0]
 		prz[i][1]=prz[i][0]+angles[i]
 		licznik+=angles[i]
-	print(prz[0][0])
-	print(prz[0][1])
+	
+	var dynamic_font = DynamicFont.new()
+	dynamic_font.font_data = load("res://resources/PTC55F.ttf")
+	dynamic_font.size = 30
+	dynamic_font.outline_size = 5
+	dynamic_font.outline_color = Color( 0, 0, 0, 1 )
+	dynamic_font.use_filter = true
+	
+	for i in jsonR.size():
+		label=Label.new()
+		label.text=jsonR[i]["name"]
+		var angl=((prz[i][1]-prz[i][0])/2)+prz[i][0]
+		var x=sin(angl)*RADIUS
+		var y=cos(angl)*RADIUS
+		label.rect_position=Vector2(x, y)
+		label.add_font_override("font", dynamic_font)
+		label.add_color_override("font_color", Color.red)
+		add_child(label)
+	
 	print("work")
 	pass
 
 func _draw():
 	for i in prz.size():
-		print(prz[0][0])
-		var center = Vector2(350, 350)
-		var radius = 200
+		var center = Vector2(0, 0)
 		var angle_from = int(prz[i][0])
 		var angle_to = int(prz[i][1])
-		var color = Color(randf(), randf(), randf())
-		draw_circle_arc_poly(center, radius, angle_from, angle_to, color)
-	#for i in prz.size():
-	#	draw_circle_arc_poly(Vector2(350,350), int(prz[0][0]), int(prz[0][1]), 90, Color(0.0,1.0,0.0))
-	#draw_circle_arc_poly(Vector2(350,350), 1, 90, 90, Color(0.0,1.0,0.0))
+		var color = Color(jsonR[i]["color"][0], jsonR[i]["color"][1], jsonR[i]["color"][2])
+		draw_circle_arc_poly(center, RADIUS, angle_from, angle_to, color)
+		self.rotation_degrees+=v
 	pass
 func _process(delta):
-	#update()
+	update()
 	pass

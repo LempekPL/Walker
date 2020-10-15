@@ -6,8 +6,9 @@
         "hp": 10,
         "atak":2,
         "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
+        "szansa":100,
+        "gniazdo":"nogi",
+        "color":[0.5,1.0,0.2]
     },
     {
         "id":13,
@@ -17,7 +18,8 @@
         "atak":50,
         "rzadkość":"rzadki",
         "szansa":20,
-        "gniazdo":"ciało"
+        "gniazdo":"ciało",
+        "color":[0.2,0.5,0.11]
     },
     {
         "id":14,
@@ -27,7 +29,8 @@
         "atak":30,
         "rzadkość":"częsty",
         "szansa":20,
-        "gniazdo":"artefakt"
+        "gniazdo":"artefakt",
+        "color":[0.3,0.2,0.81]
     },
     {
         "id":15,
@@ -37,7 +40,8 @@
         "atak":50,
         "rzadkość":"legendarny",
         "szansa":10,
-        "gniazdo":"artefakt"
+        "gniazdo":"artefakt",
+        "color":[0.7,0.1,0.81]
     },
     {
         "id":16,
@@ -47,7 +51,8 @@
         "atak":0,
         "rzadkość":"rzadki",
         "szansa":20,
-        "gniazdo":"glowa"
+        "gniazdo":"glowa",
+        "color":[0.4,0.7,0.81]
     },
     {
         "id":17,
@@ -57,6 +62,7 @@
         "atak":0,
         "rzadkość":"rzadki",
         "szansa":20,
-        "gniazdo":"bron"
+        "gniazdo":"bron",
+        "color":[0.0,0.12,0.81]
     }
 ]

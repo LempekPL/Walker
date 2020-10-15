@@ -25,8 +25,8 @@ font_data = ExtResource( 4 )
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 0, -3.77551 )
 z_index = -1
+texture = ExtResource( 1 )
 centered = false
-script = ExtResource( 7 )
 
 [node name="Button" type="Button" parent="Background"]
 margin_left = 74.0
@@ -51,6 +51,10 @@ text = "PvP fight"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sprite" type="Sprite" parent="Background"]
+position = Vector2( 350, 350 )
+script = ExtResource( 7 )
 
 [node name="Background3" type="Sprite" parent="."]
 position = Vector2( 4.75684, 0 )
