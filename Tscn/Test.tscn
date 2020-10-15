@@ -6,6 +6,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="background" type="Sprite" parent="."]
+visible = false
 position = Vector2( 359.849, 637.063 )
 texture = ExtResource( 1 )
 
@@ -18,7 +19,4 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-<<<<<<< HEAD
 [connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
-=======
->>>>>>> 2ca8ae0d18e37aedd2c061308df73dfcba960a26

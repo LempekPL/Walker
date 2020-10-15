@@ -10,23 +10,23 @@
 [ext_resource path="res://Tscn/popup.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Tscn/popup.gd" type="Script" id=9]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 28
-font_data = ExtResource( 3 )
-
-[sub_resource type="DynamicFont" id=4]
-size = 50
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 50
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=3]
+size = 50
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
 size = 30
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=5]
 size = 20
 font_data = ExtResource( 3 )
 
@@ -44,7 +44,7 @@ margin_left = 31.0
 margin_top = 12.0
 margin_right = 156.0
 margin_bottom = 136.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 text = "go back"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -57,7 +57,7 @@ margin_left = 45.0
 margin_top = 945.318
 margin_right = 331.0
 margin_bottom = 1087.32
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 2 )
 text = "kup"
 script = ExtResource( 7 )
 __meta__ = {
@@ -69,7 +69,7 @@ margin_left = 388.473
 margin_top = 947.0
 margin_right = 674.473
 margin_bottom = 1089.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "kup"
 script = ExtResource( 6 )
 __meta__ = {
@@ -81,7 +81,7 @@ margin_left = 22.0
 margin_top = 244.0
 margin_right = 710.0
 margin_bottom = 406.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 text = "Odbierz za: hh/mm"
 align = 2
 script = ExtResource( 4 )
@@ -107,7 +107,7 @@ margin_left = 486.0
 margin_top = 47.0
 margin_right = 695.0
 margin_bottom = 118.0
-custom_fonts/normal_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 5 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "0"
 script = ExtResource( 2 )
