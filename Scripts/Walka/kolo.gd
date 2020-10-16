@@ -137,3 +137,11 @@ func pojaw():
 	for i in labels.size():
 		labels[i].visible=true
 	pass
+
+func rewerse():
+	for i in labels.size():
+		labels[i].visible=false if labels[i].visible else true
+	
+func _on_Button_pressed():
+	rewerse()
+	pass # Replace with function body.
