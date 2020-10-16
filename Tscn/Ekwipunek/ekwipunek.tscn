@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scripts/Ekwipunek/PrzyciskiEkw1.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Ekwipunek/inventory.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://resources/PTC55F.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://Scripts/Ekwipunek/X.gd" type="Script" id=9]
 [ext_resource path="res://Scripts/Ekwipunek/ubierz.gd" type="Script" id=10]
+[ext_resource path="res://Scripts/Ekwipunek/zmianascenyekwi.gd" type="Script" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -36,6 +37,7 @@ size = 27
 font_data = ExtResource( 8 )
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 11 )
 
 [node name="background" type="Sprite" parent="."]
 z_index = -1
