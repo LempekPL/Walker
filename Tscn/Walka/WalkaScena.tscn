@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://resources/Main/background.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Walka/VBoxContainer.gd" type="Script" id=2]
@@ -17,7 +17,17 @@ font_data = ExtResource( 4 )
 size = 48
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="DynamicFont" id=8]
 size = 60
 font_data = ExtResource( 4 )
 
@@ -52,14 +62,31 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="Background"]
-position = Vector2( 360, 350 )
-script = ExtResource( 7 )
+[node name="Node" type="Node" parent="Background"]
 
-[node name="strzalka" type="Sprite" parent="Background"]
+[node name="Button" type="Button" parent="Background/Node"]
+margin_left = 160.0
+margin_top = 160.0
+margin_right = 560.0
+margin_bottom = 560.0
+rect_min_size = Vector2( 400, 400 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 5 )
+custom_styles/disabled = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="strzalka" type="Sprite" parent="Background/Node"]
 position = Vector2( 360, 113 )
 z_index = 1
 texture = ExtResource( 8 )
+
+[node name="Sprite" type="Sprite" parent="Background/Node"]
+position = Vector2( 360, 350 )
+script = ExtResource( 7 )
 
 [node name="Background3" type="Sprite" parent="."]
 position = Vector2( 4.75684, 0 )
@@ -98,7 +125,7 @@ margin_left = 720.0
 margin_top = 550.0
 margin_right = 1424.0
 margin_bottom = 664.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 8 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Pasek akcji"
 __meta__ = {
@@ -106,7 +133,6 @@ __meta__ = {
 }
 
 [node name="Background2" type="Sprite" parent="."]
-position = Vector2( 0, -3.77539 )
 z_index = -1
 texture = ExtResource( 1 )
 centered = false
@@ -129,3 +155,4 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
 script = ExtResource( 2 )
+[connection signal="pressed" from="Background/Node/Button" to="Background/Node/Sprite" method="_on_Button_pressed"]

@@ -30,6 +30,13 @@ window/stretch/aspect="keep"
 
 pointing/emulate_touch_from_mouse=true
 
+[locale]
+
+translation_remaps={
+"res://data/items/ekwipunek.json": PoolStringArray(  ),
+"res://data/items/itemy.json": PoolStringArray(  )
+}
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
