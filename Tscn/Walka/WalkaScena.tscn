@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://resources/Main/background.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Walka/VBoxContainer.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://resources/Walka/tempHpbar.png" type="Texture" id=5]
 [ext_resource path="res://resources/Walka/ktos.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/Walka/kolo.gd" type="Script" id=7]
+[ext_resource path="res://resources/Walka/strzalka.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -23,7 +24,6 @@ font_data = ExtResource( 4 )
 [node name="Node2D" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 0, -3.77551 )
 z_index = -1
 texture = ExtResource( 1 )
 centered = false
@@ -55,6 +55,11 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="Background"]
 position = Vector2( 360, 350 )
 script = ExtResource( 7 )
+
+[node name="strzalka" type="Sprite" parent="Background"]
+position = Vector2( 360, 113 )
+z_index = 1
+texture = ExtResource( 8 )
 
 [node name="Background3" type="Sprite" parent="."]
 position = Vector2( 4.75684, 0 )

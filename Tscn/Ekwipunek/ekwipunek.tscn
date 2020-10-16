@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Scripts/Ekwipunek/PrzyciskiEkw1.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Ekwipunek/inventory.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Scripts/Ekwipunek/miniBG.gd" type="Script" id=7]
 [ext_resource path="res://resources/PTC55F.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://Scripts/Ekwipunek/X.gd" type="Script" id=9]
+[ext_resource path="res://Scripts/Ekwipunek/ubierz.gd" type="Script" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -148,8 +149,18 @@ __meta__ = {
 [node name="miniBG" type="Sprite" parent="."]
 visible = false
 position = Vector2( 360, 600 )
+z_index = 1
 texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 600, 600 )
 script = ExtResource( 7 )
+
+[node name="Panel" type="Panel" parent="miniBG"]
+show_behind_parent = true
+margin_left = -300.0
+margin_top = -300.0
+margin_right = 300.0
+margin_bottom = 300.0
 
 [node name="X" type="Button" parent="miniBG"]
 margin_left = 270.0
@@ -195,6 +206,7 @@ margin_bottom = 280.0
 rect_min_size = Vector2( 80, 80 )
 custom_fonts/font = SubResource( 3 )
 text = "Use"
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -235,3 +247,4 @@ __meta__ = {
 }
 [connection signal="swiped" from="SwipeDetector" to="." method="_on_SwipeDetector_swiped"]
 [connection signal="pressed" from="miniBG/X" to="miniBG/X" method="_on_X_pressed"]
+[connection signal="pressed" from="miniBG/Button" to="miniBG/Button" method="_on_Button_pressed"]
