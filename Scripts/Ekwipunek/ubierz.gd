@@ -2,6 +2,8 @@ extends Button
 
 var jsonI
 var jsonU 
+var fileU
+var fileI
 
 var id
 var gniazdo
@@ -11,21 +13,23 @@ func przekaz(_id, _gniazdo):
 	gniazdo=_gniazdo
 
 func _ready():
-	var	fileU=File.new()
-	fileU.open("res://data/items/ekwipunek.json", fileU.READ)
+	var fileU=File.new()
+	print(fileU.open("res://data/items/ekwipunek.json", fileU.READ_WRITE))
 	jsonU=JSON.parse(fileU.get_as_text()).result
-	var	fileI=File.new()
-	fileI.open("res://data/items/itemy.json", fileI.READ)
+	var fileI=File.new()
+	fileI.open("res://data/items/itemy.json", fileI.READ_WRITE)
 	jsonI=JSON.parse(fileI.get_as_text()).result
+	fileI.close()
+	fileU.close()
 	pass # Replace with function body.
 
 
 
 func _on_Button_pressed():
-	var fileU=File.new()
-	var fileI=File.new()
-	fileI.open("res://data/items/itemy.json", fileI.WRITE)
-	fileU.open("res://data/items/itemy.json", fileI.WRITE)
+#	var fileU=File.new()
+#	var fileI=File.new()
+#	print(fileI.open("res://data/items/itemy.json", File.READ_WRITE))
+#	fileU.open("res://data/items/ekwipunek.json", File.READ_WRITE)
 	var temp
 
 	for i in jsonI.size()-1:
@@ -40,7 +44,6 @@ func _on_Button_pressed():
 			break
 	fileI.store_line(to_json(jsonI))
 	fileU.store_line(to_json(jsonU))
-	fileI.close()
-	fileU.close()
+
 	get_parent().visible=false
 	pass 

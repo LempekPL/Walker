@@ -68,3 +68,8 @@ func _draw():
 func _process(delta):
 	update()
 	pass
+
+func losuj():
+	var w=randi()%361
+	for i in jsonR.size():
+		
