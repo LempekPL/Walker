@@ -23,6 +23,8 @@ var status=0
 var licznikStatus=-1
 var zatrzymanie=0
 
+var LStatus=2
+
 const RADIUS = 200
 
 var labels=[]
@@ -65,8 +67,8 @@ func _ready():
 		label.add_color_override("font_color",Color(jsonR[i]["color"][0],jsonR[i]["color"][1],jsonR[i]["color"][2]) )
 		#label.rect_rotation=90-angl
 		add_child(label)
-		print(label.rect_position)
 		labels.insert(i, label)
+		
 	
 	print("work")
 	print(losuj())
@@ -81,6 +83,7 @@ func _draw():
 		draw_circle_arc_poly(center, RADIUS, angle_from, angle_to, color)
 		self.rotation_degrees+=v
 		controlStatus()
+		poziomL()
 	#	li+=1
 	#	if li%100==0:
 	#		print(li)
@@ -134,23 +137,42 @@ func controlStatus():
 				v=0
 				status=0
 				pojaw()
+
+func poziomL():
+	for i in labels.size():
+		labels[i].rect_rotation=-(self.rotation_degrees)
+
 func ukryj():
 	for i in labels.size():
 		labels[i].visible=false
+	LStatus=1
 	pass
 	
 func pojaw():
 	for i in labels.size():
 		labels[i].visible=true
+	LStatus=2
 	pass
-
-func rewerse():
+func pokazNazwy():
 	for i in labels.size():
-		labels[i].visible=false if labels[i].visible else true
+		labels[i].text=jsonR[i]["name"]
 	
+func pokazStaty():
+	for i in labels.size():
+		labels[i].text="hp: "+String(jsonR[i]["hp"])+" atak: "+String(jsonR[i]["hp"])
+	LStatus=0
+
+
 func _on_Button_pressed():
-	rewerse()
-	pass # Replace with function body.
+	match LStatus:
+		0:
+			ukryj()
+			pokazNazwy()
+		1:
+			pojaw()
+		2:
+			pokazStaty()
+	pass 
 
 
 func _on_BEkw_pressed():

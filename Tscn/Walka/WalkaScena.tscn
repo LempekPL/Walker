@@ -164,9 +164,9 @@ texture = ExtResource( 5 )
 
 [node name="Label" type="Label" parent="Background3"]
 margin_left = 720.0
-margin_top = 550.0
+margin_top = 544.96
 margin_right = 1424.0
-margin_bottom = 664.0
+margin_bottom = 658.96
 custom_fonts/font = SubResource( 8 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Pasek akcji"
@@ -182,9 +182,9 @@ offset = Vector2( -720, 0 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Background2"]
 margin_left = -710.0
-margin_top = 2.44055
-margin_right = -10.0
-margin_bottom = 1202.44
+margin_top = 30.0
+margin_right = -9.99994
+margin_bottom = 1230.0
 rect_min_size = Vector2( 100, 32 )
 __meta__ = {
 "_edit_use_anchors_": false
