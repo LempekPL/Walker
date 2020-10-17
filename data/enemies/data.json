@@ -1,16 +1,474 @@
-{
-    "1": {
-        "name": "Burgerman",
-        "health": "100",
-        "extras": ["strength"],
-        "items": ["burger","fries"],
-        "icon": "burman.png"
+[
+    {
+        "name": "tłuszczek",
+        "opis":"godny przeciwnik breja tłuszczu",
+        "hp":1000,
+        "itemy":
+        [
+            {
+                "nazwa":"długi glukogen",
+                "hp":0,
+                "atak":60,
+                "szanse":30
+            },
+            {
+                "nazwa":"czepek tłuszczowy",
+                "hp":0,
+                "atak":200,
+                "szanse":5
+            },
+            {
+                "nazwa":"tarcza opychu",
+                "hp":50,
+                "atak":0,
+                "szanse":30
+            }
+
+        ]
     },
-    "2": {
-        "name": "Burgerwoman",
-        "health": "100",
-        "extras": ["accuracy"],
-        "items": ["burger","fries"],
-        "icon": "burwoman.png"
+    {
+        "name": "wódz frytek",
+        "opis": "jeden z potężnych frytkowych wodzów",
+        "hp": 5000,
+        "itemy": [
+            {
+                "nazwa": "armia frytek",
+                "hp": 0,
+                "atak": 500,
+                "szanse": 1
+            },
+            {
+                "nazwa": "pałeczka wodza",
+                "hp": 0,
+                "atak": 10,
+                "szanse": 50
+            },
+            {
+                "nazwa": "frytkownica",
+                "hp": 50,
+                "atak": 0,
+                "szanse": 20
+            }
+        ]
+    },
+    {
+        "name": "potężny węglowodan",
+        "opis": "to najpotężniejszy gladiator, z jakim można się zmierzyć",
+        "hp": 3000,
+        "itemy": [
+            {
+                "nazwa": "potężny cios węglowodana",
+                "hp": 0,
+                "atak": 1000,
+                "szanse": 1
+            },
+            {
+                "nazwa": "tarcza węglowodanowa",
+                "hp": 100,
+                "atak": 0,
+                "szanse": 30
+            },
+            {
+                "nazwa": "cios węglowodanowej pięści",
+                "hp": 0,
+                "atak": 10,
+                "szanse": 50
+            },
+            {
+                "nazwa": "replikacja węglowodanowa",
+                "hp": 10,
+                "atak": 5,
+                "szanse": 20
+            }
+        ]
+    },
+    {
+        "name": "koronawirus",
+        "opis": "jest to niepokonany przeciwnik",
+        "hp": 10000,
+        "itemy": [
+            {
+                "nazwa": "COVID-19",
+                "hp": 10,
+                "atak": 20,
+                "szanse": 100
+            }
+        ]
+    },
+    {
+        "name": "burgerowy sumo",
+        "opis": "nie masz szans z burgerowym sumo",
+        "hp": 1000,
+        "itemy": [
+            {
+                "nazwa": "skok masy",
+                "hp": 0,
+                "atak": 100,
+                "szanse": 10
+            },
+            {
+                "nazwa": "cios sumo",
+                "hp": 0,
+                "atak": 10,
+                "szanse": 95
+            },
+            {
+                "nazwa": "fałda tłuszczu",
+                "hp": 100,
+                "atak": 0,
+                "szanse": 15
+            }
+        ]
+    },
+    {
+        "name": "fast food",
+        "opis": "jeden z największych bossów żywieniowych współczesnego świata",
+        "hp": 20000,
+        "itemy": [
+            {
+                "nazwa": "tłuszcz z frytek",
+                "hp": 100,
+                "atak": 0,
+                "szanse": 20
+            },
+            {
+                "nazwa": "karząca ręka kasjerki",
+                "hp": 0,
+                "atak": 200,
+                "szanse": 30
+            },
+            {
+                "nazwa": "sałatki z fast fooda",
+                "hp": 0,
+                "atak": 100,
+                "szanse": 40
+            }
+        ]
+    },
+    {
+        "name": "super fałda tłuszczu",
+        "opis": "sabotujący Cię przeciwnik",
+        "hp": 5500,
+        "itemy": [
+            {
+                "nazwa": "wnikanie",
+                "hp": 0,
+                "atak": 100,
+                "szanse": 50
+            },
+            {
+                "nazwa": "autoregeneracja",
+                "hp": 100,
+                "atak": 0,
+                "szanse": 5
+            }
+        ]
+    },
+    {
+        "name": "ninja chipsy",
+        "opis": "nie wiesz, kiedy uderzy",
+        "hp": 800,
+        "itemy": [
+            {
+                "nazwa": "ziemniaczane shurikeny",
+                "hp": 0,
+                "atak": 100,
+                "szanse": 30
+            },
+            {
+                "nazwa": "ziemniaczana katana",
+                "hp": 0,
+                "atak": 200,
+                "szanse": 30
+            },
+            {
+                "nazwa": "ziemniaczany cios",
+                "hp": 0,
+                "atak": 500,
+                "szanse": 1
+            }
+        ]
+    },
+    {
+        "name": "król gazowanych napójów",
+        "opis": "lepiej nie zakłócać spokoju króla gazowanych napojów",
+        "hp": 5710,
+        "itemy": [
+            {
+                "nazwa": "berło bąbelkowe",
+                "hp": 0,
+                "atak": 60,
+                "szanse": 70
+            },
+            {
+                "nazwa": "straż bąbelkowa",
+                "hp": 0,
+                "atak": 10,
+                "szanse": 35
+            },
+            {
+                "nazwa": "bąbelkowa mikstura",
+                "hp": 50,
+                "atak": 50,
+                "szanse": 30
+            }
+        ]
+    },
+    {
+        "name": "szalona pizza",
+        "opis": "z szaleńcami lepiej się nie zadawać",
+        "hp": 5100,
+        "itemy": [
+            {
+                "nazwa": "pistolet serowy",
+                "hp": 0,
+                "atak": 60,
+                "szanse": 30
+            },
+            {
+                "nazwa": "dyski salami",
+                "hp": 0,
+                "atak": 300,
+                "szanse": 1
+            },
+            {
+                "nazwa": "ściana ketchupu",
+                "hp": 50,
+                "atak": 0,
+                "szanse": 30
+            }
+        ]
+    },
+    {
+        "name": "telewizor zombie",
+        "opis": "lepiej uciekaj od hordy telewizorów zombie",
+        "hp": 7000,
+        "itemy": [
+            {
+                "nazwa": "hipnoza",
+                "hp": 0,
+                "atak": 100,
+                "szanse": 30
+            },
+            {
+                "nazwa": "wciągnięcie",
+                "hp": 0,
+                "atak": 200,
+                "szanse": 15
+            },
+            {
+                "nazwa": "bezmózg",
+                "hp": 75,
+                "atak": 0,
+                "szanse": 50
+            }
+        ]
+    },
+    {
+        "name": "wysysacz portfela",
+        "opis": "nie zdasz sobie sprawy, kiedy zastaniesz oskubany",
+        "hp": 1000,
+        "itemy": [
+            {
+                "nazwa": "zagadanie",
+                "hp": 0,
+                "atak": 80,
+                "szanse": 30
+            },
+            {
+                "nazwa": "szybka ucieczka",
+                "hp": 50,
+                "atak": 0,
+                "szanse": 30
+            }
+        ]
+    },
+    {
+        "name": "pasożyt joystick",
+        "opis": "nie wiesz, kiedy wpadniesz w jego łapy",
+        "hp": 3200,
+        "itemy": [
+            {
+                "nazwa": "szpony",
+                "hp": 100,
+                "atak": 0,
+                "szanse": 60
+            }
+        ]
+    },
+    {
+        "name": "alkohol-naukowiec",
+        "opis": "nie wiesz kiedy jego intelekt Cię powali",
+        "hp": 1000,
+        "itemy": [
+            {
+                "nazwa": "zaklęcie naukowca",
+                "hp": 0,
+                "atak": 100,
+                "szanse": 30
+            },
+            {
+                "nazwa": "energia chemiczna",
+                "hp": 0,
+                "atak": 200,
+                "szanse": 5
+            },
+            {
+                "nazwa": "akcja-rekacja",
+                "hp": 100,
+                "atak": 0,
+                "szanse": 30
+            }
+        ]
+    },
+    {
+        "name": "e-papieros hacker",
+        "opis": "nie wiesz kiedy zhackuje Twoje ciało",
+        "hp": 5000,
+        "itemy": [
+            {
+                "nazwa": "deszyfrator haseł",
+                "hp": 0,
+                "atak": 100,
+                "szanse": 30
+            },
+            {
+                "nazwa": "zbieranie danych",
+                "hp": 100,
+                "atak": 0,
+                "szanse": 5
+            },
+            {
+                "nazwa": "wyłączanie płuc",
+                "hp": 0,
+                "atak": 400,
+                "szanse": 1
+            }
+        ]
+    },
+    {
+        "name": "papieros eksterminacja",
+        "opis": "nie wiesz kiedy wyciągnie spluwę",
+        "hp": 1000,
+        "itemy": [
+            {
+                "nazwa": "dezintegracja płuc",
+                "hp": 0,
+                "atak": 500,
+                "szanse": 1
+            },
+            {
+                "nazwa": "eksterminacja",
+                "hp": 0,
+                "atak": 50,
+                "szanse": 30
+            },
+            {
+                "nazwa": "restart systemu",
+                "hp": 20,
+                "atak": 0,
+                "szanse": 30
+            }
+        ]
+    },
+    {
+        "name": "cyberpet",
+        "opis": "milutki, ale jaki groźny",
+        "hp": 8000,
+        "itemy": [
+            {
+                "nazwa": "cyber-drapnięcie",
+                "hp": 0,
+                "atak": 60,
+                "szanse": 30
+            },
+            {
+                "nazwa": "pancerz bitów",
+                "hp": 100,
+                "atak": 0,
+                "szanse": 30
+            },
+            {
+                "nazwa": "cyber-ryk",
+                "hp": 0,
+                "atak": 105,
+                "szanse": 10
+            }
+        ]
+    },
+    {
+        "name": "duszek wirusek",
+        "opis": "niewidzialny, ale groźny",
+        "hp": 950,
+        "itemy": [
+            {
+                "nazwa": "atak skrzeli",
+                "hp": 0,
+                "atak": 100,
+                "szanse": 10
+            },
+            {
+                "nazwa": "wzomożone powielanie",
+                "hp": 100,
+                "atak": 0,
+                "szanse": 15
+            },
+            {
+                "nazwa": "totalna dominacja",
+                "hp": 100,
+                "atak": 190,
+                "szanse": 5
+            }
+        ]
+    },
+    {
+        "name": "szybkie bakterie",
+        "opis": "szybkie niczym wiatr",
+        "hp": 100,
+        "itemy": [
+            {
+                "nazwa": "prędkość światła",
+                "hp": 0,
+                "atak": 100,
+                "szanse": 10
+            },
+            {
+                "nazwa": "powielanie DNA",
+                "hp": 50,
+                "atak": 200,
+                "szanse": 5
+            },
+            {
+                "nazwa": "szybka replikacja",
+                "hp": 50,
+                "atak": 0,
+                "szanse": 30
+            }
+        ]
+    },
+    {
+        "name": "niezdrowy styl życia",
+        "opis": "największy boss świata",
+        "hp": 100000,
+        "itemy": [
+            {
+                "nazwa": "armia węglowodanów-gladiatorów",
+                "hp": 0,
+                "atak": 600,
+                "szanse": 15
+            },
+            {
+                "nazwa": "armia burgerowych sumo",
+                "hp": 0,
+                "atak": 650,
+                "szanse": 15
+            },
+            {
+                "nazwa": "tarcza z szalonych pizz",
+                "hp": 100,
+                "atak": 0,
+                "szanse": 15
+            }
+        ]
     }
-}
+]

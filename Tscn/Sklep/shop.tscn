@@ -1,0 +1,148 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://resources/shop/Sklepbg.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Sklep/RichTextLabel.gd" type="Script" id=2]
+[ext_resource path="res://resources/PTC55F.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scripts/Sklep/dailychest.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/Sklep/shop.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/Sklep/buy2.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Sklep/buy.gd" type="Script" id=7]
+[ext_resource path="res://Tscn/Sklep/popup.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scripts/Sklep/popup.gd" type="Script" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 50
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+font_data = ExtResource( 3 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Sklepbg" type="Sprite" parent="."]
+position = Vector2( 360.131, 640.162 )
+texture = ExtResource( 1 )
+
+[node name="buttons" type="Node" parent="."]
+
+[node name="goBack" type="Button" parent="buttons"]
+margin_left = 31.0
+margin_top = 12.0
+margin_right = 156.0
+margin_bottom = 136.0
+custom_fonts/font = SubResource( 1 )
+text = "go back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buy" type="Button" parent="buttons"]
+anchor_top = 0.00165539
+anchor_bottom = 0.00165539
+margin_left = 45.0
+margin_top = 945.318
+margin_right = 331.0
+margin_bottom = 1087.32
+custom_fonts/font = SubResource( 2 )
+text = "kup"
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buy2" type="Button" parent="buttons"]
+margin_left = 388.473
+margin_top = 947.0
+margin_right = 674.473
+margin_bottom = 1089.0
+custom_fonts/font = SubResource( 3 )
+text = "kup"
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dailychest" type="Button" parent="buttons"]
+margin_left = 22.0
+margin_top = 244.0
+margin_right = 710.0
+margin_bottom = 406.0
+custom_fonts/font = SubResource( 4 )
+text = "Odbierz za: hh/mm"
+align = 2
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="buttons/dailychest"]
+
+[node name="curr" type="Node" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="curr"]
+
+[node name="base" type="Control" parent="curr/CanvasLayer"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="counter" type="RichTextLabel" parent="curr/CanvasLayer/base"]
+margin_left = 486.0
+margin_top = 47.0
+margin_right = 695.0
+margin_bottom = 118.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "0"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="costloot" type="Node" parent="."]
+
+[node name="loot1" type="Label" parent="costloot"]
+margin_left = 71.0
+margin_top = 1109.0
+margin_right = 316.0
+margin_bottom = 1204.0
+rect_pivot_offset = Vector2( 189.437, 35.1755 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="loot2" type="Label" parent="costloot"]
+margin_left = 405.087
+margin_top = 1109.89
+margin_right = 650.087
+margin_bottom = 1204.89
+rect_pivot_offset = Vector2( 189.437, 35.1755 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="popup" parent="costloot" instance=ExtResource( 8 )]
+margin_left = -25.4271
+margin_top = 228.844
+margin_right = 14.5729
+margin_bottom = 268.844
+script = ExtResource( 9 )
+[connection signal="pressed" from="buttons/goBack" to="." method="_on_goBack_pressed"]
+[connection signal="pressed" from="buttons/buy" to="costloot/popup" method="_on_buy_pressed"]
+[connection signal="timeout" from="buttons/dailychest/Timer" to="buttons/dailychest" method="TimerTimeOut"]

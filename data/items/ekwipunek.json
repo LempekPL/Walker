@@ -1,62 +1,68 @@
 [
     {
         "id":12,
-        "name": "Brokół",
+        "name": "Brokó33333ł",
         "opis": "wielki zielony",
         "hp": 10,
         "atak":2,
         "rzadkość":"częsty",
         "szansa":10,
-        "gniazdo":"nogi"
+        "gniazdo":"nogi",
+        "color":[0.5,1.0,0.2]
     },
     {
         "id":13,
-        "name": "woda mineralna",
+        "name": "woda min32432eralna",
         "opis": "czysta źródlana",
         "hp": 4,
         "atak":50,
         "rzadkość":"rzadki",
         "szansa":20,
-        "gniazdo":"ciało"
+        "gniazdo":"ciało",
+        "color":[0.2,0.5,0.11]
     },
     {
         "id":14,
-        "name": "pomidor",
+        "name": "pomid48259842or",
         "opis": "czerwony",
         "hp": 5,
         "atak":30,
         "rzadkość":"częsty",
         "szansa":20,
-        "gniazdo":"artefakt"
+        "gniazdo":"artefakt",
+        "color":[0.3,0.2,0.81]
     },
     {
         "id":15,
-        "name": "szpinak",
+        "name": "szpin23ak",
         "opis": "zielony",
         "hp": 15,
         "atak":50,
         "rzadkość":"legendarny",
         "szansa":10,
-        "gniazdo":"artefakt"
+        "gniazdo":"artefakt",
+        "color":[0.7,0.1,0.81]
     },
     {
         "id":16,
-        "name": "maseczka",
+        "name": "masec342zka",
         "opis": "czysta źródlana",
         "hp": 50,
         "atak":0,
         "rzadkość":"rzadki",
         "szansa":20,
-        "gniazdo":"glowa"
+        "gniazdo":"glowa",
+        "color":[0.4,0.7,0.81]
     },
     {
         "id":17,
-        "name": "maseczka",
+        "name": "maseczk321a",
         "opis": "czysta źródlana",
         "hp": 50,
         "atak":0,
         "rzadkość":"rzadki",
         "szansa":20,
-        "gniazdo":"bron"
+        "gniazdo":"bron",
+        "color":[0.0,0.12,0.81]
     }
 ]

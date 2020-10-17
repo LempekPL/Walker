@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://resources/background.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/VBoxContainer.gd" type="Script" id=2]
@@ -6,6 +6,33 @@
 [ext_resource path="res://resources/PTC55F.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://resources/tempHpbar.png" type="Texture" id=5]
 [ext_resource path="res://resources/ktos.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/kolo.gd" type="Script" id=7]
+
+[sub_resource type="GDScript" id=4]
+script/source = "extends Node2D
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#    pass
+
+
+func _on_SwipeDetector_swiped(direction):
+
+	if direction == Vector2(-1, 0):
+		get_tree().change_scene(\"res://Tscn/Main/main.tscn\")
+	pass # Replace with function body.
+"
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -20,7 +47,7 @@ size = 60
 font_data = ExtResource( 4 )
 
 [node name="Node2D" type="Node2D"]
-position = Vector2( 720, 0 )
+script = SubResource( 4 )
 
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 0, -3.77551 )
@@ -28,17 +55,11 @@ z_index = -1
 texture = ExtResource( 1 )
 centered = false
 
-[node name="kolo" type="Sprite" parent="Background"]
-position = Vector2( 360.004, 370.998 )
-scale = Vector2( 1.95334, 1.74629 )
-z_index = 1
-texture = ExtResource( 3 )
-
 [node name="Button" type="Button" parent="Background"]
 margin_left = 74.0
-margin_top = 784.0
+margin_top = 799.008
 margin_right = 311.0
-margin_bottom = 1101.0
+margin_bottom = 1116.01
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 text = "ekwipunek"
@@ -57,6 +78,10 @@ text = "PvP fight"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sprite" type="Sprite" parent="Background"]
+position = Vector2( 360, 360 )
+script = ExtResource( 7 )
 
 [node name="Background3" type="Sprite" parent="."]
 position = Vector2( 4.75684, 0 )

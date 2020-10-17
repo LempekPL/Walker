@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="maingame"
-run/main_scene="res://Tscn/main.tscn"
+run/main_scene="res://Tscn/Main/main.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -25,6 +25,17 @@ window/size/width=720
 window/size/height=1280
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[locale]
+
+translation_remaps={
+"res://data/items/ekwipunek.json": PoolStringArray(  ),
+"res://data/items/itemy.json": PoolStringArray(  )
+}
 
 [rendering]
 

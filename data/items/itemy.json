@@ -1,5 +1,4 @@
 [	
-	//przedmioty na stopy
 	{
 		"id":0,
 		"name":"",
@@ -100,7 +99,6 @@
 		"szansa":20,
 		"gniazdo":"stopy"
 	},
-	//Przedmioty na tors
 	{
 		"id":21,
 		"name":"Ogórkowa koszula",
@@ -191,7 +189,6 @@
 		"szansa":20,
 		"gniazdo":"tors"
 	},
-	//Przedmioty na głowę
 	{
 		"id":41,
 		"name":"Ogórkowa czapka",
@@ -282,7 +279,6 @@
 		"szansa":20,
 		"gniazdo":"glowa"
 	},
-	//Przedmioty na slot broni
 	{
 		"id":61,
 		"name":"Miecz z marchewek",
@@ -373,7 +369,6 @@
 		"szansa":15,
 		"gniazdo":"bron"
 	},
-	//Przedmioty na slot artefaktów
 	{
 		"id":81,
 		"name":"Marchewka",
@@ -463,5 +458,5 @@
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"bron"
-	},
+	}
 ]

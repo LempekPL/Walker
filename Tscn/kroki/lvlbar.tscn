@@ -2,23 +2,21 @@
 
 [ext_resource path="res://resources/Main/Bar/bg.png" type="Texture" id=1]
 [ext_resource path="res://resources/Main/Bar/fill.png" type="Texture" id=2]
-[ext_resource path="res://bar/lvlbar.gd" type="Script" id=3]
+[ext_resource path="res://Tscn/kroki/krokibar.gd" type="Script" id=3]
 
 
 [node name="Node2D" type="Node2D"]
 
-[node name="levelbar" type="Control" parent="."]
+[node name="krokibar" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="lvlbar" type="TextureProgress" parent="levelbar"]
-margin_left = 312.62
-margin_top = 54.4756
-margin_right = 708.62
-margin_bottom = 108.476
+[node name="krokibar" type="TextureProgress" parent="krokibar"]
+margin_right = 396.0
+margin_bottom = 54.0004
 texture_under = ExtResource( 1 )
 texture_progress = ExtResource( 2 )
 script = ExtResource( 3 )
@@ -26,4 +24,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="UpdateTween" type="Tween" parent="levelbar"]
+[node name="UpdateTween" type="Tween" parent="krokibar"]

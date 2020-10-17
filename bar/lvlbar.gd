@@ -1,7 +1,7 @@
 extends TextureProgress
 
-onready var levelbar = $levelbar
-onready var tween = $UpdateTween
+onready var levelbar = self.get_parent()
+onready var tween = levelbar.get_node("UpdateTween")
 
 func _on_health_updated(level, amount):
 
