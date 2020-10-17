@@ -13,11 +13,12 @@ func przekaz(_id, _gniazdo):
 	gniazdo=_gniazdo
 
 func _ready():
+	print(OS.get_user_data_dir())
 	var fileU=File.new()
-	print(fileU.open("res://data/items/ekwipunek.json", fileU.READ_WRITE))
+	print(fileU.open("user://data/items/ekwipunek.json", fileU.READ_WRITE))
 	jsonU=JSON.parse(fileU.get_as_text()).result
 	var fileI=File.new()
-	fileI.open("res://data/items/itemy.json", fileI.READ_WRITE)
+	fileI.open("user://data/items/itemy.json", fileI.READ_WRITE)
 	jsonI=JSON.parse(fileI.get_as_text()).result
 	fileI.close()
 	fileU.close()
