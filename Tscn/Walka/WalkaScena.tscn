@@ -38,7 +38,7 @@ z_index = -1
 texture = ExtResource( 1 )
 centered = false
 
-[node name="Button" type="Button" parent="Background"]
+[node name="BEkw" type="Button" parent="Background"]
 margin_left = 74.0
 margin_top = 799.008
 margin_right = 311.0
@@ -50,7 +50,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="Background"]
+[node name="BPvp" type="Button" parent="Background"]
 margin_left = 357.936
 margin_top = 796.476
 margin_right = 594.936
@@ -155,4 +155,5 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
 script = ExtResource( 2 )
+[connection signal="pressed" from="Background/BEkw" to="Background/Node/Sprite" method="_on_BEkw_pressed"]
 [connection signal="pressed" from="Background/Node/Button" to="Background/Node/Sprite" method="_on_Button_pressed"]

@@ -6,7 +6,7 @@
         "hp": 10,
         "atak":2,
         "rzadkość":"częsty",
-        "szansa":100,
+        "szansa":10,
         "gniazdo":"nogi",
         "color":[0.5,1.0,0.2]
     },

@@ -56,19 +56,22 @@ func _ready():
 	for i in jsonR.size():
 		label=Label.new()
 		label.text=jsonR[i]["name"]
-		var angl=((prz[i][1]-prz[i][0])/2)+prz[i][0]+ (-15 if prz[i][0]>180 else 15)
-		var x=sin(angl*PI/180)*RADIUS
-		var y=cos(angl*PI/180)*RADIUS
+		var angl:float
+		angl=prz[i][0]-((prz[i][0]-prz[i][1])/2)
+		var x=sin(angl*PI/180.0)*RADIUS
+		var y=-cos(angl*PI/180.0)*RADIUS
 		label.rect_position=Vector2(x, y)
 		label.add_font_override("font", dynamic_font)
-		label.add_color_override("font_color", Color.red)
+		label.add_color_override("font_color",Color(jsonR[i]["color"][0],jsonR[i]["color"][1],jsonR[i]["color"][2]) )
+		#label.rect_rotation=90-angl
 		add_child(label)
+		print(label.rect_position)
 		labels.insert(i, label)
 	
 	print("work")
 	print(losuj())
 	pass
-var li=0
+#var li=0
 func _draw():
 	for i in prz.size():
 		var center = Vector2(0, 0)
@@ -78,26 +81,29 @@ func _draw():
 		draw_circle_arc_poly(center, RADIUS, angle_from, angle_to, color)
 		self.rotation_degrees+=v
 		controlStatus()
-		li+=1
-		if li%100==0:
-			print(li)
+	#	li+=1
+	#	if li%100==0:
+	#		print(li)
 	pass
 
+# warning-ignore:unused_argument
 func _process(delta):
 	update()
 	pass
 
 func losuj():
-	randomize()
-	ukryj()
-	var w=randi()%360
-	zatrzymanie=w
-	status=3
-	for i in angles.size()-1:
-		if angles[i]<w && angles[i+1]>w:
-			return jsonR[i]
-		else:
-			return jsonR[jsonR.size()-1]
+	if status==0:
+		randomize()
+		ukryj()
+		var w=randi()%360
+		zatrzymanie=w
+		status=3
+		for i in angles.size()-1:
+			if angles[i]>w && angles[i+1]<w:
+				return jsonR[i]
+			else:
+				return jsonR[jsonR.size()-1]
+
 func controlStatus():
 	match status:
 		3:
@@ -144,4 +150,9 @@ func rewerse():
 	
 func _on_Button_pressed():
 	rewerse()
+	pass # Replace with function body.
+
+
+func _on_BEkw_pressed():
+	losuj()
 	pass # Replace with function body.
