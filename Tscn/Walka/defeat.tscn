@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resources/PTC55F.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 70
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 4.43918
+margin_top = 404.681
+margin_right = 718.439
+margin_bottom = 560.681
+custom_fonts/font = SubResource( 1 )
+text = "Przegrałeś"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

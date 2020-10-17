@@ -1,7 +1,5 @@
 extends Node2D
 
-
-
 func _on_Shop_pressed():
 	get_tree().change_scene("res://Tscn/Sklep/shop.tscn")
 	pass 
