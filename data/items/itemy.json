@@ -1,1085 +1,462 @@
-[
-    {
-        "licznikId":11
-    },
-    {
-        "id":0,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":1,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":2,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":3,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":4,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":5,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":6,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":7,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":8,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":9,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":10,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":11,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":0,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":1,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":2,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":3,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":4,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":5,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":6,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":7,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":8,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":9,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":10,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":11,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":0,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":1,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":2,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":3,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":4,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":5,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":6,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":7,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":8,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":9,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":10,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":11,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":0,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":1,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":2,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":3,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":4,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":5,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":6,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":7,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":8,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":9,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":10,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":11,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":0,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":1,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":2,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":3,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":4,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":5,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":6,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":7,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":8,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":9,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":10,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":11,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":0,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":1,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":2,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":3,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":4,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":5,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":6,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":7,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":8,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":9,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":10,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":11,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":0,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":1,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":2,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":3,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":4,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":5,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":6,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":7,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":8,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":9,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":10,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":11,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":0,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":1,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":2,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":3,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":4,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":5,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":6,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":7,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":8,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":9,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":10,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":11,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":0,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":1,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":2,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":3,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":4,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":5,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":6,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":7,
-        "name": "pomidor",
-        "opis": "czerwony",
-        "hp": 5,
-        "atak":30,
-        "rzadkość":"częsty",
-        "szansa":20,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":8,
-        "name": "szpinak",
-        "opis": "zielony",
-        "hp": 15,
-        "atak":50,
-        "rzadkość":"legendarny",
-        "szansa":10,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":9,
-        "name": "maseczka",
-        "opis": "czysta źródlana",
-        "hp": 50,
-        "atak":0,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"artefakt"
-    },
-    {
-        "id":10,
-        "name": "Brokół",
-        "opis": "wielki zielony",
-        "hp": 10,
-        "atak":2,
-        "rzadkość":"częsty",
-        "szansa":10,
-        "gniazdo":"nogi"
-    },
-    {
-        "id":11,
-        "name": "woda mineralna",
-        "opis": "czysta źródlana",
-        "hp": 4,
-        "atak":50,
-        "rzadkość":"rzadki",
-        "szansa":20,
-        "gniazdo":"nogi"
-    }
+[	
+	{
+		"id":0,
+		"name":"",
+		"opis":"",
+		"hp":0,
+		"protect":0,
+		"rarity":"",
+		"szansa":0,
+		"gniazdo":""
+	},
+	{
+		"id":1,
+		"name":"Ogórkowe buty",
+		"opis":"tmp",
+		"hp":10,
+		"protect":5,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"stopy"
+	},
+	{
+		"id":2,
+		"name":"Brokółowe buty",
+		"opis":"tmp",
+		"hp":20,
+		"protect":10,
+		"rarity":"częsty",
+		"szansa":20,
+		"gniazdo":"stopy"
+	},
+	{
+		"id":3,
+		"name":"Kalafiorowe buty",
+		"opis":"tmp",
+		"hp":5,
+		"protect":10,
+		"rarity":"rzadki",
+		"szansa":25,
+		"gniazdo":"stopy"
+	},
+	{
+		"id":4,
+		"name":"Pomidorowe buty",
+		"opis":"tmp",
+		"hp":20,
+		"protect":35,
+		"rarity":"częsty",
+		"szansa":10,
+		"gniazdo":"stopy"
+	},
+	{
+		"id":5,
+		"name":"Buty z parówek",
+		"opis":"tmp",
+		"hp":5,
+		"protect":5,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"stopy"
+	},
+	{
+		"id":6,
+		"name":"Cebulowe buty",
+		"opis":"Chce mi się płakać...",
+		"hp":10,
+		"protect":20,
+		"rarity":"rzadkie",
+		"szansa":30,
+		"gniazdo":"stopy"
+	},
+	{
+		"id":7,
+		"name":"Buraczane buty",
+		"opis":"tmp",
+		"hp":15,
+		"protect":10,
+		"rarity":"pospolity",
+		"szansa":40,
+		"gniazdo":"stopy"
+	},
+	{
+		"id":8,
+		"name":"Ziemniaczane buty",
+		"opis":"tmp",
+		"hp":10,
+		"protect":15,
+		"rarity":"pospolity",
+		"szansa":30,
+		"gniazdo":"stopy"
+	},
+	{
+		"id":9,
+		"name":"Buty z szynki",
+		"opis":"tmp",
+		"hp":15,
+		"protect":10,
+		"rarity":"częsty",
+		"szansa":20,
+		"gniazdo":"stopy"
+	},
+	{
+		"id":21,
+		"name":"Ogórkowa koszula",
+		"opis":"tmp",
+		"hp":10,
+		"protect":5,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"tors"
+	},
+	{
+		"id":22,
+		"name":"Brokółowa koszula",
+		"opis":"tmp",
+		"hp":20,
+		"protect":10,
+		"rarity":"częsty",
+		"szansa":20,
+		"gniazdo":"tors"
+	},
+	{
+		"id":23,
+		"name":"Kalafiorowa koszula",
+		"opis":"tmp",
+		"hp":5,
+		"protect":10,
+		"rarity":"rzadki",
+		"szansa":25,
+		"gniazdo":"tors"
+	},
+	{
+		"id":24,
+		"name":"Pomidorowa koszula",
+		"opis":"tmp",
+		"hp":20,
+		"protect":35,
+		"rarity":"częsty",
+		"szansa":10,
+		"gniazdo":"tors"
+	},
+	{
+		"id":25,
+		"name":"Koszula z parówek",
+		"opis":"tmp",
+		"hp":5,
+		"protect":5,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"tors"
+	},
+	{
+		"id":26,
+		"name":"Cebulowa koszula",
+		"opis":"Chce mi się płakać...",
+		"hp":10,
+		"protect":20,
+		"rarity":"rzadkie",
+		"szansa":30,
+		"gniazdo":"tors"
+	},
+	{
+		"id":27,
+		"name":"Buraczana koszula",
+		"opis":"tmp",
+		"hp":15,
+		"protect":10,
+		"rarity":"pospolity",
+		"szansa":40,
+		"gniazdo":"tors"
+	},
+	{
+		"id":28,
+		"name":"Ziemniaczana koszula",
+		"opis":"tmp",
+		"hp":10,
+		"protect":15,
+		"rarity":"pospolity",
+		"szansa":30,
+		"gniazdo":"tors"
+	},
+	{
+		"id":29,
+		"name":"Koszula z szynki",
+		"opis":"tmp",
+		"hp":15,
+		"protect":10,
+		"rarity":"częsty",
+		"szansa":20,
+		"gniazdo":"tors"
+	},
+	{
+		"id":41,
+		"name":"Ogórkowa czapka",
+		"opis":"tmp",
+		"hp":10,
+		"protect":5,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"glowa"
+	},
+	{
+		"id":42,
+		"name":"Brokółowa czapka",
+		"opis":"tmp",
+		"hp":20,
+		"protect":10,
+		"rarity":"częsty",
+		"szansa":20,
+		"gniazdo":"glowa"
+	},
+	{
+		"id":43,
+		"name":"Kalafiorowa czapka",
+		"opis":"tmp",
+		"hp":5,
+		"protect":10,
+		"rarity":"rzadki",
+		"szansa":25,
+		"gniazdo":"glowa"
+	},
+	{
+		"id":44,
+		"name":"Pomidorowa czapka",
+		"opis":"tmp",
+		"hp":20,
+		"protect":35,
+		"rarity":"częsty",
+		"szansa":10,
+		"gniazdo":"glowa"
+	},
+	{
+		"id":45,
+		"name":"Czapka z parówek",
+		"opis":"tmp",
+		"hp":5,
+		"protect":5,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"glowa"
+	},
+	{
+		"id":46,
+		"name":"Cebulowa czapka",
+		"opis":"Chce mi się płakać...",
+		"hp":10,
+		"protect":20,
+		"rarity":"rzadkie",
+		"szansa":30,
+		"gniazdo":"glowa"
+	},
+	{
+		"id":47,
+		"name":"Buraczana czapka",
+		"opis":"tmp",
+		"hp":15,
+		"protect":10,
+		"rarity":"pospolity",
+		"szansa":40,
+		"gniazdo":"glowa"
+	},
+	{
+		"id":48,
+		"name":"Ziemniaczana czapka",
+		"opis":"tmp",
+		"hp":10,
+		"protect":15,
+		"rarity":"pospolity",
+		"szansa":30,
+		"gniazdo":"glowa"
+	},
+	{
+		"id":49,
+		"name":"Czapka z szynki",
+		"opis":"tmp",
+		"hp":15,
+		"protect":10,
+		"rarity":"częsty",
+		"szansa":20,
+		"gniazdo":"glowa"
+	},
+	{
+		"id":61,
+		"name":"Miecz z marchewek",
+		"opis":"tmp",
+		"hp":20,
+		"damage":10,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"bron"
+	},
+	{
+		"id":62,
+		"name":"Miecz z ziemniaków",
+		"opis":"tmp",
+		"hp":40,
+		"damage":5,
+		"rarity":"rzadki",
+		"szansa":30,
+		"gniazdo":"bron"
+	},
+	{
+		"id":63,
+		"name":"Miecz z szynki",
+		"opis":"tmp",
+		"hp":10,
+		"damage":5,
+		"rarity":"pospolity",
+		"szansa":40,
+		"gniazdo":"bron"
+	},
+	{
+		"id":64,
+		"name":"Cebulowy miecz",
+		"opis":"tmp",
+		"hp":20,
+		"damage":10,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"bron"
+	},
+	{
+		"id":65,
+		"name":"Buraczany miecz",
+		"opis":"tmp",
+		"hp":50,
+		"damage":15,
+		"rarity":"pospolity",
+		"szansa":50,
+		"gniazdo":"bron"
+	},
+	{
+		"id":66,
+		"name":"Miecz z parówek",
+		"opis":"tmp",
+		"hp":20,
+		"damage":10,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"bron"
+	},
+	{
+		"id":67,
+		"name":"Kalafiorowy miecz",
+		"opis":"tmp",
+		"hp":20,
+		"damage":5,
+		"rarity":"pospolity",
+		"szansa":30,
+		"gniazdo":"bron"
+	},
+	{
+		"id":68,
+		"name":"Pomidorowy miecz",
+		"opis":"tmp",
+		"hp":10,
+		"damage":5,
+		"rarity":"pospolity",
+		"szansa":40,
+		"gniazdo":"bron"
+	},
+	{
+		"id":69,
+		"name":"Brokółowy miecz",
+		"opis":"tmp",
+		"hp":20,
+		"damage":10,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"bron"
+	},
+	{
+		"id":81,
+		"name":"Marchewka",
+		"opis":"tmp",
+		"hp":20,
+		"damage":20,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"bron"
+	},
+	{
+		"id":82,
+		"name":"Ziemniak",
+		"opis":"tmp",
+		"hp":40,
+		"damage":5,
+		"rarity":"rzadki",
+		"szansa":30,
+		"gniazdo":"bron"
+	},
+	{
+		"id":83,
+		"name":"Szynka",
+		"opis":"tmp",
+		"hp":10,
+		"damage":5,
+		"rarity":"pospolity",
+		"szansa":40,
+		"gniazdo":"bron"
+	},
+	{
+		"id":84,
+		"name":"Cebula",
+		"opis":"tmp",
+		"hp":20,
+		"damage":10,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"bron"
+	},
+	{
+		"id":85,
+		"name":"Burak",
+		"opis":"tmp",
+		"hp":50,
+		"damage":15,
+		"rarity":"pospolity",
+		"szansa":50,
+		"gniazdo":"bron"
+	},
+	{
+		"id":86,
+		"name":"Parówka",
+		"opis":"tmp",
+		"hp":20,
+		"damage":10,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"bron"
+	},
+	{
+		"id":87,
+		"name":"Kalafior",
+		"opis":"tmp",
+		"hp":20,
+		"damage":5,
+		"rarity":"pospolity",
+		"szansa":30,
+		"gniazdo":"bron"
+	},
+	{
+		"id":88,
+		"name":"Pomidor",
+		"opis":"tmp",
+		"hp":10,
+		"damage":5,
+		"rarity":"pospolity",
+		"szansa":40,
+		"gniazdo":"bron"
+	},
+	{
+		"id":89,
+		"name":"Brokółowy miecz",
+		"opis":"tmp",
+		"hp":20,
+		"damage":10,
+		"rarity":"pospolity",
+		"szansa":15,
+		"gniazdo":"bron"
+	}
 ]
