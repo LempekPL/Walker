@@ -1,16 +1,29 @@
-{
-    "1": {
-        "name": "Burgerman",
-        "health": "100",
-        "extras": ["strength"],
-        "items": ["burger","fries"],
-        "icon": "burman.png"
-    },
-    "2": {
-        "name": "Burgerwoman",
-        "health": "100",
-        "extras": ["accuracy"],
-        "items": ["burger","fries"],
-        "icon": "burwoman.png"
+[
+    {
+        "name": "tłuszczek",
+        "opis":"godny przeciwnik breja tłuszczu",
+        "hp":1000,
+        "itemy":
+        [
+            {
+                "nazwa":"długi glukogen",
+                "hp":0,
+                "atak":60,
+                "szanse":30
+            },
+            {
+                "nazwa":"czepek tłuszczowy",
+                "hp":0,
+                "atak":200,
+                "szanse":5
+            },
+            {
+                "nazwa":"tarcza opychu",
+                "hp":50,
+                "atak":0,
+                "szanse":30
+            }
+
+        ]
     }
-}
+]
