@@ -1,26 +1,26 @@
 [
 	{
-		"id":"1",
+		"id":1,
 		"text":"Przebiegnij #RAND# metrów"
 	},
 	{
-		"id":"2",
+		"id":2,
 		"text":"Zrób #RAND# pompek"
 	},
 	{
-		"id":"3",
+		"id":3,
 		"text":"Zrób #RAND# brzuszków"
 	},
 	{
-		"id":"4",
+		"id":4,
 		"text":"Zrób #RAND# pajacyków"
 	},
 	{
-		"id":"5",
+		"id":5,
 		"text":"Zrobienie zdrowego koktajlu"
 	},
 	{
-		"id":"6",
+		"id":6,
 		"text":"Umycie zębów 3 razy. Rano, po obiedzie i wieczorem"
 	}
 ]
