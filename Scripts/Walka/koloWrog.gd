@@ -12,11 +12,12 @@ func draw_circle_arc_poly(center, radius, angle_from, angle_to, color):
 		points_arc.push_back(center + Vector2(cos(angle_point), sin(angle_point)) * radius)
 	draw_polygon(points_arc, colors)
 var file
-var jsonR
 var angles
 var prz
 var v=0.0
 var label
+
+var przeciwnik
 
 var speed=0
 var status=0
@@ -25,21 +26,24 @@ var zatrzymanie=0
 
 var LStatus=2
 
+var flag=false
 const RADIUS = 200
 
 var labels=[]
 
 func _ready():
-	file=File.new();
-	file.open("res://data/items/ekwipunek.json", file.READ)
-	jsonR=JSON.parse(file.get_as_text()).result
-	angles=range(jsonR.size())
-	prz=range(jsonR.size())
+	pass
+
+func ustaw(_przeciwnik):
+	przeciwnik=_przeciwnik
+	flag=true
+	angles=range(przeciwnik["itemy"].size())
+	prz=range(przeciwnik["itemy"].size())
 	var sum=0.0
-	for i in jsonR.size():
-		sum+=jsonR[i]["szansa"]
-	for i in jsonR.size():
-		angles[i]=float(jsonR[i]["szansa"])/sum*360
+	for i in przeciwnik["itemy"].size():
+		sum+=przeciwnik["itemy"][i]["szansa"]
+	for i in przeciwnik["itemy"].size():
+		angles[i]=float(przeciwnik["itemy"][i]["szansa"])/sum*360
 	var licznik=-1.0
 	for i in angles.size():
 		prz[i]=[licznik+1.0,0]
@@ -55,38 +59,34 @@ func _ready():
 	
 
 	
-	for i in jsonR.size():
+	for i in przeciwnik["itemy"].size():
 		label=Label.new()
-		label.text=jsonR[i]["name"]
+		label.text=przeciwnik["itemy"][i]["nazwa"]
 		var angl:float
 		angl=prz[i][0]-((prz[i][0]-prz[i][1])/2)
 		var x=sin(angl*PI/180.0)*RADIUS
 		var y=-cos(angl*PI/180.0)*RADIUS
 		label.rect_position=Vector2(x, y)
 		label.add_font_override("font", dynamic_font)
-		label.add_color_override("font_color",Color(jsonR[i]["color"][0],jsonR[i]["color"][1],jsonR[i]["color"][2]) )
+		label.add_color_override("font_color",Color(randf(),randf(),randf()) )
 		#label.rect_rotation=90-angl
 		add_child(label)
 		labels.insert(i, label)
-		
-	
-	print("work")
-	print(losuj())
-	pass
-#var li=0
+	losuj()
+
+
 func _draw():
-	for i in prz.size():
-		var center = Vector2(0, 0)
-		var angle_from = int(prz[i][0])
-		var angle_to = int(prz[i][1])
-		var color = Color(jsonR[i]["color"][0], jsonR[i]["color"][1], jsonR[i]["color"][2])
-		draw_circle_arc_poly(center, RADIUS, angle_from, angle_to, color)
-		self.rotation_degrees+=v
-		controlStatus()
-		poziomL()
-	#	li+=1
-	#	if li%100==0:
-	#		print(li)
+	if flag:
+		for i in prz.size():
+			var center = Vector2(0, 0)
+			var angle_from = int(prz[i][0])
+			var angle_to = int(prz[i][1])
+			var color = Color(randf(), randf(), randf())
+			draw_circle_arc_poly(center, RADIUS, angle_from, angle_to, color)
+			self.rotation_degrees+=v
+			controlStatus()
+			poziomL()
+
 	pass
 
 # warning-ignore:unused_argument
@@ -103,9 +103,9 @@ func losuj():
 		status=3
 		for i in angles.size()-1:
 			if angles[i]>w && angles[i+1]<w:
-				return jsonR[i]
+				return przeciwnik["itemy"][i]
 			else:
-				return jsonR[jsonR.size()-1]
+				return przeciwnik["itemy"][przeciwnik["itemy"].size()-1]
 
 func controlStatus():
 	match status:
@@ -155,11 +155,11 @@ func pojaw():
 	pass
 func pokazNazwy():
 	for i in labels.size():
-		labels[i].text=jsonR[i]["name"]
+		labels[i].text=przeciwnik["itemy"][i]["nazwa"]
 	
 func pokazStaty():
 	for i in labels.size():
-		labels[i].text="hp: "+String(jsonR[i]["hp"])+" atak: "+String(jsonR[i]["hp"])
+		labels[i].text="hp: "+String(przeciwnik["itemy"][i]["hp"])+" atak: "+String(przeciwnik["itemy"][i]["atak"])
 	LStatus=0
 
 
