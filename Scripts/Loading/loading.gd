@@ -1,18 +1,17 @@
 extends Node2D
 
-var paths = ["res://data/enemies/", "res://data/items/", "res://data/player/", "res://data/quests/"]
-var files = ["res://data/enemies/data.json", "res://data/items/ekwipunek.json", "res://data/items/itemy.json", "res://data/player/data.json", "res://data/player/level.json", "res://data/player/quests.json", "res://data/quests/data.json"]
-var crFiles = ["user://enemies/data.json", "user://items/ekwipunek.json", "user://items/itemy.json", "user://player/data.json", "user://player/level.json", "user://player/quests.json", "user://quests/data.json"]
+var paths = ["user://enemies/", "user://items/", "user://player/", "user://quests/"]
+var files = ["user://data/enemies/data.json", "user://data/items/ekwipunek.json", "user://data/items/itemy.json", "res://data/player/data.json", "res://data/player/level.json", "res://data/player/quests.json", "res://data/quests/data.json"]
+var copyFiles = ["res://data/enemies/", "res://data/items/", "res://data/player/", "res://data/quests/"]
 
 func _ready():
 	var i = 0
 	for path in paths:
 		if(!is_dir(path)):
-			make_dr(path.split("/")[3])
-	for file in files:
+			make_dr(path.split("/")[2])
+		if(!is_file(files[i])):
+			create_file(copyFiles[i], path)
 		i += 1
-		if(!is_file(file)):
-			create_file(crFiles[i], file)
 	pass
 
 
@@ -33,13 +32,7 @@ func is_file(path):
 	pass
 
 func create_file(pathToCreate, pathToCopy):
-	var file = File.new()
-	var copyFile = File.new()
-	var data = []
-	copyFile.open(pathToCopy, File.READ)
-	while !copyFile.eof_reached():
-		var line = copyFile.get_line
-		data.push_back(line)
-	file.open(pathToCreate, File.WRITE)
-	file.store_string(data)
-	file.close()
+	var dir = Directory.new()
+	print("PathToCopy " + str(pathToCopy) + "\n pathToCreate " + str(pathToCreate))
+	dir.copy(pathToCreate, pathToCopy)
+	pass
