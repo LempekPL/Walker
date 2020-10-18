@@ -9,10 +9,11 @@ var rng = RandomNumberGenerator.new()
 func _ready():
 	file=File.new();
 	fileUser=File.new();
-	fileUser.open("user://data/player/quests.json", File.READ_WRITE)
+	fileUser.open("user://player/quests.json", File.READ_WRITE)
 	jsonR=JSON.parse(fileUser.get_as_text()).result
+	print(jsonR)
 	if jsonR.quests == null:
-		file.open("user://data/quests/data.json", File.READ)
+		file.open("user://quests/data.json", File.READ)
 		jsonL=JSON.parse(file.get_as_text()).result
 		rng.randomize()
 		var rand1 = rng.randi_range(0, 9)

@@ -2,7 +2,7 @@ extends Node2D
 
 var paths = ["res://data/enemies/", "res://data/items/", "res://data/player/", "res://data/quests/"]
 var files = ["res://data/enemies/data.json", "res://data/items/ekwipunek.json", "res://data/items/itemy.json", "res://data/player/data.json", "res://data/player/level.json", "res://data/player/quests.json", "res://data/quests/data.json"]
-var crFiles = ["user://data/enemies/data.json", "user://data/items/ekwipunek.json", "user://data/items/itemy.json", "user://data/player/data.json", "user://data/player/level.json", "user://data/player/quests.json", "user://data/quests/data.json"]
+var crFiles = ["user://enemies/data.json", "user://items/ekwipunek.json", "user://items/itemy.json", "user://player/data.json", "user://player/level.json", "user://player/quests.json", "user://quests/data.json"]
 
 func _ready():
 	var i = 0
