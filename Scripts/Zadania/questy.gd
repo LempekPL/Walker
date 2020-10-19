@@ -2,9 +2,12 @@ extends Node2D
 
 var file
 var fileUser
+var fil
+var stp
 var jsonR
 var jsonL
 var rng = RandomNumberGenerator.new()
+var dru = false
 
 func _ready():
 	file=File.new();
@@ -12,7 +15,7 @@ func _ready():
 	fileUser.open("user://player/quests.json", File.READ_WRITE)
 	jsonR=JSON.parse(fileUser.get_as_text()).result
 	print(jsonR)
-	if jsonR.quests == null:
+	if false:
 		file.open("user://quests/data.json", File.READ)
 		jsonL=JSON.parse(file.get_as_text()).result
 		rng.randomize()
@@ -36,7 +39,23 @@ func _ready():
 	$VBoxContainer/TextureRect3/Label2.text = jsonR.quests[1]
 	$VBoxContainer/TextureRect4/Label3.text = jsonR.quests[2]
 	
+	
 	jsonR.close()
+
+func _process(delta):
+	fil.open("user://player/step.json", File.READ_WRITE)
+	stp=JSON.parse(fileUser.get_as_text()).result
+	
+	var acc = Input.get_accelerometer()
+	if dru == false && acc.y<0:
+		dru = true
+	if dru == true && acc.y>0:
+		stp.step += 1
+		dru = false
+	
+	fil.store_line(to_json(stp))
+	$VBoxContainer/TextureRect4/Label3.text = stp.step
+	fil.close()
 
 func _on_SwipeDetector_swiped(direction):
 	if direction == Vector2(1, 0):
