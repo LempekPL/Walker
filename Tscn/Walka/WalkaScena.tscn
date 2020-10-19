@@ -29,7 +29,7 @@ font_data = ExtResource( 4 )
 [sub_resource type="StyleBoxEmpty" id=7]
 
 [sub_resource type="DynamicFont" id=8]
-size = 60
+size = 30
 font_data = ExtResource( 4 )
 
 [node name="Node2D" type="Node2D"]
@@ -107,6 +107,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Label" type="Label" parent="Background3"]
+margin_left = 720.0
+margin_top = 545.0
+margin_right = 1278.0
+margin_bottom = 659.0
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Pasek akcji"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="tempHpbar" type="Sprite" parent="Background3"]
 position = Vector2( 904.904, 841.292 )
 texture = ExtResource( 5 )
@@ -122,18 +134,6 @@ texture = ExtResource( 6 )
 [node name="tempHpbar2" type="Sprite" parent="Background3"]
 position = Vector2( 1240.9, 421.292 )
 texture = ExtResource( 5 )
-
-[node name="Label" type="Label" parent="Background3"]
-margin_left = 720.0
-margin_top = 545.0
-margin_right = 1278.0
-margin_bottom = 659.0
-custom_fonts/font = SubResource( 8 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Pasek akcji"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="koloWrog" type="Position2D" parent="Background3"]
 position = Vector2( 920, 300 )
@@ -212,5 +212,6 @@ size_flags_stretch_ratio = 0.0
 script = ExtResource( 2 )
 [connection signal="pressed" from="Background/BEkw" to="Background/kolo/Sprite" method="_on_BEkw_pressed"]
 [connection signal="pressed" from="Background/kolo/Button" to="Background/kolo/Sprite" method="_on_Button_pressed"]
+[connection signal="pressed" from="Background3/Button" to="Background3/Button" method="_on_Button_pressed"]
 [connection signal="pressed" from="Background3/koloWrog/Button" to="Background3/koloWrog/Sprite" method="_on_Button_pressed"]
 [connection signal="pressed" from="Background3/koloTy/Button" to="Background3/koloTy/Sprite" method="_on_Button_pressed"]

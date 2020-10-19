@@ -68,12 +68,9 @@ func _ready():
 		#label.rect_rotation=90-angl
 		add_child(label)
 		labels.insert(i, label)
-		
-	
-	print("work")
-	print(losuj())
+
 	pass
-#var li=0
+
 func _draw():
 	for i in prz.size():
 		var center = Vector2(0, 0)
@@ -84,9 +81,6 @@ func _draw():
 		self.rotation_degrees+=v
 		controlStatus()
 		poziomL()
-	#	li+=1
-	#	if li%100==0:
-	#		print(li)
 	pass
 
 # warning-ignore:unused_argument
@@ -100,18 +94,16 @@ func losuj():
 		ukryj()
 		var w=randi()%360
 		zatrzymanie=w
-		status=3
-		for i in angles.size()-1:
-			if angles[i]>w && angles[i+1]<w:
+		for i in prz.size():
+			if prz[i][0]<w and prz[i][1]>w:
+				status=3
 				return jsonR[i]
-			else:
-				return jsonR[jsonR.size()-1]
 
 func controlStatus():
 	match status:
 		3:
 			if licznikStatus==-1:
-				speed=0.005
+				speed=0.02
 				licznikStatus=300
 			elif licznikStatus>0:
 				v+=speed
@@ -122,14 +114,14 @@ func controlStatus():
 				speed=0
 		2:
 			if licznikStatus==-1:
-				speed=-0.001
+				speed=-0.004
 				licznikStatus=0
 			elif licznikStatus==0:
-				if v<=0.1:
+				if v<=0.4:
 					status=1
 					licznikStatus=-1
 					speed=0
-					v=0.1
+					v=0.4
 				else:
 					v+=speed
 		1:
