@@ -12,7 +12,9 @@ func _ready():
 		if(!is_file(copyFiles[i])):
 			create_file(files[i], copyFiles[i])
 		i += 1
-	pass
+	get_tree().change_scene("res://Tscn/Main/main.tscn")
+	
+
 
 
 func make_dr(dir_name):
@@ -33,6 +35,5 @@ func is_file(path):
 
 func create_file(pathToCreate, pathToCopy):
 	var dir = Directory.new()
-	print("PathToCopy " + str(pathToCopy) + "\n pathToCreate " + str(pathToCreate))
 	dir.copy(pathToCreate, pathToCopy)
 	pass
