@@ -18,13 +18,13 @@ func _ready():
 		file.open("res://quests/data.json", File.READ)
 		jsonL=JSON.parse(file.get_as_text()).result
 		rng.randomize()
-		var rand1 = rng.randi_range(0, 9)
-		var rand2 = rng.randi_range(0, 9)
+		var rand1 = rng.randi_range(0, jsonL.length)
+		var rand2 = rng.randi_range(0, jsonL.length)
 		if rand1 == rand2:
-			rand2 = rng.randi_range(0, 9)
-		var rand3 = rng.randi_range(0, 9)
+			rand2 = rng.randi_range(0, jsonL.length)
+		var rand3 = rng.randi_range(0, jsonL.length)
 		if rand2 == rand3 || rand1 == rand3:
-			rand3 = rng.randi_range(0, 9)
+			rand3 = rng.randi_range(0, jsonL.length)
 		var Ndata = [
 			jsonL[rand1].text,
 			jsonL[rand2].text,
