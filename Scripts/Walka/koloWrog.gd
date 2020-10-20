@@ -131,7 +131,7 @@ func controlStatus():
 				else:
 					v+=speed
 		1:
-			if abs(360-int(self.rotation_degrees)%361)<zatrzymanie+0.1&&abs(360-int(self.rotation_degrees)%361)>zatrzymanie-0.1:
+			if abs(360-int(self.rotation_degrees)%360)<zatrzymanie+0.1&&abs(360-int(self.rotation_degrees)%360)>zatrzymanie-0.1:
 				v=0
 				status=0
 				pojaw()
