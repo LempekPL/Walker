@@ -1,9 +1,10 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://resources/Main/background.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Walka/VBoxContainer.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/Walka/ButtonAkcji.gd" type="Script" id=3]
 [ext_resource path="res://resources/PTC55F.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Tscn/kroki/lvlbar.tscn" type="PackedScene" id=5]
 [ext_resource path="res://resources/Walka/ktos.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/Walka/kolo.gd" type="Script" id=7]
 [ext_resource path="res://resources/Walka/strzalka.png" type="Texture" id=8]
@@ -213,6 +214,11 @@ texture = ExtResource( 8 )
 
 [node name="Sprite" type="Sprite" parent="Background3/koloTy"]
 script = ExtResource( 7 )
+
+[node name="Node2D" parent="Background3" instance=ExtResource( 5 )]
+
+[node name="Node2D2" parent="Background3" instance=ExtResource( 5 )]
+position = Vector2( -4.75684, 0 )
 
 [node name="Background2" type="Sprite" parent="."]
 z_index = -1
