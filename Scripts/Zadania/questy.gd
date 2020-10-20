@@ -14,9 +14,8 @@ func _ready():
 	fileUser=File.new();
 	fileUser.open("user://player/quests.json", File.READ_WRITE)
 	jsonR=JSON.parse(fileUser.get_as_text()).result
-	print(jsonR)
-	if false:
-		file.open("user://quests/data.json", File.READ)
+	if jsonR.quests == null:
+		file.open("res://quests/data.json", File.READ)
 		jsonL=JSON.parse(file.get_as_text()).result
 		rng.randomize()
 		var rand1 = rng.randi_range(0, 9)
