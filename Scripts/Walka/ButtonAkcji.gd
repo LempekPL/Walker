@@ -27,6 +27,9 @@ func _ready():
 	label=get_parent().get_node("Label")
 	koloWrog=get_parent().get_node("koloWrog/Sprite")
 	koloTy=get_parent().get_node("koloTy/Sprite")
+	get_parent().get_node("pasekTy").get_node("krokibar/krokibar").max_value=int(jsonR["hp"])
+	get_parent().get_node("pasekTy").get_node("krokibar/krokibar").value=int(jsonR["hp"])
+	
 
 	pass
 
@@ -43,10 +46,15 @@ func _process(delta):
 func incjacja(_przeciwnik):
 	przeciwnik=_przeciwnik
 	get_node("/root/Node2D/Background3/koloWrog/Sprite").ustaw(_przeciwnik)
+	print(przeciwnik["hp"])
 	wrogHp=przeciwnik["hp"]
+	get_parent().get_node("HpWrog").text=str(wrogHp)	
+	get_parent().get_node("pasekWrog").get_node("krokibar/krokibar").max_value=int(przeciwnik["hp"])
+	get_parent().get_node("pasekWrog").get_node("krokibar/krokibar").value=int(przeciwnik["hp"])
 	tyHp=jsonR["hp"]
 
 func _on_Button_pressed():
+	self.visible=false
 	if kolejka==0:
 		item=koloWrog.losuj()
 		status=true
@@ -59,8 +67,11 @@ func _on_Button_pressed():
 func wylosowano():
 	label.text=item["name"]+"\n +hp: "+String(item["hp"])+" atak: "+String(item["atak"])
 	if kolejka==1:
+		print(wrogHp)
 		tyHp-=item["atak"]
-		wrogHp+=item["hp"]
+		wrogHp+=int(item["hp"])
+		print(wrogHp)
+		kolejka+=0
 	elif kolejka==0:
 		wrogHp-=item["atak"]
 		tyHp+=item["hp"]
@@ -69,7 +80,10 @@ func wylosowano():
 	elif wrogHp<=0:
 		wygrana()
 	get_parent().get_node("HpTy").text=str(tyHp)
+	get_parent().get_node("pasekTy").get_node("krokibar")._on_kroki_updated(tyHp,0)
+	get_parent().get_node("pasekWrog").get_node("krokibar")._on_kroki_updated(wrogHp,0)
 	get_parent().get_node("HpWrog").text=str(wrogHp)
+	
 	status=false
 func przegrana():
 	print("przegrana")

@@ -104,6 +104,14 @@ texture = ExtResource( 1 )
 centered = false
 offset = Vector2( 720, 0 )
 
+[node name="ktos" type="Sprite" parent="Background3"]
+position = Vector2( 905.341, 1046.94 )
+texture = ExtResource( 6 )
+
+[node name="ktos2" type="Sprite" parent="Background3"]
+position = Vector2( 1244.75, 221.038 )
+texture = ExtResource( 6 )
+
 [node name="Button" type="Button" parent="Background3"]
 margin_left = 1260.0
 margin_top = 500.0
@@ -126,6 +134,12 @@ text = "Pasek akcji"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="pasekTy" parent="Background3" instance=ExtResource( 5 )]
+position = Vector2( 740, 820 )
+
+[node name="pasekWrog" parent="Background3" instance=ExtResource( 5 )]
+position = Vector2( 1020, 390 )
 
 [node name="HpWrog" type="Label" parent="Background3"]
 margin_left = 1130.0
@@ -154,14 +168,6 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="ktos2" type="Sprite" parent="Background3"]
-position = Vector2( 1244.75, 221.038 )
-texture = ExtResource( 6 )
-
-[node name="ktos" type="Sprite" parent="Background3"]
-position = Vector2( 905.341, 1046.94 )
-texture = ExtResource( 6 )
 
 [node name="koloWrog" type="Position2D" parent="Background3"]
 position = Vector2( 920, 300 )
@@ -214,11 +220,6 @@ texture = ExtResource( 8 )
 
 [node name="Sprite" type="Sprite" parent="Background3/koloTy"]
 script = ExtResource( 7 )
-
-[node name="Node2D" parent="Background3" instance=ExtResource( 5 )]
-
-[node name="Node2D2" parent="Background3" instance=ExtResource( 5 )]
-position = Vector2( -4.75684, 0 )
 
 [node name="Background2" type="Sprite" parent="."]
 z_index = -1
