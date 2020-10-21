@@ -9,19 +9,22 @@
                 "name":"długi glukogen",
                 "hp":0,
                 "atak":60,
-                "szansa":30
+                "szansa":30,
+                "color": [0.0, 0.2, 0.0]
             },
             {
                 "name":"czepek tłuszczowy",
                 "hp":0,
                 "atak":200,
-                "szansa":5
+                "szansa":5,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name":"tarcza opychu",
                 "hp":50,
                 "atak":0,
-                "szansa":30
+                "szansa":30,
+                "color": [0.8, 0.0, 0.0]
             }
 
         ]
@@ -35,19 +38,22 @@
                 "name": "armia frytek",
                 "hp": 0,
                 "atak": 500,
-                "szansa": 1
+                "szansa": 1,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "pałeczka wodza",
                 "hp": 0,
                 "atak": 10,
-                "szansa": 50
+                "szansa": 50,
+                "color": [0.0, 0.3, 0.0]
             },
             {
                 "name": "frytkownica",
                 "hp": 50,
                 "atak": 0,
-                "szansa": 20
+                "szansa": 20,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     },
@@ -60,25 +66,29 @@
                 "name": "potężny cios węglowodana",
                 "hp": 0,
                 "atak": 1000,
-                "szansa": 1
+                "szansa": 1,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "tarcza węglowodanowa",
                 "hp": 100,
                 "atak": 0,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.8, 0.0, 0.0]
             },
             {
                 "name": "cios węglowodanowej pięści",
                 "hp": 0,
                 "atak": 10,
-                "szansa": 50
+                "szansa": 50,
+                "color": [0.0, 0.3, 0.0]
             },
             {
                 "name": "replikacja węglowodanowa",
                 "hp": 10,
                 "atak": 5,
-                "szansa": 20
+                "szansa": 20,
+                "color": [0.8, 0.5, 0.0]
             }
         ]
     },
@@ -91,7 +101,8 @@
                 "name": "COVID-19",
                 "hp": 10,
                 "atak": 20,
-                "szansa": 100
+                "szansa": 100,
+                "color": [0.8, 0.5, 0.0]
             }
         ]
     },
@@ -104,19 +115,22 @@
                 "name": "skok masy",
                 "hp": 0,
                 "atak": 100,
-                "szansa": 10
+                "szansa": 10,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "cios sumo",
                 "hp": 0,
                 "atak": 10,
-                "szansa": 95
+                "szansa": 95,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "fałda tłuszczu",
                 "hp": 100,
                 "atak": 0,
-                "szansa": 15
+                "szansa": 15,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     },
@@ -129,19 +143,22 @@
                 "name": "tłuszcz z frytek",
                 "hp": 100,
                 "atak": 0,
-                "szansa": 20
+                "szansa": 20,
+                "color": [0.8, 0.0, 0.0]
             },
             {
                 "name": "karząca ręka kasjerki",
                 "hp": 0,
                 "atak": 200,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "sałatki z fast fooda",
                 "hp": 0,
                 "atak": 100,
-                "szansa": 40
+                "szansa": 40,
+                "color": [0.0, 0.3, 0.0]
             }
         ]
     },
@@ -154,13 +171,15 @@
                 "name": "wnikanie",
                 "hp": 0,
                 "atak": 100,
-                "szansa": 50
+                "szansa": 50,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "autoregeneracja",
                 "hp": 100,
                 "atak": 0,
-                "szansa": 5
+                "szansa": 5,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     },
@@ -173,19 +192,22 @@
                 "name": "ziemniaczane shurikeny",
                 "hp": 0,
                 "atak": 100,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "ziemniaczana katana",
                 "hp": 0,
                 "atak": 200,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.0, 0.3, 0.0]
             },
             {
                 "name": "ziemniaczany cios",
                 "hp": 0,
                 "atak": 500,
-                "szansa": 1
+                "szansa": 1,
+                "color": [0.0, 0.1, 0.0]
             }
         ]
     },
@@ -198,19 +220,22 @@
                 "name": "berło bąbelkowe",
                 "hp": 0,
                 "atak": 60,
-                "szansa": 70
+                "szansa": 70,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "straż bąbelkowa",
                 "hp": 0,
                 "atak": 10,
-                "szansa": 35
+                "szansa": 35,
+                "color": [0.0, 0.3, 0.0]
             },
             {
                 "name": "bąbelkowa mikstura",
                 "hp": 50,
                 "atak": 50,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     },
@@ -223,19 +248,22 @@
                 "name": "pistolet serowy",
                 "hp": 0,
                 "atak": 60,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "dyski salami",
                 "hp": 0,
                 "atak": 300,
-                "szansa": 1
+                "szansa": 1,
+                "color": [0.0, 0.3, 0.0]
             },
             {
                 "name": "ściana ketchupu",
                 "hp": 50,
                 "atak": 0,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     },
@@ -248,19 +276,22 @@
                 "name": "hipnoza",
                 "hp": 0,
                 "atak": 100,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "wciągnięcie",
                 "hp": 0,
                 "atak": 200,
-                "szansa": 15
+                "szansa": 15,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "bezmózg",
                 "hp": 75,
                 "atak": 0,
-                "szansa": 50
+                "szansa": 50,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     },
@@ -273,13 +304,15 @@
                 "name": "zagadanie",
                 "hp": 0,
                 "atak": 80,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "szybka ucieczka",
                 "hp": 50,
                 "atak": 0,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     },
@@ -292,7 +325,8 @@
                 "name": "szpony",
                 "hp": 100,
                 "atak": 0,
-                "szansa": 60
+                "szansa": 60,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     },
@@ -305,19 +339,22 @@
                 "name": "zaklęcie naukowca",
                 "hp": 0,
                 "atak": 100,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "energia chemiczna",
                 "hp": 0,
                 "atak": 200,
-                "szansa": 5
+                "szansa": 5,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "akcja-rekacja",
                 "hp": 100,
                 "atak": 0,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     },
@@ -330,19 +367,22 @@
                 "name": "deszyfrator haseł",
                 "hp": 0,
                 "atak": 100,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "zbieranie danych",
                 "hp": 100,
                 "atak": 0,
-                "szansa": 5
+                "szansa": 5,
+                "color": [0.8, 0.0, 0.0]
             },
             {
                 "name": "wyłączanie płuc",
                 "hp": 0,
                 "atak": 400,
-                "szansa": 1
+                "szansa": 1,
+                "color": [0.0, 0.5, 0.0]
             }
         ]
     },
@@ -355,19 +395,22 @@
                 "name": "dezintegracja płuc",
                 "hp": 0,
                 "atak": 500,
-                "szansa": 1
+                "szansa": 1,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "eksterminacja",
                 "hp": 0,
                 "atak": 50,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "restart systemu",
                 "hp": 20,
                 "atak": 0,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     },
@@ -380,19 +423,22 @@
                 "name": "cyber-drapnięcie",
                 "hp": 0,
                 "atak": 60,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "pancerz bitów",
                 "hp": 100,
                 "atak": 0,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.8, 0.0, 0.0]
             },
             {
                 "name": "cyber-ryk",
                 "hp": 0,
                 "atak": 105,
-                "szansa": 10
+                "szansa": 10,
+                "color": [0.0, 0.5, 0.0]
             }
         ]
     },
@@ -405,19 +451,22 @@
                 "name": "atak skrzeli",
                 "hp": 0,
                 "atak": 100,
-                "szansa": 10
+                "szansa": 10,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "wzomożone powielanie",
                 "hp": 100,
                 "atak": 0,
-                "szansa": 15
+                "szansa": 15,
+                "color": [0.8, 0.0, 0.0]
             },
             {
                 "name": "totalna dominacja",
                 "hp": 100,
                 "atak": 190,
-                "szansa": 5
+                "szansa": 5,
+                "color": [0.8, 0.5, 0.0]
             }
         ]
     },
@@ -430,19 +479,22 @@
                 "name": "prędkość światła",
                 "hp": 0,
                 "atak": 100,
-                "szansa": 10
+                "szansa": 10,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "powielanie DNA",
                 "hp": 50,
                 "atak": 200,
-                "szansa": 5
+                "szansa": 5,
+                "color": [0.8, 0.0, 0.0]
             },
             {
                 "name": "szybka replikacja",
                 "hp": 50,
                 "atak": 0,
-                "szansa": 30
+                "szansa": 30,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     },
@@ -455,19 +507,22 @@
                 "name": "armia węglowodanów-gladiatorów",
                 "hp": 0,
                 "atak": 600,
-                "szansa": 15
+                "szansa": 15,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "armia burgerowych sumo",
                 "hp": 0,
                 "atak": 650,
-                "szansa": 15
+                "szansa": 15,
+                "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "tarcza z szalonych pizz",
                 "hp": 100,
                 "atak": 0,
-                "szansa": 15
+                "szansa": 15,
+                "color": [0.8, 0.0, 0.0]
             }
         ]
     }
