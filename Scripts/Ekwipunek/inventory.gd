@@ -4,10 +4,11 @@ var jsonR
 var items = []
 func _ready():
 	file=File.new()
-	file.open("res://data/items/itemy.json", file.READ)
+	file.open("user://items/itemy.json", file.READ)
 	jsonR=JSON.parse(file.get_as_text()).result
+	file.close()
 	for i in jsonR.size()-1:
-		items.insert(i, Item.new(self, jsonR[i+1]["name"],jsonR[i+1]["id"],jsonR[i+1]["name"],jsonR[i+1]["opis"],jsonR[i+1]["hp"],jsonR[i+1]["atak"],jsonR[i+1]["rzadkość"], jsonR[i+1]["gniazdo"]))
+		items.insert(i, Item.new(self, jsonR[i+1]["name"],jsonR[i+1]["id"],jsonR[i+1]["name"],jsonR[i+1]["opis"],jsonR[i+1]["hp"],jsonR[i+1]["atak"],jsonR[i+1]["rarity"], jsonR[i+1]["gniazdo"]))
 	
 class Item:
 	var newButton : Button

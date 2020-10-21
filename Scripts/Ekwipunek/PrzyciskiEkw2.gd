@@ -9,8 +9,9 @@ var jsonR
 
 func _ready():
 	file=File.new();
-	file.open("res://data/items/ekwipunek.json", file.READ)
+	file.open("user://items/ekwipunek.json", file.READ)
 	jsonR=JSON.parse(file.get_as_text()).result
+	file.close()
 	$Button.text=jsonR[3]["name"]
 	$Button2.text=jsonR[4]["name"]
 	$Button3.text=jsonR[5]["name"]

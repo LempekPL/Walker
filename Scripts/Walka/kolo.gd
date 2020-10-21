@@ -31,8 +31,9 @@ var labels=[]
 
 func _ready():
 	file=File.new();
-	file.open("res://data/items/ekwipunek.json", file.READ)
+	file.open("user://items/ekwipunek.json", file.READ)
 	jsonR=JSON.parse(file.get_as_text()).result
+	file.close()
 	angles=range(jsonR.size())
 	prz=range(jsonR.size())
 	var sum=0.0

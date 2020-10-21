@@ -24,6 +24,7 @@ func _ready():
 	file=File.new()
 	file.open("user://player/data.json", File.READ)
 	jsonR=JSON.parse(file.get_as_text()).result
+	file.close()
 	label=get_parent().get_node("Label")
 	koloWrog=get_parent().get_node("koloWrog/Sprite")
 	koloTy=get_parent().get_node("koloTy/Sprite")
