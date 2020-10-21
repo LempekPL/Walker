@@ -9,6 +9,7 @@
 [node name="krokibar" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -18,7 +19,6 @@ margin_right = 396.0
 margin_bottom = 54.0004
 texture_under = ExtResource( 1 )
 texture_progress = ExtResource( 2 )
-script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

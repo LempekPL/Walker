@@ -1,4 +1,4 @@
-extends TextureProgress
+extends Control
 
 onready var krokibar = $krokibar
 onready var tween = $UpdateTween
