@@ -5,42 +5,42 @@
     },
     {
         "id": 2,
-        "szansa": 12
+        "szansa": 13
     },
     {
         "id": 3,
-        "szansa": 15
+        "szansa": 28
     },
     {
         "id": 4,
-        "szansa": 10
+        "szansa": 38
     },
     {
         "id": 5,
-        "szansa": 10
+        "szansa": 48
     },
     {
         "id": 6,
-        "szansa": 10
+        "szansa": 58
     },
     {
         "id": 7,
-        "szansa": 10
+        "szansa": 68
     },
     {
         "id": 8,
-        "szansa": 10
+        "szansa": 78
     },
     {
         "id": 9,
-        "szansa": 10
+        "szansa": 88
     },
     {
         "id": 10,
-        "szansa": 10
+        "szansa": 98
     },
     {
         "id": 11,
-        "szansa": 10
+        "szansa": 108
     }
 ]

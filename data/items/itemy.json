@@ -7,8 +7,7 @@
 		"protect":0,
 		"rarity":"NaN",
 		"szansa":0,
-		"gniazdo":"NaN",
-		"lvl":0
+		"gniazdo":"NaN"
 	},
 	{
 		"id":1,
@@ -18,8 +17,7 @@
 		"protect":5,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"stopy",
-		"lvl":1
+		"gniazdo":"stopy"
 	},
 	{
 		"id":2,
@@ -29,8 +27,7 @@
 		"protect":10,
 		"rarity":"częsty",
 		"szansa":20,
-		"gniazdo":"stopy",
-		"lvl":4
+		"gniazdo":"stopy"
 	},
 	{
 		"id":3,
@@ -40,8 +37,7 @@
 		"protect":10,
 		"rarity":"rzadki",
 		"szansa":25,
-		"gniazdo":"stopy",
-		"lvl":2
+		"gniazdo":"stopy"
 	},
 	{
 		"id":4,
@@ -51,8 +47,7 @@
 		"protect":35,
 		"rarity":"częsty",
 		"szansa":10,
-		"gniazdo":"stopy",
-		"lvl":10
+		"gniazdo":"stopy"
 	},
 	{
 		"id":5,
@@ -62,8 +57,7 @@
 		"protect":5,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"stopy",
-		"lvl":1
+		"gniazdo":"stopy"
 	},
 	{
 		"id":6,
@@ -73,8 +67,7 @@
 		"protect":20,
 		"rarity":"rzadkie",
 		"szansa":30,
-		"gniazdo":"stopy",
-		"lvl":7
+		"gniazdo":"stopy"
 	},
 	{
 		"id":7,
@@ -84,8 +77,7 @@
 		"protect":10,
 		"rarity":"pospolity",
 		"szansa":40,
-		"gniazdo":"stopy",
-		"lvl":6
+		"gniazdo":"stopy"
 	},
 	{
 		"id":8,
@@ -95,8 +87,7 @@
 		"protect":15,
 		"rarity":"pospolity",
 		"szansa":30,
-		"gniazdo":"stopy",
-		"lvl":5
+		"gniazdo":"stopy"
 	},
 	{
 		"id":9,
@@ -106,8 +97,7 @@
 		"protect":10,
 		"rarity":"częsty",
 		"szansa":20,
-		"gniazdo":"stopy",
-		"lvl":2
+		"gniazdo":"stopy"
 	},
 	{
 		"id":21,
@@ -117,8 +107,7 @@
 		"protect":5,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"tors",
-		"lvl":1
+		"gniazdo":"tors"
 	},
 	{
 		"id":22,
@@ -128,8 +117,7 @@
 		"protect":10,
 		"rarity":"częsty",
 		"szansa":20,
-		"gniazdo":"tors",
-		"lvl":5
+		"gniazdo":"tors"
 	},
 	{
 		"id":23,
@@ -139,8 +127,7 @@
 		"protect":10,
 		"rarity":"rzadki",
 		"szansa":25,
-		"gniazdo":"tors",
-		"lvl":3
+		"gniazdo":"tors"
 	},
 	{
 		"id":24,
@@ -150,8 +137,7 @@
 		"protect":35,
 		"rarity":"częsty",
 		"szansa":10,
-		"gniazdo":"tors",
-		"lvl":5
+		"gniazdo":"tors"
 	},
 	{
 		"id":25,
@@ -161,8 +147,7 @@
 		"protect":5,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"tors",
-		"lvl":10
+		"gniazdo":"tors"
 	},
 	{
 		"id":26,
@@ -172,8 +157,7 @@
 		"protect":20,
 		"rarity":"rzadkie",
 		"szansa":30,
-		"gniazdo":"tors",
-		"lvl":5
+		"gniazdo":"tors"
 	},
 	{
 		"id":27,
@@ -183,8 +167,7 @@
 		"protect":10,
 		"rarity":"pospolity",
 		"szansa":40,
-		"gniazdo":"tors",
-		"lvl":4
+		"gniazdo":"tors"
 	},
 	{
 		"id":28,
@@ -194,8 +177,7 @@
 		"protect":15,
 		"rarity":"pospolity",
 		"szansa":30,
-		"gniazdo":"tors",
-		"lvl":6
+		"gniazdo":"tors"
 	},
 	{
 		"id":29,
@@ -205,8 +187,7 @@
 		"protect":10,
 		"rarity":"częsty",
 		"szansa":20,
-		"gniazdo":"tors",
-		"lvl":7
+		"gniazdo":"tors"
 	},
 	{
 		"id":41,
@@ -216,8 +197,7 @@
 		"protect":5,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"glowa",
-		"lvl":1
+		"gniazdo":"glowa"
 	},
 	{
 		"id":42,
@@ -227,8 +207,7 @@
 		"protect":10,
 		"rarity":"częsty",
 		"szansa":20,
-		"gniazdo":"glowa",
-		"lvl":3
+		"gniazdo":"glowa"
 	},
 	{
 		"id":43,
@@ -238,8 +217,7 @@
 		"protect":10,
 		"rarity":"rzadki",
 		"szansa":25,
-		"gniazdo":"glowa",
-		"lvl":1
+		"gniazdo":"glowa"
 	},
 	{
 		"id":44,
@@ -249,8 +227,7 @@
 		"protect":35,
 		"rarity":"częsty",
 		"szansa":10,
-		"gniazdo":"glowa",
-		"lvl":5
+		"gniazdo":"glowa"
 	},
 	{
 		"id":45,
@@ -260,8 +237,7 @@
 		"protect":5,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"glowa",
-		"lvl":1
+		"gniazdo":"glowa"
 	},
 	{
 		"id":46,
@@ -271,8 +247,7 @@
 		"protect":20,
 		"rarity":"rzadkie",
 		"szansa":30,
-		"gniazdo":"glowa",
-		"lvl":4
+		"gniazdo":"glowa"
 	},
 	{
 		"id":47,
@@ -282,8 +257,7 @@
 		"protect":10,
 		"rarity":"pospolity",
 		"szansa":40,
-		"gniazdo":"glowa",
-		"lvl":3
+		"gniazdo":"glowa"
 	},
 	{
 		"id":48,
@@ -293,8 +267,7 @@
 		"protect":15,
 		"rarity":"pospolity",
 		"szansa":30,
-		"gniazdo":"glowa",
-		"lvl":3
+		"gniazdo":"glowa"
 	},
 	{
 		"id":49,
@@ -304,8 +277,7 @@
 		"protect":10,
 		"rarity":"częsty",
 		"szansa":20,
-		"gniazdo":"glowa",
-		"lvl":4
+		"gniazdo":"glowa"
 	},
 	{
 		"id":61,
@@ -315,8 +287,7 @@
 		"damage":10,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"bron",
-		"lvl":5
+		"gniazdo":"bron"
 	},
 	{
 		"id":62,
@@ -326,8 +297,7 @@
 		"damage":5,
 		"rarity":"rzadki",
 		"szansa":30,
-		"gniazdo":"bron",
-		"lvl":15
+		"gniazdo":"bron"
 	},
 	{
 		"id":63,
@@ -337,8 +307,7 @@
 		"damage":5,
 		"rarity":"pospolity",
 		"szansa":40,
-		"gniazdo":"bron",
-		"lvl":1
+		"gniazdo":"bron"
 	},
 	{
 		"id":64,
@@ -348,8 +317,7 @@
 		"damage":10,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"bron",
-		"lvl":5
+		"gniazdo":"bron"
 	},
 	{
 		"id":65,
@@ -359,8 +327,7 @@
 		"damage":15,
 		"rarity":"pospolity",
 		"szansa":50,
-		"gniazdo":"bron",
-		"lvl":15
+		"gniazdo":"bron"
 	},
 	{
 		"id":66,
@@ -370,8 +337,7 @@
 		"damage":10,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"bron",
-		"lvl":4
+		"gniazdo":"bron"
 	},
 	{
 		"id":67,
@@ -381,8 +347,7 @@
 		"damage":5,
 		"rarity":"pospolity",
 		"szansa":30,
-		"gniazdo":"bron",
-		"lvl":2
+		"gniazdo":"bron"
 	},
 	{
 		"id":68,
@@ -392,8 +357,7 @@
 		"damage":5,
 		"rarity":"pospolity",
 		"szansa":40,
-		"gniazdo":"bron",
-		"lvl":1
+		"gniazdo":"bron"
 	},
 	{
 		"id":69,
@@ -403,8 +367,7 @@
 		"damage":10,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"bron",
-		"lvl":5
+		"gniazdo":"bron"
 	},
 	{
 		"id":81,
@@ -414,8 +377,7 @@
 		"damage":20,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"bron",
-		"lvl":5
+		"gniazdo":"bron"
 	},
 	{
 		"id":82,
@@ -425,8 +387,7 @@
 		"damage":5,
 		"rarity":"rzadki",
 		"szansa":30,
-		"gniazdo":"bron",
-		"lvl":10
+		"gniazdo":"bron"
 	},
 	{
 		"id":83,
@@ -436,8 +397,7 @@
 		"damage":5,
 		"rarity":"pospolity",
 		"szansa":40,
-		"gniazdo":"bron",
-		"lvl":1
+		"gniazdo":"bron"
 	},
 	{
 		"id":84,
@@ -447,8 +407,7 @@
 		"damage":10,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"bron",
-		"lvl":4
+		"gniazdo":"bron"
 	},
 	{
 		"id":85,
@@ -458,8 +417,7 @@
 		"damage":15,
 		"rarity":"pospolity",
 		"szansa":50,
-		"gniazdo":"bron",
-		"lvl":11
+		"gniazdo":"bron"
 	},
 	{
 		"id":86,
@@ -469,8 +427,7 @@
 		"damage":10,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"bron",
-		"lvl":3
+		"gniazdo":"bron"
 	},
 	{
 		"id":87,
@@ -480,8 +437,7 @@
 		"damage":5,
 		"rarity":"pospolity",
 		"szansa":30,
-		"gniazdo":"bron",
-		"lvl":1
+		"gniazdo":"bron"
 	},
 	{
 		"id":88,
@@ -491,8 +447,7 @@
 		"damage":5,
 		"rarity":"pospolity",
 		"szansa":40,
-		"gniazdo":"bron",
-		"lvl":3
+		"gniazdo":"bron"
 	},
 	{
 		"id":89,
@@ -502,7 +457,6 @@
 		"damage":10,
 		"rarity":"pospolity",
 		"szansa":15,
-		"gniazdo":"bron",
-		"lvl":5
+		"gniazdo":"bron"
 	}
 ]
