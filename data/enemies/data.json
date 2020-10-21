@@ -6,19 +6,19 @@
         "itemy":
         [
             {
-                "nazwa":"długi glukogen",
+                "name":"długi glukogen",
                 "hp":0,
                 "atak":60,
                 "szansa":30
             },
             {
-                "nazwa":"czepek tłuszczowy",
+                "name":"czepek tłuszczowy",
                 "hp":0,
                 "atak":200,
                 "szansa":5
             },
             {
-                "nazwa":"tarcza opychu",
+                "name":"tarcza opychu",
                 "hp":50,
                 "atak":0,
                 "szansa":30
@@ -32,19 +32,19 @@
         "hp": 5000,
         "itemy": [
             {
-                "nazwa": "armia frytek",
+                "name": "armia frytek",
                 "hp": 0,
                 "atak": 500,
                 "szansa": 1
             },
             {
-                "nazwa": "pałeczka wodza",
+                "name": "pałeczka wodza",
                 "hp": 0,
                 "atak": 10,
                 "szansa": 50
             },
             {
-                "nazwa": "frytkownica",
+                "name": "frytkownica",
                 "hp": 50,
                 "atak": 0,
                 "szansa": 20
@@ -57,25 +57,25 @@
         "hp": 3000,
         "itemy": [
             {
-                "nazwa": "potężny cios węglowodana",
+                "name": "potężny cios węglowodana",
                 "hp": 0,
                 "atak": 1000,
                 "szansa": 1
             },
             {
-                "nazwa": "tarcza węglowodanowa",
+                "name": "tarcza węglowodanowa",
                 "hp": 100,
                 "atak": 0,
                 "szansa": 30
             },
             {
-                "nazwa": "cios węglowodanowej pięści",
+                "name": "cios węglowodanowej pięści",
                 "hp": 0,
                 "atak": 10,
                 "szansa": 50
             },
             {
-                "nazwa": "replikacja węglowodanowa",
+                "name": "replikacja węglowodanowa",
                 "hp": 10,
                 "atak": 5,
                 "szansa": 20
@@ -88,7 +88,7 @@
         "hp": 10000,
         "itemy": [
             {
-                "nazwa": "COVID-19",
+                "name": "COVID-19",
                 "hp": 10,
                 "atak": 20,
                 "szansa": 100
@@ -101,19 +101,19 @@
         "hp": 1000,
         "itemy": [
             {
-                "nazwa": "skok masy",
+                "name": "skok masy",
                 "hp": 0,
                 "atak": 100,
                 "szansa": 10
             },
             {
-                "nazwa": "cios sumo",
+                "name": "cios sumo",
                 "hp": 0,
                 "atak": 10,
                 "szansa": 95
             },
             {
-                "nazwa": "fałda tłuszczu",
+                "name": "fałda tłuszczu",
                 "hp": 100,
                 "atak": 0,
                 "szansa": 15
@@ -126,19 +126,19 @@
         "hp": 20000,
         "itemy": [
             {
-                "nazwa": "tłuszcz z frytek",
+                "name": "tłuszcz z frytek",
                 "hp": 100,
                 "atak": 0,
                 "szansa": 20
             },
             {
-                "nazwa": "karząca ręka kasjerki",
+                "name": "karząca ręka kasjerki",
                 "hp": 0,
                 "atak": 200,
                 "szansa": 30
             },
             {
-                "nazwa": "sałatki z fast fooda",
+                "name": "sałatki z fast fooda",
                 "hp": 0,
                 "atak": 100,
                 "szansa": 40
@@ -151,13 +151,13 @@
         "hp": 5500,
         "itemy": [
             {
-                "nazwa": "wnikanie",
+                "name": "wnikanie",
                 "hp": 0,
                 "atak": 100,
                 "szansa": 50
             },
             {
-                "nazwa": "autoregeneracja",
+                "name": "autoregeneracja",
                 "hp": 100,
                 "atak": 0,
                 "szansa": 5
@@ -170,19 +170,19 @@
         "hp": 800,
         "itemy": [
             {
-                "nazwa": "ziemniaczane shurikeny",
+                "name": "ziemniaczane shurikeny",
                 "hp": 0,
                 "atak": 100,
                 "szansa": 30
             },
             {
-                "nazwa": "ziemniaczana katana",
+                "name": "ziemniaczana katana",
                 "hp": 0,
                 "atak": 200,
                 "szansa": 30
             },
             {
-                "nazwa": "ziemniaczany cios",
+                "name": "ziemniaczany cios",
                 "hp": 0,
                 "atak": 500,
                 "szansa": 1
@@ -195,19 +195,19 @@
         "hp": 5710,
         "itemy": [
             {
-                "nazwa": "berło bąbelkowe",
+                "name": "berło bąbelkowe",
                 "hp": 0,
                 "atak": 60,
                 "szansa": 70
             },
             {
-                "nazwa": "straż bąbelkowa",
+                "name": "straż bąbelkowa",
                 "hp": 0,
                 "atak": 10,
                 "szansa": 35
             },
             {
-                "nazwa": "bąbelkowa mikstura",
+                "name": "bąbelkowa mikstura",
                 "hp": 50,
                 "atak": 50,
                 "szansa": 30
@@ -220,19 +220,19 @@
         "hp": 5100,
         "itemy": [
             {
-                "nazwa": "pistolet serowy",
+                "name": "pistolet serowy",
                 "hp": 0,
                 "atak": 60,
                 "szansa": 30
             },
             {
-                "nazwa": "dyski salami",
+                "name": "dyski salami",
                 "hp": 0,
                 "atak": 300,
                 "szansa": 1
             },
             {
-                "nazwa": "ściana ketchupu",
+                "name": "ściana ketchupu",
                 "hp": 50,
                 "atak": 0,
                 "szansa": 30
@@ -245,19 +245,19 @@
         "hp": 7000,
         "itemy": [
             {
-                "nazwa": "hipnoza",
+                "name": "hipnoza",
                 "hp": 0,
                 "atak": 100,
                 "szansa": 30
             },
             {
-                "nazwa": "wciągnięcie",
+                "name": "wciągnięcie",
                 "hp": 0,
                 "atak": 200,
                 "szansa": 15
             },
             {
-                "nazwa": "bezmózg",
+                "name": "bezmózg",
                 "hp": 75,
                 "atak": 0,
                 "szansa": 50
@@ -270,13 +270,13 @@
         "hp": 1000,
         "itemy": [
             {
-                "nazwa": "zagadanie",
+                "name": "zagadanie",
                 "hp": 0,
                 "atak": 80,
                 "szansa": 30
             },
             {
-                "nazwa": "szybka ucieczka",
+                "name": "szybka ucieczka",
                 "hp": 50,
                 "atak": 0,
                 "szansa": 30
@@ -289,7 +289,7 @@
         "hp": 3200,
         "itemy": [
             {
-                "nazwa": "szpony",
+                "name": "szpony",
                 "hp": 100,
                 "atak": 0,
                 "szansa": 60
@@ -302,19 +302,19 @@
         "hp": 1000,
         "itemy": [
             {
-                "nazwa": "zaklęcie naukowca",
+                "name": "zaklęcie naukowca",
                 "hp": 0,
                 "atak": 100,
                 "szansa": 30
             },
             {
-                "nazwa": "energia chemiczna",
+                "name": "energia chemiczna",
                 "hp": 0,
                 "atak": 200,
                 "szansa": 5
             },
             {
-                "nazwa": "akcja-rekacja",
+                "name": "akcja-rekacja",
                 "hp": 100,
                 "atak": 0,
                 "szansa": 30
@@ -327,19 +327,19 @@
         "hp": 5000,
         "itemy": [
             {
-                "nazwa": "deszyfrator haseł",
+                "name": "deszyfrator haseł",
                 "hp": 0,
                 "atak": 100,
                 "szansa": 30
             },
             {
-                "nazwa": "zbieranie danych",
+                "name": "zbieranie danych",
                 "hp": 100,
                 "atak": 0,
                 "szansa": 5
             },
             {
-                "nazwa": "wyłączanie płuc",
+                "name": "wyłączanie płuc",
                 "hp": 0,
                 "atak": 400,
                 "szansa": 1
@@ -352,19 +352,19 @@
         "hp": 1000,
         "itemy": [
             {
-                "nazwa": "dezintegracja płuc",
+                "name": "dezintegracja płuc",
                 "hp": 0,
                 "atak": 500,
                 "szansa": 1
             },
             {
-                "nazwa": "eksterminacja",
+                "name": "eksterminacja",
                 "hp": 0,
                 "atak": 50,
                 "szansa": 30
             },
             {
-                "nazwa": "restart systemu",
+                "name": "restart systemu",
                 "hp": 20,
                 "atak": 0,
                 "szansa": 30
@@ -377,19 +377,19 @@
         "hp": 8000,
         "itemy": [
             {
-                "nazwa": "cyber-drapnięcie",
+                "name": "cyber-drapnięcie",
                 "hp": 0,
                 "atak": 60,
                 "szansa": 30
             },
             {
-                "nazwa": "pancerz bitów",
+                "name": "pancerz bitów",
                 "hp": 100,
                 "atak": 0,
                 "szansa": 30
             },
             {
-                "nazwa": "cyber-ryk",
+                "name": "cyber-ryk",
                 "hp": 0,
                 "atak": 105,
                 "szansa": 10
@@ -402,19 +402,19 @@
         "hp": 950,
         "itemy": [
             {
-                "nazwa": "atak skrzeli",
+                "name": "atak skrzeli",
                 "hp": 0,
                 "atak": 100,
                 "szansa": 10
             },
             {
-                "nazwa": "wzomożone powielanie",
+                "name": "wzomożone powielanie",
                 "hp": 100,
                 "atak": 0,
                 "szansa": 15
             },
             {
-                "nazwa": "totalna dominacja",
+                "name": "totalna dominacja",
                 "hp": 100,
                 "atak": 190,
                 "szansa": 5
@@ -427,19 +427,19 @@
         "hp": 100,
         "itemy": [
             {
-                "nazwa": "prędkość światła",
+                "name": "prędkość światła",
                 "hp": 0,
                 "atak": 100,
                 "szansa": 10
             },
             {
-                "nazwa": "powielanie DNA",
+                "name": "powielanie DNA",
                 "hp": 50,
                 "atak": 200,
                 "szansa": 5
             },
             {
-                "nazwa": "szybka replikacja",
+                "name": "szybka replikacja",
                 "hp": 50,
                 "atak": 0,
                 "szansa": 30
@@ -452,19 +452,19 @@
         "hp": 100000,
         "itemy": [
             {
-                "nazwa": "armia węglowodanów-gladiatorów",
+                "name": "armia węglowodanów-gladiatorów",
                 "hp": 0,
                 "atak": 600,
                 "szansa": 15
             },
             {
-                "nazwa": "armia burgerowych sumo",
+                "name": "armia burgerowych sumo",
                 "hp": 0,
                 "atak": 650,
                 "szansa": 15
             },
             {
-                "nazwa": "tarcza z szalonych pizz",
+                "name": "tarcza z szalonych pizz",
                 "hp": 100,
                 "atak": 0,
                 "szansa": 15

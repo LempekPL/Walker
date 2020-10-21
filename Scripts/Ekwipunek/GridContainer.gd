@@ -17,6 +17,12 @@ func _ready():
 		button.text=jsonR[i+1]["name"]
 		button.size_flags_horizontal=3
 		button.rect_min_size=Vector2(80, 80)
+		var dynamic_font = DynamicFont.new()
+		dynamic_font.font_data = load("res://resources/PTC55F.ttf")
+		dynamic_font.size = 30
+		dynamic_font.outline_size = 5
+		dynamic_font.outline_color = Color( 0, 0, 0, 1 )
+		button.add_font_override("font", dynamic_font)
 		add_child(button)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

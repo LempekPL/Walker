@@ -4,7 +4,7 @@
 		"name":"NaN",
 		"opis":"NaN",
 		"hp":0,
-		"protect":0,
+		"atak":0,
 		"rarity":"NaN",
 		"szansa":0,
 		"gniazdo":"NaN"
@@ -14,7 +14,7 @@
 		"name":"Ogórkowe buty",
 		"opis":"tmp",
 		"hp":10,
-		"protect":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"stopy"
@@ -24,7 +24,7 @@
 		"name":"Brokółowe buty",
 		"opis":"tmp",
 		"hp":20,
-		"protect":10,
+		"atak":10,
 		"rarity":"częsty",
 		"szansa":20,
 		"gniazdo":"stopy"
@@ -34,7 +34,7 @@
 		"name":"Kalafiorowe buty",
 		"opis":"tmp",
 		"hp":5,
-		"protect":10,
+		"atak":10,
 		"rarity":"rzadki",
 		"szansa":25,
 		"gniazdo":"stopy"
@@ -44,7 +44,7 @@
 		"name":"Pomidorowe buty",
 		"opis":"tmp",
 		"hp":20,
-		"protect":35,
+		"atak":35,
 		"rarity":"częsty",
 		"szansa":10,
 		"gniazdo":"stopy"
@@ -54,7 +54,7 @@
 		"name":"Buty z parówek",
 		"opis":"tmp",
 		"hp":5,
-		"protect":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"stopy"
@@ -64,7 +64,7 @@
 		"name":"Cebulowe buty",
 		"opis":"Chce mi się płakać...",
 		"hp":10,
-		"protect":20,
+		"atak":20,
 		"rarity":"rzadkie",
 		"szansa":30,
 		"gniazdo":"stopy"
@@ -74,7 +74,7 @@
 		"name":"Buraczane buty",
 		"opis":"tmp",
 		"hp":15,
-		"protect":10,
+		"atak":10,
 		"rarity":"pospolity",
 		"szansa":40,
 		"gniazdo":"stopy"
@@ -84,7 +84,7 @@
 		"name":"Ziemniaczane buty",
 		"opis":"tmp",
 		"hp":10,
-		"protect":15,
+		"atak":15,
 		"rarity":"pospolity",
 		"szansa":30,
 		"gniazdo":"stopy"
@@ -94,7 +94,7 @@
 		"name":"Buty z szynki",
 		"opis":"tmp",
 		"hp":15,
-		"protect":10,
+		"atak":10,
 		"rarity":"częsty",
 		"szansa":20,
 		"gniazdo":"stopy"
@@ -104,7 +104,7 @@
 		"name":"Ogórkowa koszula",
 		"opis":"tmp",
 		"hp":10,
-		"protect":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"tors"
@@ -114,7 +114,7 @@
 		"name":"Brokółowa koszula",
 		"opis":"tmp",
 		"hp":20,
-		"protect":10,
+		"atak":10,
 		"rarity":"częsty",
 		"szansa":20,
 		"gniazdo":"tors"
@@ -124,7 +124,7 @@
 		"name":"Kalafiorowa koszula",
 		"opis":"tmp",
 		"hp":5,
-		"protect":10,
+		"atak":10,
 		"rarity":"rzadki",
 		"szansa":25,
 		"gniazdo":"tors"
@@ -134,7 +134,7 @@
 		"name":"Pomidorowa koszula",
 		"opis":"tmp",
 		"hp":20,
-		"protect":35,
+		"atak":35,
 		"rarity":"częsty",
 		"szansa":10,
 		"gniazdo":"tors"
@@ -144,7 +144,7 @@
 		"name":"Koszula z parówek",
 		"opis":"tmp",
 		"hp":5,
-		"protect":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"tors"
@@ -154,7 +154,7 @@
 		"name":"Cebulowa koszula",
 		"opis":"Chce mi się płakać...",
 		"hp":10,
-		"protect":20,
+		"atak":20,
 		"rarity":"rzadkie",
 		"szansa":30,
 		"gniazdo":"tors"
@@ -164,7 +164,7 @@
 		"name":"Buraczana koszula",
 		"opis":"tmp",
 		"hp":15,
-		"protect":10,
+		"atak":10,
 		"rarity":"pospolity",
 		"szansa":40,
 		"gniazdo":"tors"
@@ -174,7 +174,7 @@
 		"name":"Ziemniaczana koszula",
 		"opis":"tmp",
 		"hp":10,
-		"protect":15,
+		"atak":15,
 		"rarity":"pospolity",
 		"szansa":30,
 		"gniazdo":"tors"
@@ -184,7 +184,7 @@
 		"name":"Koszula z szynki",
 		"opis":"tmp",
 		"hp":15,
-		"protect":10,
+		"atak":10,
 		"rarity":"częsty",
 		"szansa":20,
 		"gniazdo":"tors"
@@ -194,7 +194,7 @@
 		"name":"Ogórkowa czapka",
 		"opis":"tmp",
 		"hp":10,
-		"protect":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"glowa"
@@ -204,7 +204,7 @@
 		"name":"Brokółowa czapka",
 		"opis":"tmp",
 		"hp":20,
-		"protect":10,
+		"atak":10,
 		"rarity":"częsty",
 		"szansa":20,
 		"gniazdo":"glowa"
@@ -214,7 +214,7 @@
 		"name":"Kalafiorowa czapka",
 		"opis":"tmp",
 		"hp":5,
-		"protect":10,
+		"atak":10,
 		"rarity":"rzadki",
 		"szansa":25,
 		"gniazdo":"glowa"
@@ -224,7 +224,7 @@
 		"name":"Pomidorowa czapka",
 		"opis":"tmp",
 		"hp":20,
-		"protect":35,
+		"atak":35,
 		"rarity":"częsty",
 		"szansa":10,
 		"gniazdo":"glowa"
@@ -234,7 +234,7 @@
 		"name":"Czapka z parówek",
 		"opis":"tmp",
 		"hp":5,
-		"protect":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"glowa"
@@ -244,7 +244,7 @@
 		"name":"Cebulowa czapka",
 		"opis":"Chce mi się płakać...",
 		"hp":10,
-		"protect":20,
+		"atak":20,
 		"rarity":"rzadkie",
 		"szansa":30,
 		"gniazdo":"glowa"
@@ -254,7 +254,7 @@
 		"name":"Buraczana czapka",
 		"opis":"tmp",
 		"hp":15,
-		"protect":10,
+		"atak":10,
 		"rarity":"pospolity",
 		"szansa":40,
 		"gniazdo":"glowa"
@@ -264,7 +264,7 @@
 		"name":"Ziemniaczana czapka",
 		"opis":"tmp",
 		"hp":10,
-		"protect":15,
+		"atak":15,
 		"rarity":"pospolity",
 		"szansa":30,
 		"gniazdo":"glowa"
@@ -274,7 +274,7 @@
 		"name":"Czapka z szynki",
 		"opis":"tmp",
 		"hp":15,
-		"protect":10,
+		"atak":10,
 		"rarity":"częsty",
 		"szansa":20,
 		"gniazdo":"glowa"
@@ -284,7 +284,7 @@
 		"name":"Miecz z marchewek",
 		"opis":"tmp",
 		"hp":20,
-		"damage":10,
+		"atak":10,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"bron"
@@ -294,7 +294,7 @@
 		"name":"Miecz z ziemniaków",
 		"opis":"tmp",
 		"hp":40,
-		"damage":5,
+		"atak":5,
 		"rarity":"rzadki",
 		"szansa":30,
 		"gniazdo":"bron"
@@ -304,7 +304,7 @@
 		"name":"Miecz z szynki",
 		"opis":"tmp",
 		"hp":10,
-		"damage":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":40,
 		"gniazdo":"bron"
@@ -314,7 +314,7 @@
 		"name":"Cebulowy miecz",
 		"opis":"tmp",
 		"hp":20,
-		"damage":10,
+		"atak":10,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"bron"
@@ -324,7 +324,7 @@
 		"name":"Buraczany miecz",
 		"opis":"tmp",
 		"hp":50,
-		"damage":15,
+		"atak":15,
 		"rarity":"pospolity",
 		"szansa":50,
 		"gniazdo":"bron"
@@ -334,7 +334,7 @@
 		"name":"Miecz z parówek",
 		"opis":"tmp",
 		"hp":20,
-		"damage":10,
+		"atak":10,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"bron"
@@ -344,7 +344,7 @@
 		"name":"Kalafiorowy miecz",
 		"opis":"tmp",
 		"hp":20,
-		"damage":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":30,
 		"gniazdo":"bron"
@@ -354,7 +354,7 @@
 		"name":"Pomidorowy miecz",
 		"opis":"tmp",
 		"hp":10,
-		"damage":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":40,
 		"gniazdo":"bron"
@@ -364,7 +364,7 @@
 		"name":"Brokółowy miecz",
 		"opis":"tmp",
 		"hp":20,
-		"damage":10,
+		"atak":10,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"bron"
@@ -374,7 +374,7 @@
 		"name":"Marchewka",
 		"opis":"tmp",
 		"hp":20,
-		"damage":20,
+		"atak":20,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"bron"
@@ -384,7 +384,7 @@
 		"name":"Ziemniak",
 		"opis":"tmp",
 		"hp":40,
-		"damage":5,
+		"atak":5,
 		"rarity":"rzadki",
 		"szansa":30,
 		"gniazdo":"bron"
@@ -394,7 +394,7 @@
 		"name":"Szynka",
 		"opis":"tmp",
 		"hp":10,
-		"damage":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":40,
 		"gniazdo":"bron"
@@ -404,7 +404,7 @@
 		"name":"Cebula",
 		"opis":"tmp",
 		"hp":20,
-		"damage":10,
+		"atak":10,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"bron"
@@ -414,7 +414,7 @@
 		"name":"Burak",
 		"opis":"tmp",
 		"hp":50,
-		"damage":15,
+		"atak":15,
 		"rarity":"pospolity",
 		"szansa":50,
 		"gniazdo":"bron"
@@ -424,7 +424,7 @@
 		"name":"Parówka",
 		"opis":"tmp",
 		"hp":20,
-		"damage":10,
+		"atak":10,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"bron"
@@ -434,7 +434,7 @@
 		"name":"Kalafior",
 		"opis":"tmp",
 		"hp":20,
-		"damage":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":30,
 		"gniazdo":"bron"
@@ -444,7 +444,7 @@
 		"name":"Pomidor",
 		"opis":"tmp",
 		"hp":10,
-		"damage":5,
+		"atak":5,
 		"rarity":"pospolity",
 		"szansa":40,
 		"gniazdo":"bron"
@@ -454,7 +454,7 @@
 		"name":"Brokółowy miecz",
 		"opis":"tmp",
 		"hp":20,
-		"damage":10,
+		"atak":10,
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"bron"

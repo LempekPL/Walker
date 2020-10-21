@@ -4,7 +4,6 @@
 [ext_resource path="res://resources/Main/Bar/fill.png" type="Texture" id=2]
 [ext_resource path="res://Tscn/kroki/krokibar.gd" type="Script" id=3]
 
-
 [node name="Node2D" type="Node2D"]
 
 [node name="krokibar" type="Control" parent="."]

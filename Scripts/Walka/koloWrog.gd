@@ -61,7 +61,7 @@ func ustaw(_przeciwnik):
 	
 	for i in przeciwnik["itemy"].size():
 		label=Label.new()
-		label.text=przeciwnik["itemy"][i]["nazwa"]
+		label.text=przeciwnik["itemy"][i]["name"]
 		var angl:float
 		angl=prz[i][0]-((prz[i][0]-prz[i][1])/2)
 		var x=sin(angl*PI/180.0)*RADIUS
@@ -72,7 +72,6 @@ func ustaw(_przeciwnik):
 		#label.rect_rotation=90-angl
 		add_child(label)
 		labels.insert(i, label)
-	losuj()
 
 
 func _draw():
@@ -94,24 +93,23 @@ func _process(delta):
 	update()
 	pass
 
-func losuj():
+func losuj(): 
 	if status==0:
 		randomize()
 		ukryj()
 		var w=randi()%360
 		zatrzymanie=w
-		status=3
-		for i in angles.size()-1:
-			if angles[i]>w && angles[i+1]<w:
+		for i in prz.size():
+			if prz[i][0]<w && prz[i][1]>w:
+				print(przeciwnik["itemy"][i])
+				status=3
 				return przeciwnik["itemy"][i]
-			else:
-				return przeciwnik["itemy"][przeciwnik["itemy"].size()-1]
 
 func controlStatus():
 	match status:
 		3:
 			if licznikStatus==-1:
-				speed=0.005
+				speed=0.02
 				licznikStatus=300
 			elif licznikStatus>0:
 				v+=speed
@@ -122,18 +120,18 @@ func controlStatus():
 				speed=0
 		2:
 			if licznikStatus==-1:
-				speed=-0.001
+				speed=-0.004
 				licznikStatus=0
 			elif licznikStatus==0:
-				if v<=0.1:
+				if v<=0.4:
 					status=1
 					licznikStatus=-1
 					speed=0
-					v=0.1
+					v=0.4
 				else:
 					v+=speed
 		1:
-			if abs(360-int(self.rotation_degrees)%361)<zatrzymanie+0.1&&abs(360-int(self.rotation_degrees)%361)>zatrzymanie-0.1:
+			if abs(360-int(self.rotation_degrees)%360)<zatrzymanie+0.1&&abs(360-int(self.rotation_degrees)%360)>zatrzymanie-0.1:
 				v=0
 				status=0
 				pojaw()
@@ -155,7 +153,7 @@ func pojaw():
 	pass
 func pokazNazwy():
 	for i in labels.size():
-		labels[i].text=przeciwnik["itemy"][i]["nazwa"]
+		labels[i].text=przeciwnik["itemy"][i]["name"]
 	
 func pokazStaty():
 	for i in labels.size():
