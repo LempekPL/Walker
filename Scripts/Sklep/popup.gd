@@ -29,14 +29,14 @@ func _on_buy_pressed():
 		if(item['id'] == win_item):
 			winItem = item
 	var toSave = File.new()
-	toSave.open("user://items/ekwipunek.json", File.READ)
+	toSave.open("user://items/itemy.json", File.READ)
 	var data = JSON.parse(toSave.get_as_text()).result
 	data.push_back(winItem)
 	toSave.close()
 	var dir = Directory.new()
-	dir.remove("user://items/ekwipunek.json")
+	dir.remove("user://items/itemy.json")
 	file = File.new()
-	file.open("user://items/ekwipunek.json", File.WRITE)
+	file.open("user://items/itemy.json", File.WRITE)
 	file.store_string(to_json(data))
 	file.close()
 	pass

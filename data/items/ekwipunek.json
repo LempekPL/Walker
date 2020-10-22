@@ -5,9 +5,9 @@
         "opis": "wielki zielony",
         "hp": 10,
         "atak":200,
-        "rzadkość":"częsty",
+        "rarity":"częsty",
         "szansa":10,
-        "gniazdo":"nogi",
+        "gniazdo":"stopy",
         "color":[0.5,1.0,0.2]
     },
     {
@@ -16,9 +16,9 @@
         "opis": "czysta źródlana",
         "hp": 4,
         "atak":500,
-        "rzadkość":"rzadki",
+        "rarity":"rzadki",
         "szansa":20,
-        "gniazdo":"ciało",
+        "gniazdo":"tors",
         "color":[0.2,0.5,0.11]
     },
     {
@@ -27,7 +27,7 @@
         "opis": "czerwony",
         "hp": 5,
         "atak":300,
-        "rzadkość":"częsty",
+        "rarity":"częsty",
         "szansa":20,
         "gniazdo":"artefakt",
         "color":[0.3,0.2,0.81]
@@ -38,7 +38,7 @@
         "opis": "zielony",
         "hp": 15,
         "atak":500,
-        "rzadkość":"legendarny",
+        "rarity":"legendarny",
         "szansa":10,
         "gniazdo":"artefakt",
         "color":[0.7,0.1,0.81]
@@ -49,7 +49,7 @@
         "opis": "czysta źródlana",
         "hp": 50,
         "atak":100,
-        "rzadkość":"rzadki",
+        "rarity":"rzadki",
         "szansa":20,
         "gniazdo":"glowa",
         "color":[0.4,0.7,0.81]
@@ -60,7 +60,7 @@
         "opis": "czysta źródlana",
         "hp": 50,
         "atak":0,
-        "rzadkość":"rzadki",
+        "rarity":"rzadki",
         "szansa":20,
         "gniazdo":"bron",
         "color":[0.0,0.12,0.81]

@@ -68,7 +68,7 @@ func ustaw(_przeciwnik):
 		var y=-cos(angl*PI/180.0)*RADIUS
 		label.rect_position=Vector2(x, y)
 		label.add_font_override("font", dynamic_font)
-		label.add_color_override("font_color",Color(randf(),randf(),randf()) )
+		label.add_color_override("font_color",Color(przeciwnik["itemy"][i]["color"][0],przeciwnik["itemy"][i]["color"][1],przeciwnik["itemy"][i]["color"][2] ))
 		#label.rect_rotation=90-angl
 		add_child(label)
 		labels.insert(i, label)
@@ -80,7 +80,7 @@ func _draw():
 			var center = Vector2(0, 0)
 			var angle_from = int(prz[i][0])
 			var angle_to = int(prz[i][1])
-			var color = Color(randf(), randf(), randf())
+			var color = Color(przeciwnik["itemy"][i]["color"][0],przeciwnik["itemy"][i]["color"][1],przeciwnik["itemy"][i]["color"][2] )
 			draw_circle_arc_poly(center, RADIUS, angle_from, angle_to, color)
 			self.rotation_degrees+=v
 			controlStatus()

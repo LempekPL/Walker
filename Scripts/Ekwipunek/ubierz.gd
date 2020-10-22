@@ -15,11 +15,13 @@ func przekaz(_id, _gniazdo):
 func _ready():
 	print(OS.get_user_data_dir())
 	fileU=File.new()
-	fileU.open("user://items/ekwipunek.json", File.READ_WRITE)
+	fileU.open("user://items/ekwipunek.json", File.READ)
 	jsonU=JSON.parse(fileU.get_as_text()).result
+	fileU.close()
 	fileI=File.new()
-	fileI.open("user://items/itemy.json", File.READ_WRITE)
+	fileI.open("user://items/itemy.json", File.READ)
 	jsonI=JSON.parse(fileI.get_as_text()).result
+	fileI.close()
 	pass # Replace with function body.
 
 
@@ -41,12 +43,20 @@ func _on_Button_pressed():
 			jsonI.push_back(jsonU[i])
 			jsonU[i]=temp
 			break
-	fileI.store_string(to_json(jsonI))
-	fileU.store_string(to_json(jsonU))
+	
+	saveToFile(jsonI, "itemy")
+	saveToFile(jsonU, "ekwipunek")
 	get_parent().get_parent().get_node("ScrollContainer/GridContainer")._ready()
 	get_parent().get_parent().get_node("VBoxContainer")._ready()
 	get_parent().get_parent().get_node("VBoxContainer2")._ready()
-	fileI.close()
-	fileU.close()
 	get_parent().visible=false
 	pass 
+
+func saveToFile(json, name):
+	var dir = Directory.new()
+	dir.remove("user://items/"+name+".json")
+	var file = File.new()
+	file.open("user://items/"+name+".json", File.WRITE)
+	file.store_string(to_json(json))
+	file.close()
+	pass
