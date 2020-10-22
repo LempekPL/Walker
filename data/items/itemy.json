@@ -100,7 +100,7 @@
 		"gniazdo":"stopy"
 	},
 	{
-		"id":21,
+		"id":10,
 		"name":"Ogórkowa koszula",
 		"opis":"tmp",
 		"hp":10,
@@ -110,7 +110,7 @@
 		"gniazdo":"tors"
 	},
 	{
-		"id":22,
+		"id":11,
 		"name":"Brokółowa koszula",
 		"opis":"tmp",
 		"hp":20,
@@ -120,7 +120,7 @@
 		"gniazdo":"tors"
 	},
 	{
-		"id":23,
+		"id":12,
 		"name":"Kalafiorowa koszula",
 		"opis":"tmp",
 		"hp":5,
@@ -130,7 +130,7 @@
 		"gniazdo":"tors"
 	},
 	{
-		"id":24,
+		"id":13,
 		"name":"Pomidorowa koszula",
 		"opis":"tmp",
 		"hp":20,
@@ -140,7 +140,7 @@
 		"gniazdo":"tors"
 	},
 	{
-		"id":25,
+		"id":14,
 		"name":"Koszula z parówek",
 		"opis":"tmp",
 		"hp":5,
@@ -150,7 +150,7 @@
 		"gniazdo":"tors"
 	},
 	{
-		"id":26,
+		"id":15,
 		"name":"Cebulowa koszula",
 		"opis":"Chce mi się płakać...",
 		"hp":10,
@@ -160,7 +160,7 @@
 		"gniazdo":"tors"
 	},
 	{
-		"id":27,
+		"id":16,
 		"name":"Buraczana koszula",
 		"opis":"tmp",
 		"hp":15,
@@ -170,7 +170,7 @@
 		"gniazdo":"tors"
 	},
 	{
-		"id":28,
+		"id":17,
 		"name":"Ziemniaczana koszula",
 		"opis":"tmp",
 		"hp":10,
@@ -180,7 +180,7 @@
 		"gniazdo":"tors"
 	},
 	{
-		"id":29,
+		"id":18,
 		"name":"Koszula z szynki",
 		"opis":"tmp",
 		"hp":15,
@@ -190,7 +190,7 @@
 		"gniazdo":"tors"
 	},
 	{
-		"id":41,
+		"id":19,
 		"name":"Ogórkowa czapka",
 		"opis":"tmp",
 		"hp":10,
@@ -200,7 +200,7 @@
 		"gniazdo":"glowa"
 	},
 	{
-		"id":42,
+		"id":20,
 		"name":"Brokółowa czapka",
 		"opis":"tmp",
 		"hp":20,
@@ -210,7 +210,7 @@
 		"gniazdo":"glowa"
 	},
 	{
-		"id":43,
+		"id":21,
 		"name":"Kalafiorowa czapka",
 		"opis":"tmp",
 		"hp":5,
@@ -220,7 +220,7 @@
 		"gniazdo":"glowa"
 	},
 	{
-		"id":44,
+		"id":22,
 		"name":"Pomidorowa czapka",
 		"opis":"tmp",
 		"hp":20,
@@ -230,7 +230,7 @@
 		"gniazdo":"glowa"
 	},
 	{
-		"id":45,
+		"id":23,
 		"name":"Czapka z parówek",
 		"opis":"tmp",
 		"hp":5,
@@ -240,7 +240,7 @@
 		"gniazdo":"glowa"
 	},
 	{
-		"id":46,
+		"id":24,
 		"name":"Cebulowa czapka",
 		"opis":"Chce mi się płakać...",
 		"hp":10,
@@ -250,7 +250,7 @@
 		"gniazdo":"glowa"
 	},
 	{
-		"id":47,
+		"id":25,
 		"name":"Buraczana czapka",
 		"opis":"tmp",
 		"hp":15,
@@ -260,7 +260,7 @@
 		"gniazdo":"glowa"
 	},
 	{
-		"id":48,
+		"id":29,
 		"name":"Ziemniaczana czapka",
 		"opis":"tmp",
 		"hp":10,
@@ -270,7 +270,7 @@
 		"gniazdo":"glowa"
 	},
 	{
-		"id":49,
+		"id":30,
 		"name":"Czapka z szynki",
 		"opis":"tmp",
 		"hp":15,
@@ -280,7 +280,7 @@
 		"gniazdo":"glowa"
 	},
 	{
-		"id":61,
+		"id":31,
 		"name":"Miecz z marchewek",
 		"opis":"tmp",
 		"hp":20,
@@ -290,7 +290,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":62,
+		"id":32,
 		"name":"Miecz z ziemniaków",
 		"opis":"tmp",
 		"hp":40,
@@ -300,7 +300,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":63,
+		"id":33,
 		"name":"Miecz z szynki",
 		"opis":"tmp",
 		"hp":10,
@@ -310,7 +310,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":64,
+		"id":34,
 		"name":"Cebulowy miecz",
 		"opis":"tmp",
 		"hp":20,
@@ -320,7 +320,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":65,
+		"id":35,
 		"name":"Buraczany miecz",
 		"opis":"tmp",
 		"hp":50,
@@ -330,7 +330,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":66,
+		"id":36,
 		"name":"Miecz z parówek",
 		"opis":"tmp",
 		"hp":20,
@@ -340,7 +340,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":67,
+		"id":37,
 		"name":"Kalafiorowy miecz",
 		"opis":"tmp",
 		"hp":20,
@@ -350,7 +350,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":68,
+		"id":38,
 		"name":"Pomidorowy miecz",
 		"opis":"tmp",
 		"hp":10,
@@ -360,7 +360,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":69,
+		"id":39,
 		"name":"Brokółowy miecz",
 		"opis":"tmp",
 		"hp":20,
@@ -370,7 +370,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":81,
+		"id":40,
 		"name":"Marchewka",
 		"opis":"tmp",
 		"hp":20,
@@ -380,7 +380,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":82,
+		"id":41,
 		"name":"Ziemniak",
 		"opis":"tmp",
 		"hp":40,
@@ -390,7 +390,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":83,
+		"id":42,
 		"name":"Szynka",
 		"opis":"tmp",
 		"hp":10,
@@ -400,7 +400,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":84,
+		"id":43,
 		"name":"Cebula",
 		"opis":"tmp",
 		"hp":20,
@@ -410,7 +410,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":85,
+		"id":44,
 		"name":"Burak",
 		"opis":"tmp",
 		"hp":50,
@@ -420,7 +420,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":86,
+		"id":45,
 		"name":"Parówka",
 		"opis":"tmp",
 		"hp":20,
@@ -430,7 +430,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":87,
+		"id":46,
 		"name":"Kalafior",
 		"opis":"tmp",
 		"hp":20,
@@ -440,7 +440,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":88,
+		"id":47,
 		"name":"Pomidor",
 		"opis":"tmp",
 		"hp":10,
@@ -450,7 +450,7 @@
 		"gniazdo":"bron"
 	},
 	{
-		"id":89,
+		"id":48,
 		"name":"Brokółowy miecz",
 		"opis":"tmp",
 		"hp":20,

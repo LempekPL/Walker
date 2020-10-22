@@ -13,7 +13,7 @@ func _ready():
 	
 	experience = data[0]['exp']
 	level = data[0]['level']
-	maxExp = int(log(level+1)*log(level+1)*log(level+1) + 1)
+	maxExp = int(48*pow(log(level+15),2)/pow(log(5),2))
 	
 	print(maxExp)
 	print(experience)
@@ -26,7 +26,7 @@ func _process(delta):
 	if(experience > maxExp):
 		experience = experience - maxExp
 		level += 1
-		maxExp = int(log(level+1)*log(level+1)*log(level+1) + 1)
+		maxExp = int()
 		print("level " + str(level))
 		print("maxExp " + str(maxExp))
 		print("experience " + str(experience))
