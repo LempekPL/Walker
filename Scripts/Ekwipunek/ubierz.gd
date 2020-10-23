@@ -52,7 +52,7 @@ func _on_Button_pressed():
 				"atak":0,
 				"gniazdo":jsonU[G]["gniazdo"],
 				"rarity":"ultra_legend",
-				"szansa":1,
+				"szansa":35,
 				"color":[randf(),randf(),randf()]
 			}
 		G==null
