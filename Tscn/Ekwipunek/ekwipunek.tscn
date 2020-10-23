@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Scripts/Ekwipunek/PrzyciskiEkw1.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Ekwipunek/inventory.gd" type="Script" id=2]
@@ -36,6 +36,10 @@ font_data = ExtResource( 8 )
 size = 27
 font_data = ExtResource( 8 )
 
+[sub_resource type="DynamicFont" id=7]
+size = 25
+font_data = ExtResource( 8 )
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 11 )
 
@@ -45,10 +49,10 @@ texture = ExtResource( 3 )
 centered = false
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
-margin_left = 32.0
-margin_top = 680.0
-margin_right = 688.0
-margin_bottom = 1280.0
+margin_left = 8.0
+margin_top = 600.0
+margin_right = 664.0
+margin_bottom = 1200.0
 scroll_horizontal_enabled = false
 __meta__ = {
 "_edit_use_anchors_": false
@@ -63,6 +67,9 @@ custom_constants/vseparation = 16
 custom_constants/hseparation = 16
 columns = 4
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_left = 32.0
@@ -214,10 +221,10 @@ __meta__ = {
 }
 
 [node name="hp" type="Label" parent="miniBG"]
-margin_left = -260.0
+margin_left = -270.0
 margin_top = 220.0
-margin_right = -228.0
-margin_bottom = 234.0
+margin_right = -210.0
+margin_bottom = 253.0
 custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0.0196078, 0.682353, 0.207843, 1 )
 text = "1000"
@@ -226,10 +233,10 @@ __meta__ = {
 }
 
 [node name="atak" type="Label" parent="miniBG"]
-margin_left = 220.0
+margin_left = 140.0
 margin_top = 220.0
-margin_right = 260.0
-margin_bottom = 234.0
+margin_right = 185.0
+margin_bottom = 253.0
 custom_fonts/font = SubResource( 5 )
 custom_colors/font_color = Color( 0.760784, 0.0313726, 0.0313726, 1 )
 text = "500"
@@ -247,6 +254,42 @@ text = "Rare"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="gniazdo" type="Label" parent="miniBG"]
+margin_left = -270.0
+margin_top = 130.0
+margin_right = -217.0
+margin_bottom = 199.0
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0.231373, 0.435294, 0.368627, 1 )
+text = "Tors
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="szanse" type="Label" parent="miniBG"]
+margin_left = 140.0
+margin_top = 130.0
+margin_right = 282.0
+margin_bottom = 199.0
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0.627451, 0.490196, 0.694118, 1 )
+text = "szanse: 100
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Button" to="." method="_on_Button00_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Button2" to="." method="_on_Button22_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Button3" to="." method="_on_Button33_pressed"]
 [connection signal="swiped" from="SwipeDetector" to="." method="_on_SwipeDetector_swiped"]
 [connection signal="pressed" from="miniBG/X" to="miniBG/X" method="_on_X_pressed"]
 [connection signal="pressed" from="miniBG/Button" to="miniBG/Button" method="_on_Button_pressed"]
