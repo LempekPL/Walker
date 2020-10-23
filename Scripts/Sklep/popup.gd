@@ -67,6 +67,15 @@ func _process(delta):
 		file.open("user://items/itemy.json", File.WRITE)
 		file.store_string(to_json(data))
 		file.close()
+		file = File.new()
+		file.open("user://player/level.json", File.READ)
+		data = JSON.parse(file.get_as_text()).result
+		data[0]['money'] -= 400
+		file.close()
+		dir.remove("user://player/level.json")
+		file = File.new()
+		file.open("user://player/level.json", File.WRITE)
+		file.store_string(to_json(data))
 	if(flag):
 		flag = false
 	pass
