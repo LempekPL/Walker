@@ -2,54 +2,66 @@ extends Popup
 
 var loot1_items
 var drop = 0
+var flag = false
 
 func _on_buy_pressed():
-	drop = 0
-	loot1_items = []
-	openJSON()
-	drop = loot1_items[loot1_items.size()-1]['szansa']
-	var random_number = int(rand_range(0, drop))
-	var after
-	var before
-	var win_item
-	var level = level()
+	self.popup()
+	get_parent().get_node("popup/WindowDialog").popup()
+	pass
 
-	for item in loot1_items.size():
-		before = 0
-		if(item != 0):
-			before = loot1_items[item-1]['szansa']
-		
-		after = loot1_items[item]['szansa']
-		if(random_number > before && random_number < after):
-			win_item = loot1_items[item]['id']
-			break
+func _process(delta):
 	var file = File.new()
-	file.open("res://data/items/itemy.json", File.READ)
-	var items = JSON.parse(file.get_as_text()).result
+	file.open("user://player/level.json", File.READ)
+	var data = JSON.parse(file.get_as_text()).result
+	var money = data[0]['money']
 	file.close()
-	
-	var winItem
+	if(flag && money > 399):
+		drop = 0
+		loot1_items = []
+		openJSON()
+		drop = loot1_items[loot1_items.size()-1]['szansa']
+		var random_number = int(rand_range(0, drop))
+		var after
+		var before
+		var win_item
+		var level = level()
 
-	for item in items:
-		if(item['id'] == win_item):
-			winItem = item
-			break
-	print(winItem['name'])
-	winItem['hp'] *= int(pow(sqrt(log(level+2)), 4) * ((randf() - randf() )/10 + 1))
-	winItem['atak'] *= int(pow(sqrt(log(level+2)), 4) * ((randf() - randf() )/10 + 1))
-	print(winItem['hp'])
-	var toSave = File.new()
-	toSave.open("user://items/itemy.json", File.READ)
-	var data = JSON.parse(toSave.get_as_text()).result
-	data.push_back(winItem)
-	print(data)
-	toSave.close()
-	var dir = Directory.new()
-	dir.remove("user://items/itemy.json")
-	file = File.new()
-	file.open("user://items/itemy.json", File.WRITE)
-	file.store_string(to_json(data))
-	file.close()
+		for item in loot1_items.size():
+			before = 0
+			if(item != 0):
+				before = loot1_items[item-1]['szansa']
+			
+			after = loot1_items[item]['szansa']
+			if(random_number > before && random_number < after):
+				win_item = loot1_items[item]['id']
+				break
+		file = File.new()
+		file.open("res://data/items/itemy.json", File.READ)
+		var items = JSON.parse(file.get_as_text()).result
+		file.close()
+		
+		var winItem
+
+		for item in items:
+			if(item['id'] == win_item):
+				winItem = item
+				break
+		winItem['hp'] *= int(pow(sqrt(log(level+2)), 4) * ((randf() - randf() )/10 + 1))
+		winItem['atak'] *= int(pow(sqrt(log(level+2)), 4) * ((randf() - randf() )/10 + 1))
+		var toSave = File.new()
+		toSave.open("user://items/ekwipunek.json", File.READ)
+		data = JSON.parse(toSave.get_as_text()).result
+		data.push_back(winItem)
+		toSave.close()
+		var dir = Directory.new()
+		dir.remove("user://items/itemy.json")
+		file = File.new()
+		file.open("user://items/itemy.json", File.WRITE)
+		file.store_string(to_json(data))
+		file.close()
+	if(flag):
+		print("wciśnięty button yes")
+		flag = false
 	pass
 
 func openJSON():
@@ -66,3 +78,16 @@ func level():
 	file.close()
 	return lvl[0]['level']
 	pass
+
+
+func _on_yes_pressed():
+	flag = true
+	self.hide()
+	get_parent().get_node("popup/WindowDialog").hide()
+	pass
+
+
+func _on_no_pressed():
+	self.hide()
+	get_parent().get_node("popup/WindowDialog").hide()
+	pass 
