@@ -143,4 +143,5 @@ margin_right = 14.5729
 margin_bottom = 268.844
 [connection signal="pressed" from="buttons/goBack" to="." method="_on_goBack_pressed"]
 [connection signal="pressed" from="buttons/buy" to="costloot/popup" method="_on_buy_pressed"]
+[connection signal="pressed" from="buttons/buy2" to="costloot/popup" method="_on_buy2_pressed"]
 [connection signal="timeout" from="buttons/dailychest/Timer" to="buttons/dailychest" method="TimerTimeOut"]
