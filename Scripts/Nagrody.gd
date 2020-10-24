@@ -64,9 +64,9 @@ func ustaw(przeciwnik, wynik):
 			else:
 				label.text=przeciwnik["nagrody"][i]["name"]+": "+str(przeciwnik["nagrody"][i]["value"]/10)
 				if przeciwnik["nagrody"][i]["name"]=="HealCoins":
-					jsonL[0]["money"]+=przeciwnik["nagrody"][i]["value"]/10
+					jsonL[0]["money"]+=int(przeciwnik["nagrody"][i]["value"]/10)
 				elif przeciwnik["nagrody"][i]["name"]=="doświadczenie":
-					jsonL[0]["exp"]+=przeciwnik["nagrody"][i]["value"]/10
+					jsonL[0]["exp"]+=int(przeciwnik["nagrody"][i]["value"]/10)
 			add_child(label)
 			labels.push_back(label)
 	get_parent().get_parent().position=Vector2(-1420, 0)
