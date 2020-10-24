@@ -2,7 +2,8 @@
     {
         "name": "tłuszczek",
         "opis":"godny przeciwnik breja tłuszczu",
-        "hp":1000,
+        "hp":300,
+        "isWin": false,
         "itemy":
         [
             {
@@ -35,7 +36,7 @@
                 "value":{
                     "name":"czepek tłuszczowy",
                     "hp":0,
-                    "atak":200,
+                    "atak":35,
                     "szansa":25,
                     "gniazdo":"glowa"
                     }
@@ -46,19 +47,20 @@
             },
             {
                 "name":"doświadczenie",
-                "value":100
+                "value":46
             }
         ]
     },
     {
         "name": "wódz frytek",
         "opis": "jeden z potężnych frytkowych wodzów",
-        "hp": 5000,
+        "hp": 600,
+        "isWin": false,
         "itemy": [
             {
                 "name": "armia frytek",
                 "hp": 0,
-                "atak": 500,
+                "atak": 50,
                 "szansa": 1,
                 "color": [0.0, 0.5, 0.0]
             },
@@ -84,7 +86,7 @@
                 "value":{
                     "name":"pałeczka wodza",
                     "hp":30,
-                    "atak":200,
+                    "atak":20,
                     "szansa":10,
                     "gniazdo":"ring"
                     }
@@ -95,28 +97,29 @@
             },
             {
                 "name":"doświadczenie",
-                "value":300
+                "value": 27
             }
         ]
     },
     {
         "name": "potężny węglowodan",
         "opis": "to najpotężniejszy gladiator, z jakim można się zmierzyć",
-        "hp": 3000,
+        "hp": 350,
+        "isWin": false,
         "itemy": [
             {
                 "name": "potężny cios węglowodana",
                 "hp": 0,
-                "atak": 1000,
+                "atak": 80,
                 "szansa": 1,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "tarcza węglowodanowa",
-                "hp": 100,
+                "hp": 35,
                 "atak": 0,
                 "szansa": 30,
-                "color": [0.8, 0.0, 0.0]
+                "color": [0.6, 0.0, 0.0]
             },
             {
                 "name": "cios węglowodanowej pięści",
@@ -139,7 +142,7 @@
                 "name": "przedmiot",
                 "value":{
                     "name":"zbroja energetyczna",
-                    "hp":400,
+                    "hp":60,
                     "atak":10,
                     "szansa":15,
                     "gniazdo":"tors"
@@ -151,25 +154,26 @@
             },
             {
                 "name":"doświadczenie",
-                "value":700
+                "value":58
             }
         ]
     },
     {
         "name": "koronawirus",
         "opis": "jest to niepokonany przeciwnik",
-        "hp": 10000,
+        "hp": 450,
+        "isWin": false,
         "itemy": [
             {
                 "name": "COVID-19",
-                "hp": 100,
-                "atak": 200,
+                "hp": 85,
+                "atak": 20,
                 "szansa": 100,
                 "color": [0.8, 0.5, 0.0]
             },{
-                "name": "COVID-19",
-                "hp": 200,
-                "atak": 200,
+                "name": "mutacja",
+                "hp": 20,
+                "atak": 20,
                 "szansa": 70,
                 "color": [0.4, 0.7, 0.3]
             }
@@ -180,7 +184,7 @@
                 "name": "przedmiot",
                 "value":{
                     "name":"maseczka",
-                    "hp":350,
+                    "hp":100,
                     "atak":70,
                     "szansa":30,
                     "gniazdo":"artefakt"
@@ -192,19 +196,20 @@
             },
             {
                 "name":"doświadczenie",
-                "value":1400
+                "value":60
             }
         ]
     },
     {
         "name": "burgerowy sumo",
         "opis": "nie masz szans z burgerowym sumo",
-        "hp": 1000,
+        "hp": 700,
+        "isWin": false,
         "itemy": [
             {
                 "name": "skok masy",
                 "hp": 0,
-                "atak": 100,
+                "atak": 120,
                 "szansa": 10,
                 "color": [0.0, 0.5, 0.0]
             },
@@ -217,7 +222,7 @@
             },
             {
                 "name": "fałda tłuszczu",
-                "hp": 100,
+                "hp": 150,
                 "atak": 0,
                 "szansa": 15,
                 "color": [0.8, 0.0, 0.0]
@@ -229,11 +234,11 @@
                 "name": "przedmiot",
                 "value":{
                     "name":"miecz energi",
-                    "hp":0,
-                    "atak":600,
+                    "hp":20,
+                    "atak":200,
                     "szansa":20,
                     "gniazdo":"bron"
-                    }
+                }
             },
             {
                 "name": "HealCoins",
@@ -241,14 +246,15 @@
             },
             {
                 "name":"doświadczenie",
-                "value":2150
+                "value":64
             }
         ]
     },
     {
         "name": "fast food",
         "opis": "jeden z największych bossów żywieniowych współczesnego świata",
-        "hp": 20000,
+        "hp": 2000,
+        "isWin": false,
         "itemy": [
             {
                 "name": "tłuszcz z frytek",
@@ -259,8 +265,8 @@
             },
             {
                 "name": "karząca ręka kasjerki",
-                "hp": 0,
-                "atak": 200,
+                "hp": 200,
+                "atak": 100,
                 "szansa": 30,
                 "color": [0.0, 0.5, 0.5]
             },
@@ -278,7 +284,7 @@
                 "name": "przedmiot",
                 "value":{
                     "name":"trapery",
-                    "hp":500,
+                    "hp":150,
                     "atak":0,
                     "szansa":25,
                     "gniazdo":"stopy"
@@ -290,19 +296,20 @@
             },
             {
                 "name":"doświadczenie",
-                "value":3000
+                "value":68
             }
         ]
     },
     {
         "name": "super fałda tłuszczu",
         "opis": "sabotujący Cię przeciwnik",
-        "hp": 5500,
+        "hp": 2250,
+        "isWin": false,
         "itemy": [
             {
                 "name": "wnikanie",
                 "hp": 0,
-                "atak": 100,
+                "atak": 200,
                 "szansa": 50,
                 "color": [0.0, 0.5, 0.0]
             },
@@ -320,8 +327,8 @@
                 "name": "przedmiot",
                 "value":{
                     "name":"pierścień energii",
-                    "hp":400,
-                    "atak":300,
+                    "hp":250,
+                    "atak":250,
                     "szansa":20,
                     "gniazdo":"ring"
                     }
@@ -332,14 +339,15 @@
             },
             {
                 "name":"doświadczenie",
-                "value":3800
+                "value":70
             }
         ]
     },
     {
         "name": "ninja chipsy",
         "opis": "nie wiesz, kiedy uderzy",
-        "hp": 800,
+        "hp": 2500,
+        "isWin": false,
         "itemy": [
             {
                 "name": "ziemniaczane shurikeny",
@@ -350,15 +358,15 @@
             },
             {
                 "name": "ziemniaczana katana",
-                "hp": 0,
-                "atak": 200,
+                "hp": 250,
+                "atak": 0,
                 "szansa": 30,
                 "color": [0.0, 0.3, 0.0]
             },
             {
                 "name": "ziemniaczany cios",
                 "hp": 0,
-                "atak": 500,
+                "atak": 300,
                 "szansa": 1,
                 "color": [0.0, 0.1, 0.0]
             }
@@ -368,8 +376,8 @@
             {
                 "name": "przedmiot",
                 "value":{
-                    "name":"zdrowa przekonska",
-                    "hp":700,
+                    "name":"zdrowa przekąska",
+                    "hp":350,
                     "atak":0,
                     "szansa":24,
                     "gniazdo":"artefakt"
@@ -381,33 +389,34 @@
             },
             {
                 "name":"doświadczenie",
-                "value":4500
+                "value":72
             }
         ]
     },
     {
         "name": "król gazowanych napójów",
         "opis": "lepiej nie zakłócać spokoju króla gazowanych napojów",
-        "hp": 5710,
+        "hp": 2700,
+        "isWin": false,
         "itemy": [
             {
                 "name": "berło bąbelkowe",
                 "hp": 0,
-                "atak": 60,
+                "atak": 150,
                 "szansa": 70,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "straż bąbelkowa",
                 "hp": 0,
-                "atak": 10,
+                "atak": 100,
                 "szansa": 35,
                 "color": [0.0, 0.3, 0.0]
             },
             {
                 "name": "bąbelkowa mikstura",
-                "hp": 50,
-                "atak": 50,
+                "hp": 100,
+                "atak": 100,
                 "szansa": 30,
                 "color": [0.8, 0.0, 0.0]
             }
@@ -418,8 +427,8 @@
                 "name": "przedmiot",
                 "value":{
                     "name":"soczek",
-                    "hp":500,
-                    "atak":500,
+                    "hp":400,
+                    "atak":400,
                     "szansa":18,
                     "gniazdo":"bron"
                     }
@@ -430,47 +439,69 @@
             },
             {
                 "name":"doświadczenie",
-                "value":5600
+                "value":76
             }
         ]
     },
     {
         "name": "szalona pizza",
         "opis": "z szaleńcami lepiej się nie zadawać",
-        "hp": 5100,
+        "hp": 4000,
+        "isWin": false,
         "itemy": [
             {
                 "name": "pistolet serowy",
                 "hp": 0,
-                "atak": 60,
-                "szansa": 30,
+                "atak": 500,
+                "szansa": 21,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "dyski salami",
                 "hp": 0,
                 "atak": 300,
-                "szansa": 1,
+                "szansa": 10,
                 "color": [0.0, 0.3, 0.0]
             },
             {
                 "name": "ściana ketchupu",
-                "hp": 50,
+                "hp": 300,
                 "atak": 0,
                 "szansa": 30,
                 "color": [0.8, 0.0, 0.0]
+            }
+        ],
+        "nagrody": [
+            {
+                "name": "przedmiot",
+                "value": {
+                    "name": "zdrowe jedzenie",
+                    "hp": 600,
+                    "atak": 600,
+                    "szansa": 40,
+                    "gniazdo": "bron"
+                }
+            },
+            {
+                "name": "HealCoins",
+                "value": 1000
+            },
+            {
+                "name": "doświadczenie",
+                "value": 78
             }
         ]
     },
     {
         "name": "telewizor zombie",
         "opis": "lepiej uciekaj od hordy telewizorów zombie",
-        "hp": 7000,
+        "hp": 5000,
+        "isWin": false,
         "itemy": [
             {
                 "name": "hipnoza",
                 "hp": 0,
-                "atak": 100,
+                "atak": 350,
                 "szansa": 30,
                 "color": [0.0, 0.5, 0.0]
             },
@@ -483,91 +514,186 @@
             },
             {
                 "name": "bezmózg",
-                "hp": 75,
+                "hp": 400,
                 "atak": 0,
                 "szansa": 50,
                 "color": [0.8, 0.0, 0.0]
+            }
+        ],
+        "nagrody": [
+            {
+                "name": "przedmiot",
+                "value": {
+                    "name": "szczepionka przeciw zombie",
+                    "hp": 700,
+                    "atak": 400,
+                    "szansa": 18,
+                    "gniazdo": "tors"
+                }
+            },
+            {
+                "name": "HealCoins",
+                "value": 1000
+            },
+            {
+                "name": "doświadczenie",
+                "value": 80
             }
         ]
     },
     {
         "name": "wysysacz portfela",
         "opis": "nie zdasz sobie sprawy, kiedy zastaniesz oskubany",
-        "hp": 1000,
+        "hp": 5100,
+        "isWin": false,
         "itemy": [
             {
                 "name": "zagadanie",
                 "hp": 0,
-                "atak": 80,
+                "atak": 500,
                 "szansa": 30,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "szybka ucieczka",
-                "hp": 50,
+                "hp": 400,
                 "atak": 0,
                 "szansa": 30,
                 "color": [0.8, 0.0, 0.0]
+            }
+        ],
+        "nagrody": [
+            {
+                "name": "przedmiot",
+                "value": {
+                    "name": "czujka przeciwzłodziejowa",
+                    "hp": 800,
+                    "atak": 0,
+                    "szansa": 12,
+                    "gniazdo": "tors"
+                }
+            },
+            {
+                "name": "HealCoins",
+                "value": 1000
+            },
+            {
+                "name": "doświadczenie",
+                "value": 82
             }
         ]
     },
     {
         "name": "pasożyt joystick",
         "opis": "nie wiesz, kiedy wpadniesz w jego łapy",
-        "hp": 3200,
+        "hp": 5400,
+        "isWin": false,
         "itemy": [
             {
                 "name": "szpony",
-                "hp": 100,
+                "hp": 0,
+                "atak": 800,
+                "szansa": 60,
+                "color": [0.0, 0.5, 0.0]
+            },
+            {
+                "name": "autoregeneracja",
+                "hp": 800,
                 "atak": 0,
                 "szansa": 60,
-                "color": [0.8, 0.0, 0.0]
+                "color": [
+                    0.8,
+                    0.0,
+                    0.0
+                ]
+            }
+        ],
+        "nagrody": [
+            {
+                "name": "przedmiot",
+                "value": {
+                    "name": "szczepionka przeciw uzależnieniom",
+                    "hp": 500,
+                    "atak": 500,
+                    "szansa": 15,
+                    "gniazdo": "tors"
+                }
+            },
+            {
+                "name": "HealCoins",
+                "value": 1000
+            },
+            {
+                "name": "doświadczenie",
+                "value": 86
             }
         ]
     },
     {
         "name": "alkohol-naukowiec",
         "opis": "nie wiesz kiedy jego intelekt Cię powali",
-        "hp": 1000,
+        "hp": 5500,
+        "isWin": false,
         "itemy": [
             {
                 "name": "zaklęcie naukowca",
                 "hp": 0,
-                "atak": 100,
+                "atak": 1000,
                 "szansa": 30,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "energia chemiczna",
                 "hp": 0,
-                "atak": 200,
+                "atak": 2000,
                 "szansa": 5,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "akcja-rekacja",
-                "hp": 100,
+                "hp": 800,
                 "atak": 0,
                 "szansa": 30,
                 "color": [0.8, 0.0, 0.0]
+            }
+        ],
+        "nagrody": [
+            {
+                "name": "przedmiot",
+                "value": {
+                    "name": "odwyk",
+                    "hp": 1000,
+                    "atak": 1000,
+                    "szansa": 40,
+                    "gniazdo": "glowa"
+                }
+            },
+            {
+                "name": "HealCoins",
+                "value": 1000
+            },
+            {
+                "name": "doświadczenie",
+                "value": 88
             }
         ]
     },
     {
         "name": "e-papieros hacker",
         "opis": "nie wiesz kiedy zhackuje Twoje ciało",
-        "hp": 5000,
+        "hp": 10000,
+        "isWin": false,
         "itemy": [
             {
                 "name": "deszyfrator haseł",
                 "hp": 0,
-                "atak": 100,
+                "atak": 1100,
                 "szansa": 30,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "zbieranie danych",
-                "hp": 100,
+                "hp": 1200,
                 "atak": 0,
                 "szansa": 5,
                 "color": [0.8, 0.0, 0.0]
@@ -575,55 +701,97 @@
             {
                 "name": "wyłączanie płuc",
                 "hp": 0,
-                "atak": 400,
+                "atak": 4000,
                 "szansa": 1,
                 "color": [0.0, 0.5, 0.0]
+            }
+        ],
+        "nagrody": [
+            {
+                "name": "przedmiot",
+                "value": {
+                    "name": "superkomputer",
+                    "hp": 1200,
+                    "atak": 1500,
+                    "szansa": 19,
+                    "gniazdo": "artefakt"
+                }
+            },
+            {
+                "name": "HealCoins",
+                "value": 1000
+            },
+            {
+                "name": "doświadczenie",
+                "value": 90
             }
         ]
     },
     {
         "name": "papieros eksterminacja",
         "opis": "nie wiesz kiedy wyciągnie spluwę",
-        "hp": 1000,
+        "hp": 15000,
+        "isWin": false,
         "itemy": [
             {
                 "name": "dezintegracja płuc",
                 "hp": 0,
-                "atak": 500,
+                "atak": 5000,
                 "szansa": 1,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "eksterminacja",
                 "hp": 0,
-                "atak": 50,
+                "atak": 2000,
                 "szansa": 30,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "restart systemu",
-                "hp": 20,
+                "hp": 2000,
                 "atak": 0,
                 "szansa": 30,
                 "color": [0.8, 0.0, 0.0]
+            }
+        ],
+        "nagrody": [
+            {
+                "name": "przedmiot",
+                "value": {
+                    "name": "dezintegrator 3000",
+                    "hp": 2500,
+                    "atak": 1500,
+                    "szansa": 35,
+                    "gniazdo": "bron"
+                }
+            },
+            {
+                "name": "HealCoins",
+                "value": 1000
+            },
+            {
+                "name": "doświadczenie",
+                "value": 92
             }
         ]
     },
     {
         "name": "cyberpet",
         "opis": "milutki, ale jaki groźny",
-        "hp": 8000,
+        "hp": 15200,
+        "isWin": false,
         "itemy": [
             {
                 "name": "cyber-drapnięcie",
                 "hp": 0,
-                "atak": 60,
+                "atak": 4000,
                 "szansa": 30,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "pancerz bitów",
-                "hp": 100,
+                "hp": 3000,
                 "atak": 0,
                 "szansa": 30,
                 "color": [0.8, 0.0, 0.0]
@@ -631,93 +799,176 @@
             {
                 "name": "cyber-ryk",
                 "hp": 0,
-                "atak": 105,
+                "atak": 1050,
                 "szansa": 10,
                 "color": [0.0, 0.5, 0.0]
+            }
+        ],
+        "nagrody": [
+            {
+                "name": "przedmiot",
+                "value": {
+                    "name": "cyberpazury",
+                    "hp": 5000,
+                    "atak": 5000,
+                    "szansa": 31,
+                    "gniazdo": "bron"
+                }
+            },
+            {
+                "name": "HealCoins",
+                "value": 1000
+            },
+            {
+                "name": "doświadczenie",
+                "value": 94
             }
         ]
     },
     {
         "name": "duszek wirusek",
         "opis": "niewidzialny, ale groźny",
-        "hp": 950,
+        "hp": 50000,
+        "isWin": false,
         "itemy": [
             {
                 "name": "atak skrzeli",
                 "hp": 0,
-                "atak": 100,
+                "atak": 7500,
                 "szansa": 10,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "wzomożone powielanie",
-                "hp": 100,
+                "hp": 5000,
                 "atak": 0,
                 "szansa": 15,
                 "color": [0.8, 0.0, 0.0]
             },
             {
                 "name": "totalna dominacja",
-                "hp": 100,
-                "atak": 190,
+                "hp": 4100,
+                "atak": 1000,
                 "szansa": 5,
                 "color": [0.8, 0.5, 0.0]
+            }
+        ],
+        "nagrody": [
+            {
+                "name": "przedmiot",
+                "value": {
+                    "name": "przeciwciała",
+                    "hp": 5900,
+                    "atak": 5100,
+                    "szansa": 20,
+                    "gniazdo": "ring"
+                }
+            },
+            {
+                "name": "HealCoins",
+                "value": 1000
+            },
+            {
+                "name": "doświadczenie",
+                "value": 96
             }
         ]
     },
     {
         "name": "szybkie bakterie",
         "opis": "szybkie niczym wiatr",
-        "hp": 100,
+        "hp": 51000,
+        "isWin": false,
         "itemy": [
             {
                 "name": "prędkość światła",
                 "hp": 0,
-                "atak": 100,
+                "atak": 8000,
                 "szansa": 10,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "powielanie DNA",
-                "hp": 50,
-                "atak": 200,
-                "szansa": 5,
+                "hp": 5000,
+                "atak": 10000,
+                "szansa": 1,
                 "color": [0.8, 0.0, 0.0]
             },
             {
                 "name": "szybka replikacja",
-                "hp": 50,
+                "hp": 2400,
                 "atak": 0,
                 "szansa": 30,
-                "color": [0.8, 0.0, 0.0]
+                "color": [0.6, 0.0, 0.0]
+            }
+        ],
+        "nagrody": [
+            {
+                "name": "przedmiot",
+                "value": {
+                    "name": "odporność",
+                    "hp": 1000,
+                    "atak": 5000,
+                    "szansa": 25,
+                    "gniazdo": "artefakt"
+                }
+            },
+            {
+                "name": "HealCoins",
+                "value": 1000
+            },
+            {
+                "name": "doświadczenie",
+                "value": 98
             }
         ]
     },
     {
         "name": "niezdrowy styl życia",
         "opis": "największy boss świata",
-        "hp": 100000,
+        "hp": 85000,
+        "isWin": false,
         "itemy": [
             {
                 "name": "armia węglowodanów-gladiatorów",
                 "hp": 0,
-                "atak": 600,
+                "atak": 10000,
                 "szansa": 15,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "armia burgerowych sumo",
                 "hp": 0,
-                "atak": 650,
+                "atak": 6500,
                 "szansa": 15,
                 "color": [0.0, 0.5, 0.0]
             },
             {
                 "name": "tarcza z szalonych pizz",
-                "hp": 100,
+                "hp": 20000,
                 "atak": 0,
                 "szansa": 15,
                 "color": [0.8, 0.0, 0.0]
+            }
+        ],
+        "nagrody": [
+            {
+                "name": "przedmiot",
+                "value": {
+                    "name": "najpotężniejszy pierścień zdrowia",
+                    "hp": 20000,
+                    "atak": 50000,
+                    "szansa": 10,
+                    "gniazdo": "ring"
+                }
+            },
+            {
+                "name": "HealCoins",
+                "value": 1000
+            },
+            {
+                "name": "doświadczenie",
+                "value": 200
             }
         ]
     }
