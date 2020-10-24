@@ -10,16 +10,23 @@ func _on_ButtonCan_pressed():
 	get_node("../Popup").hide()
 
 var file
-var jsonR
+var levl
 var rng = RandomNumberGenerator.new()
 
 func _on_ButtonAcc_pressed():
 	file=File.new();
-	file.open("user://data/player/level.json", file.WRITE)
-	jsonR=JSON.parse(file.get_as_text()).result
+	file.open("user://player/level.json", File.READ_WRITE)
+	levl=JSON.parse(file.get_as_text()).result
 	rng.randomize()
-	var rand = rng.randi_range(5, 20)
-	#jsonR.exp += rand
-	#file.store_line(to_json(jsonR))
+	levl[0].exp+=rng.randi_range(1, 10)
+	levl[0].money+=rng.randi_range(5, 30)
+	var nev = [
+		{
+			"level": levl[0].level,
+			"exp": levl[0].exp,
+			"money": levl[0].money
+		}
+	]
+	file.store_line(JSON.print(nev))
 	file.close()
 	get_node("../Popup").hide()
