@@ -40,7 +40,6 @@ func _process(delta):
 	self.text = "Odbierz za: " + str(leftHour) + "h" + str(leftMinutes) + "min." + str(leftSeconds) + "sek."
 	
 	if(leftHour == 0 && leftMinutes == 0 && leftSeconds == 1 && i == 0):
-		print("got it")
 		self.disabled = false
 		var file = File.new()
 		file.open("user://player/daily.json", File.READ)
@@ -61,15 +60,11 @@ func TimerTimeOut():
 	leftHour = 24-int(hour)
 	leftMinutes = 60-int(minutes)
 	leftSeconds = 60-int(seconds)
-	print(leftHour)
-	print(leftMinutes)
-	print(leftSeconds)
 	pass
 
 
 func _on_dailychest_pressed():
 	if(count > 0 && isDaily == true):
-		print("ohyes")
 		count -= 1
 		var loot_items = openJSON()
 		drop = loot_items[loot_items.size()-1]['szansa']
