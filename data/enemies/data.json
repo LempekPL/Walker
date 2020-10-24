@@ -2,7 +2,7 @@
     {
         "name": "tłuszczek",
         "opis":"godny przeciwnik breja tłuszczu",
-        "hp":1000,
+        "hp":500,
         "itemy":
         [
             {
