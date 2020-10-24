@@ -27,6 +27,27 @@
                 "color": [0.8, 0.0, 0.0]
             }
 
+        ],
+        "nagrody":
+        [
+            {
+                "name": "przedmiot",
+                "value":{
+                    "name":"czepek tłuszczowy",
+                    "hp":0,
+                    "atak":200,
+                    "szansa":25,
+                    "gniazdo":"glowa"
+                    }
+            },
+            {
+                "name": "HealCoins",
+                "value":100
+            },
+            {
+                "name":"doświadczenie",
+                "value":100
+            }
         ]
     },
     {
@@ -54,6 +75,27 @@
                 "atak": 0,
                 "szansa": 20,
                 "color": [0.8, 0.0, 0.0]
+            }
+        ],
+        "nagrody":
+        [
+            {
+                "name": "przedmiot",
+                "value":{
+                    "name":"pałeczka wodza",
+                    "hp":30,
+                    "atak":200,
+                    "szansa":10,
+                    "gniazdo":"ring"
+                    }
+            },
+            {
+                "name": "HealCoins",
+                "value":200
+            },
+            {
+                "name":"doświadczenie",
+                "value":300
             }
         ]
     },
@@ -90,6 +132,27 @@
                 "szansa": 20,
                 "color": [0.8, 0.5, 0.0]
             }
+        ],
+        "nagrody":
+        [
+            {
+                "name": "przedmiot",
+                "value":{
+                    "name":"zbroja energetyczna",
+                    "hp":400,
+                    "atak":10,
+                    "szansa":15,
+                    "gniazdo":"tors"
+                    }
+            },
+            {
+                "name": "HealCoins",
+                "value":400
+            },
+            {
+                "name":"doświadczenie",
+                "value":700
+            }
         ]
     },
     {
@@ -99,10 +162,37 @@
         "itemy": [
             {
                 "name": "COVID-19",
-                "hp": 10,
-                "atak": 20,
+                "hp": 100,
+                "atak": 200,
                 "szansa": 100,
                 "color": [0.8, 0.5, 0.0]
+            },{
+                "name": "COVID-19",
+                "hp": 200,
+                "atak": 200,
+                "szansa": 70,
+                "color": [0.4, 0.7, 0.3]
+            }
+        ],
+        "nagrody":
+        [
+            {
+                "name": "przedmiot",
+                "value":{
+                    "name":"maseczka",
+                    "hp":350,
+                    "atak":70,
+                    "szansa":30,
+                    "gniazdo":"artefakt"
+                    }
+            },
+            {
+                "name": "HealCoins",
+                "value":500
+            },
+            {
+                "name":"doświadczenie",
+                "value":1400
             }
         ]
     },
@@ -123,7 +213,7 @@
                 "hp": 0,
                 "atak": 10,
                 "szansa": 95,
-                "color": [0.0, 0.5, 0.0]
+                "color": [0.5, 0.5, 0.9]
             },
             {
                 "name": "fałda tłuszczu",
@@ -131,6 +221,27 @@
                 "atak": 0,
                 "szansa": 15,
                 "color": [0.8, 0.0, 0.0]
+            }
+        ],
+        "nagrody":
+        [
+            {
+                "name": "przedmiot",
+                "value":{
+                    "name":"miecz energi",
+                    "hp":0,
+                    "atak":600,
+                    "szansa":20,
+                    "gniazdo":"bron"
+                    }
+            },
+            {
+                "name": "HealCoins",
+                "value":600
+            },
+            {
+                "name":"doświadczenie",
+                "value":2150
             }
         ]
     },
@@ -151,7 +262,7 @@
                 "hp": 0,
                 "atak": 200,
                 "szansa": 30,
-                "color": [0.0, 0.5, 0.0]
+                "color": [0.0, 0.5, 0.5]
             },
             {
                 "name": "sałatki z fast fooda",
@@ -159,6 +270,27 @@
                 "atak": 100,
                 "szansa": 40,
                 "color": [0.0, 0.3, 0.0]
+            }
+        ],
+        "nagrody":
+        [
+            {
+                "name": "przedmiot",
+                "value":{
+                    "name":"trapery",
+                    "hp":500,
+                    "atak":0,
+                    "szansa":25,
+                    "gniazdo":"stopy"
+                    }
+            },
+            {
+                "name": "HealCoins",
+                "value":700
+            },
+            {
+                "name":"doświadczenie",
+                "value":3000
             }
         ]
     },
@@ -179,7 +311,28 @@
                 "hp": 100,
                 "atak": 0,
                 "szansa": 5,
-                "color": [0.8, 0.0, 0.0]
+                "color": [0.8, 0.7, 0.7]
+            }
+        ],
+        "nagrody":
+        [
+            {
+                "name": "przedmiot",
+                "value":{
+                    "name":"pierścień energii",
+                    "hp":400,
+                    "atak":300,
+                    "szansa":20,
+                    "gniazdo":"ring"
+                    }
+            },
+            {
+                "name": "HealCoins",
+                "value":800
+            },
+            {
+                "name":"doświadczenie",
+                "value":3800
             }
         ]
     },
@@ -209,6 +362,27 @@
                 "szansa": 1,
                 "color": [0.0, 0.1, 0.0]
             }
+        ],
+        "nagrody":
+        [
+            {
+                "name": "przedmiot",
+                "value":{
+                    "name":"zdrowa przekonska",
+                    "hp":700,
+                    "atak":0,
+                    "szansa":24,
+                    "gniazdo":"artefakt"
+                    }
+            },
+            {
+                "name": "HealCoins",
+                "value":900
+            },
+            {
+                "name":"doświadczenie",
+                "value":4500
+            }
         ]
     },
     {
@@ -236,6 +410,27 @@
                 "atak": 50,
                 "szansa": 30,
                 "color": [0.8, 0.0, 0.0]
+            }
+        ],
+        "nagrody":
+        [
+            {
+                "name": "przedmiot",
+                "value":{
+                    "name":"soczek",
+                    "hp":500,
+                    "atak":500,
+                    "szansa":18,
+                    "gniazdo":"bron"
+                    }
+            },
+            {
+                "name": "HealCoins",
+                "value":1000
+            },
+            {
+                "name":"doświadczenie",
+                "value":5600
             }
         ]
     },
