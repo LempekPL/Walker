@@ -78,19 +78,18 @@ func wylosowano():
 	get_parent().get_node("pasekTy").get_node("krokibar")._on_kroki_updated(tyHp,0)
 	get_parent().get_node("pasekWrog").get_node("krokibar")._on_kroki_updated(wrogHp,0)
 	get_parent().get_node("HpWrog").text=str(wrogHp)
+	status=false	
 	if tyHp<=0:
 		przegrana()
 	elif wrogHp<=0:
 		wygrana()
 
-	
-	status=false
 func przegrana():
 	self.visible=false
 	yield(get_tree().create_timer(3.0), "timeout")
-	get_parent().get_parent().get_node("Background4/VBoxContainer").ustaw(przeciwnik, "przegrana")
+	get_parent().get_parent().get_node("Background4/VBoxContainer").ustaw(przeciwnik, "Przegrana")
 
 func wygrana():
 	self.visible=false
 	yield(get_tree().create_timer(3.0), "timeout")
-	get_parent().get_parent().get_node("Background4/VBoxContainer").ustaw(przeciwnik, "wygrana")
+	get_parent().get_parent().get_node("Background4/VBoxContainer").ustaw(przeciwnik, "Wygrana")

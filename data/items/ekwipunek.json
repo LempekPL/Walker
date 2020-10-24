@@ -7,7 +7,7 @@
         "atak":200,
         "rarity":"częsty",
         "szansa":10,
-        "gniazdo":"stopy",
+        "gniazdo":"glowa",
         "color":[0.5,1.0,0.2]
     },
     {
@@ -29,7 +29,7 @@
         "atak":300,
         "rarity":"częsty",
         "szansa":20,
-        "gniazdo":"artefakt",
+        "gniazdo":"stopy",
         "color":[0.3,0.2,0.81]
     },
     {
@@ -40,7 +40,7 @@
         "atak":500,
         "rarity":"legendarny",
         "szansa":10,
-        "gniazdo":"artefakt",
+        "gniazdo":"bron",
         "color":[0.7,0.1,0.81]
     },
     {
@@ -51,7 +51,7 @@
         "atak":100,
         "rarity":"rzadki",
         "szansa":20,
-        "gniazdo":"glowa",
+        "gniazdo":"artefakt",
         "color":[0.4,0.7,0.81]
     },
     {
@@ -62,7 +62,7 @@
         "atak":0,
         "rarity":"rzadki",
         "szansa":20,
-        "gniazdo":"bron",
+        "gniazdo":"ring",
         "color":[0.0,0.12,0.81]
     }
 ]

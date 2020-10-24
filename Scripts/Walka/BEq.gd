@@ -17,5 +17,5 @@ func _ready():
 
 
 func _on_BEq_pressed():
-	get_tree().change_scene("res://Tscn/Ekwipunek/ekwipunek.tscn")
+	get_tree().change_scene("res://Tscn/Main/main.tscn")
 	pass # Replace with function body.
