@@ -169,6 +169,7 @@ func _on_Button_pressed():
 	pass 
 
 
-func _on_BEkw_pressed():
-	losuj()
+
+func _on_Bfight_pressed():
+	get_node("root/Node2D").positi
 	pass # Replace with function body.
