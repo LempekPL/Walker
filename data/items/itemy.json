@@ -1,18 +1,18 @@
 [	
 	{
 		"id":0,
-		"name":"NaN",
-		"opis":"NaN",
+		"name":"Karząca Potęga Zdrowia",
+		"opis":"Każdy trwoży się przed taką potęgą",
 		"hp":0,
 		"atak":0,
-		"rarity":"NaN",
-		"szansa":0,
-		"gniazdo":"NaN"
+		"rarity": "legendarny",
+		"szansa":10,
+		"gniazdo":"ring"
 	},
 	{
 		"id":1,
 		"name":"Ogórkowe buty",
-		"opis":"tmp",
+		"opis":"szybkie i zwrotne",
 		"hp":10,
 		"atak":5,
 		"rarity":"pospolity",
@@ -22,7 +22,7 @@
 	{
 		"id":2,
 		"name":"Brokółowe buty",
-		"opis":"tmp",
+		"opis":"Takie zdrowe...",
 		"hp":20,
 		"atak":10,
 		"rarity":"częsty",
@@ -32,7 +32,7 @@
 	{
 		"id":3,
 		"name":"Kalafiorowe buty",
-		"opis":"tmp",
+		"opis":"białe, ale wytrzymałe",
 		"hp":5,
 		"atak":10,
 		"rarity":"rzadki",
@@ -42,7 +42,7 @@
 	{
 		"id":4,
 		"name":"Pomidorowe buty",
-		"opis":"tmp",
+		"opis":"pysznie smakują, przywalić umią",
 		"hp":20,
 		"atak":35,
 		"rarity":"częsty",
@@ -52,7 +52,7 @@
 	{
 		"id":5,
 		"name":"Buty z parówek",
-		"opis":"tmp",
+		"opis":"najlepsze z ketchupem",
 		"hp":5,
 		"atak":5,
 		"rarity":"pospolity",
@@ -72,7 +72,7 @@
 	{
 		"id":7,
 		"name":"Buraczane buty",
-		"opis":"tmp",
+		"opis":"dobre, czerwone",
 		"hp":15,
 		"atak":10,
 		"rarity":"pospolity",
@@ -102,7 +102,7 @@
 	{
 		"id":10,
 		"name":"Ogórkowa koszula",
-		"opis":"tmp",
+		"opis":"zielona ochrona",
 		"hp":10,
 		"atak":5,
 		"rarity":"pospolity",
@@ -458,5 +458,75 @@
 		"rarity":"pospolity",
 		"szansa":15,
 		"gniazdo":"bron"
+	},
+	{
+		"id": 48,
+		"name": "Brokółowy miecz",
+		"opis": "tmp",
+		"hp": 20,
+		"atak": 10,
+		"rarity": "pospolity",
+		"szansa": 15,
+		"gniazdo": "bron"
+	},
+	{
+		"id": 49,
+		"name": "porzeracz niezdrowia",
+		"opis": "zanim się obejrzysz to niezdrowe jedzenie znika",
+		"hp": 10,
+		"atak": 10,
+		"rarity": "pospolity",
+		"szansa": 55,
+		"gniazdo": "ring"
+	},
+	{
+		"id": 50,
+		"name": "szlachetny kamień zdrowia",
+		"opis": "jeden z nielicznych rzadkich kamieni szlachetnych",
+		"hp": 50,
+		"atak": 75,
+		"rarity": "legendarny",
+		"szansa": 20,
+		"gniazdo": "ring"
+	},
+	{
+		"id": 51,
+		"name": "pierwiastek zdrowia",
+		"opis": "matematyka...",
+		"hp": 100,
+		"atak": 100,
+		"rarity": "legendarny",
+		"szansa": 10,
+		"gniazdo": "ring"
+	},
+	{
+		"id": 52,
+		"name": "mikroczip",
+		"opis": "mały na ręce, ale jaki groźny",
+		"hp": 100,
+		"atak": 50,
+		"rarity": "legendarny",
+		"szansa": 20,
+		"gniazdo": "ring"
+	},
+	{
+		"id": 53,
+		"name": "pierścień zagłady",
+		"opis": "nim zgładzisz każde niezdrowie",
+		"hp": 100,
+		"atak": 100,
+		"rarity": "legendarny",
+		"szansa": 5,
+		"gniazdo": "ring"
+	},
+	{
+		"id": 54,
+		"name": "pierścień piramidy zdrowia",
+		"opis": "ma zakodowany prawdziwą piramidę zdrowia, gdy ją odkryjesz posiądziesz jego nieskończoną moc",
+		"hp": 150,
+		"atak": 120,
+		"rarity": "legendarny",
+		"szansa": 5,
+		"gniazdo": "ring"
 	}
 ]
