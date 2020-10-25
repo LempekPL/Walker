@@ -37,13 +37,13 @@ func _process(delta):
 
 
 func saveToFile(experience, level):
-	var dir = Directory.new()
-	dir.remove("user://player/level.json")
 	var file = File.new()
 	file.open("user://player/level.json", File.READ)
 	var date = JSON.parse(file.get_as_text()).result
 	var money = date[0]['money']
 	file.close()
+	var dir = Directory.new()
+	dir.remove("user://player/level.json")
 	file = File.new()
 	file.open("user://player/level.json", File.WRITE)
 	var data = [{"level": level, "exp": experience, "money": money}]
