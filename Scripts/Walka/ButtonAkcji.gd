@@ -20,6 +20,7 @@ var wrogHp
 var file
 var jsonR
 
+var st=true
 func _ready():
 	self.visible=true
 	file=File.new()
@@ -36,7 +37,7 @@ func _ready():
 func _process(delta):
 	tyStatus=koloTy.status
 	wrogStatus=koloWrog.status
-	if tyStatus==0&&wrogStatus==0:
+	if tyStatus==0&&wrogStatus==0&&st:
 		self.visible=true
 		if status:
 			wylosowano()
@@ -85,11 +86,13 @@ func wylosowano():
 		wygrana()
 
 func przegrana():
-	self.visible=false
+	st=false
+	self.visible=0
 	yield(get_tree().create_timer(3.0), "timeout")
 	get_parent().get_parent().get_node("Background4/VBoxContainer").ustaw(przeciwnik, "Przegrana")
 
 func wygrana():
-	self.visible=false
+	st=false
+	self.visible=0
 	yield(get_tree().create_timer(3.0), "timeout")
 	get_parent().get_parent().get_node("Background4/VBoxContainer").ustaw(przeciwnik, "Wygrana")

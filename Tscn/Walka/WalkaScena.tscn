@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://resources/Main/background.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Walka/VBoxContainer.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Scripts/Walka/BEq.gd" type="Script" id=11]
 [ext_resource path="res://Scripts/Nagrody.gd" type="Script" id=12]
 [ext_resource path="res://Scripts/Walka/BAfterFight.gd" type="Script" id=13]
+[ext_resource path="res://Scripts/Walka/Button.gd" type="Script" id=14]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -45,14 +46,16 @@ size = 31
 font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=11]
-size = 90
+size = 37
 font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=12]
-size = 40
+size = 90
 font_data = ExtResource( 4 )
 
-[sub_resource type="StyleBoxEmpty" id=13]
+[sub_resource type="DynamicFont" id=13]
+size = 40
+font_data = ExtResource( 4 )
 
 [sub_resource type="StyleBoxEmpty" id=14]
 
@@ -61,6 +64,8 @@ font_data = ExtResource( 4 )
 [sub_resource type="StyleBoxEmpty" id=16]
 
 [sub_resource type="StyleBoxEmpty" id=17]
+
+[sub_resource type="StyleBoxEmpty" id=18]
 
 [node name="Node2D" type="Node2D"]
 
@@ -249,10 +254,21 @@ texture = ExtResource( 1 )
 centered = false
 offset = Vector2( -720, 0 )
 
+[node name="Button" type="Button" parent="Background2"]
+margin_left = -720.0
+margin_top = 20.0
+margin_bottom = 90.0
+custom_fonts/font = SubResource( 11 )
+text = "wróć"
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="ScrollContainer" type="ScrollContainer" parent="Background2"]
 margin_left = -710.0
-margin_top = 30.0
-margin_right = -9.99994
+margin_top = 147.0
+margin_right = -10.0
 margin_bottom = 1230.0
 rect_min_size = Vector2( 100, 32 )
 __meta__ = {
@@ -261,7 +277,7 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Background2/ScrollContainer"]
 margin_right = 700.0
-margin_bottom = 1200.0
+margin_bottom = 1083.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
@@ -278,7 +294,7 @@ margin_left = 1440.0
 margin_top = 200.0
 margin_right = 2160.0
 margin_bottom = 301.0
-custom_fonts/font = SubResource( 11 )
+custom_fonts/font = SubResource( 12 )
 custom_colors/font_color = Color( 1, 0.494118, 0.494118, 1 )
 text = "Wygrałeś"
 align = 1
@@ -292,7 +308,7 @@ margin_left = 1440.0
 margin_top = 400.0
 margin_right = 2160.0
 margin_bottom = 301.0
-custom_fonts/font = SubResource( 12 )
+custom_fonts/font = SubResource( 13 )
 custom_colors/font_color = Color( 1, 0.494118, 0.494118, 1 )
 text = "nagrody:"
 align = 1
@@ -317,11 +333,11 @@ __meta__ = {
 margin_left = 1440.0
 margin_right = 2160.0
 margin_bottom = 1280.0
-custom_styles/hover = SubResource( 13 )
-custom_styles/pressed = SubResource( 14 )
-custom_styles/focus = SubResource( 15 )
-custom_styles/disabled = SubResource( 16 )
-custom_styles/normal = SubResource( 17 )
+custom_styles/hover = SubResource( 14 )
+custom_styles/pressed = SubResource( 15 )
+custom_styles/focus = SubResource( 16 )
+custom_styles/disabled = SubResource( 17 )
+custom_styles/normal = SubResource( 18 )
 script = ExtResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -332,4 +348,5 @@ __meta__ = {
 [connection signal="pressed" from="Background3/Button" to="Background3/Button" method="_on_Button_pressed"]
 [connection signal="pressed" from="Background3/koloWrog/Button" to="Background3/koloWrog/Sprite" method="_on_Button_pressed"]
 [connection signal="pressed" from="Background3/koloTy/Button" to="Background3/koloTy/Sprite" method="_on_Button_pressed"]
+[connection signal="pressed" from="Background2/Button" to="Background2/Button" method="_on_Button_pressed"]
 [connection signal="pressed" from="Background4/Button" to="Background4/Button" method="_on_Button_pressed"]
