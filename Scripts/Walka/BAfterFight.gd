@@ -11,11 +11,7 @@ func _ready():
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 
-
-func _on_BEq_pressed():
-	get_tree().change_scene("res://Tscn/Main/main.tscn")
+func _on_Button_pressed():
+	get_tree().reload_current_scene()
 	pass # Replace with function body.

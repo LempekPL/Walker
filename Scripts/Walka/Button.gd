@@ -16,6 +16,6 @@ func _ready():
 #	pass
 
 
-func _on_BEq_pressed():
-	get_tree().change_scene("res://Tscn/Main/main.tscn")
+func _on_Button_pressed():
+	get_parent().get_parent().position=Vector2(0,0)
 	pass # Replace with function body.

@@ -13,18 +13,20 @@ var buttons=[]
 
 func _ready():
 	file=File.new()
-	file.open("res://data/enemies/data.json", File.READ)
+	file.open("user://enemies/data.json", File.READ)
 	jsonR=JSON.parse(file.get_as_text()).result
 	for i in jsonR.size():
-		buttons.insert(i, Poziom.new(self, jsonR[i]))
+		buttons.insert(i, Poziom.new(self, jsonR[i], i))
 		
 class Poziom:
 	var przeciwnik
 	var button
 	var parent:Node
-	func _init(_parent ,_przeciwnik):
+	var i
+	func _init(_parent ,_przeciwnik, _i):
 		przeciwnik=_przeciwnik
 		parent=_parent
+		i=_i
 		button= Button.new()
 		button.text=przeciwnik["name"]
 		button.size_flags_horizontal=0
@@ -40,7 +42,16 @@ class Poziom:
 		parent.add_child(button)
 		
 	func wybierz():
-		parent.get_node(NodePath("/root/Node2D/Background3/Button")).incjacja(przeciwnik)
-		var scena:Node2D
-		scena=parent.get_node("/root/Node2D")
-		scena.position=Vector2(-720, 0)
+		var file= File.new()
+		file.open("user://player/level.json", File.READ)
+		var jsonR= JSON.parse(file.get_as_text()).result
+		file.close()
+		if i<=jsonR[0]["level"]/2:
+			parent.get_node(NodePath("/root/Node2D/Background3/Button")).incjacja(przeciwnik)
+			var scena:Node2D
+			scena=parent.get_node("/root/Node2D")
+			scena.position=Vector2(-720, 0)
+		else:
+			button.text="potrzebujesz "+ str(i*2)+" poziomu"
+			yield(parent.get_tree().create_timer(3.0), "timeout")
+			button.text=przeciwnik["name"]

@@ -153,7 +153,7 @@ func pokazNazwy():
 	
 func pokazStaty():
 	for i in labels.size():
-		labels[i].text="hp: "+String(jsonR[i]["hp"])+" atak: "+String(jsonR[i]["hp"])
+		labels[i].text="hp: "+String(jsonR[i]["hp"])+" atak: "+String(jsonR[i]["atak"])
 	LStatus=0
 
 
