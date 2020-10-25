@@ -15,6 +15,7 @@ onready var i = 0
 var flag = false
 var drop = 0
 var daily
+var flag2 = true
 
 onready var timer = get_node("Timer")
 
@@ -36,7 +37,7 @@ func _process(delta):
 	file.open("user://player/stuff.json", File.READ)
 	var day = JSON.parse(file.get_as_text()).result
 	file.close()
-	if(int(day['data'])-int(time['day']) > 0):
+	if(int(day['data'])-int(time['day']) > 0 && flag2):
 		file = File.new()
 		file.open("user://player/daily.json", File.READ)
 		var data = JSON.parse(file.get_as_text()).result
@@ -48,6 +49,7 @@ func _process(delta):
 		file.store_string(to_json(data))
 		file.close()
 		count += 1
+		flag2 = false
 	if(count < 1):
 		self.disabled = true
 	hour = time.hour
