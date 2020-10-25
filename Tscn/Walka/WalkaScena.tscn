@@ -197,7 +197,7 @@ __meta__ = {
 }
 
 [node name="koloWrog" type="Position2D" parent="Background3"]
-position = Vector2( 920, 300 )
+position = Vector2( 870, 300 )
 scale = Vector2( 0.75, 0.75 )
 
 [node name="Button" type="Button" parent="Background3/koloWrog"]
