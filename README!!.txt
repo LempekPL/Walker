@@ -1,1 +1,0 @@
-Zrobiłem porządek. Jeśli skrypt nie diała to go odczepcie i podczepcie jeszcze raz.
