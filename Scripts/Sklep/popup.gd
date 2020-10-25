@@ -4,6 +4,8 @@ var loot_items
 var drop = 0
 var flag = false
 var path
+var i = 0
+var money
 
 func _on_buy2_pressed():
 	self.popup()
@@ -21,7 +23,7 @@ func _process(delta):
 	var file = File.new()
 	file.open("user://player/level.json", File.READ)
 	var data = JSON.parse(file.get_as_text()).result
-	var money = data[0]['money']
+	money = data[0]['money']
 	file.close()
 	if(flag && money > 399):
 		drop = 0
@@ -98,6 +100,10 @@ func level():
 
 func _on_yes_pressed():
 	flag = true
+	if(money < 399):
+		get_parent().get_node("popup2").popup()
+		get_parent().get_node("popup2/WindowDialog").popup()
+		i += 1
 	self.hide()
 	get_parent().get_node("popup/WindowDialog").hide()
 	pass
@@ -108,5 +114,7 @@ func _on_no_pressed():
 	get_parent().get_node("popup/WindowDialog").hide()
 	pass 
 
-
-
+func _on_Button_pressed():
+	get_parent().get_node("popup2").hide()
+	get_parent().get_node("popup2/WindowDialog").hide()
+	pass 
