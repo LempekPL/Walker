@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://resources/PTC55F.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/Sklep/popup.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+font_data = ExtResource( 1 )
+
+[node name="popup2" type="Popup"]
+margin_right = 678.0
+margin_bottom = 198.0
+script = ExtResource( 2 )
+
+[node name="WindowDialog" type="WindowDialog" parent="."]
+visible = true
+margin_left = 152.0
+margin_top = 574.0
+margin_right = 566.0
+margin_bottom = 804.0
+
+[node name="Label" type="Label" parent="WindowDialog"]
+margin_left = -0.667419
+margin_top = 7.34155
+margin_right = 413.333
+margin_bottom = 196.342
+custom_fonts/font = SubResource( 1 )
+text = "masz za mało pieniędzy"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog"]
+margin_left = 147.043
+margin_top = 162.757
+margin_right = 256.043
+margin_bottom = 212.757
+text = "OK"
+[connection signal="pressed" from="WindowDialog/Button" to="." method="_on_Button_pressed"]
