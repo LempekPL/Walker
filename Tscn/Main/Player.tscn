@@ -1,22 +1,22 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://resources/Player/Player1.jpg" type="Texture" id=2]
-[ext_resource path="res://resources/Player/Player2.jpg" type="Texture" id=3]
-[ext_resource path="res://resources/Player/Player3.jpg" type="Texture" id=4]
+[ext_resource path="res://resources/postacie/normal/pielegniarka-min.png" type="Texture" id=1]
+[ext_resource path="res://resources/postacie/normal/mrugniecie-min.png" type="Texture" id=2]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "default",
-"speed": 0.2
+"speed": 0.3
 } ]
 
 [node name="Player" type="Node2D"]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 345.472, 500.424 )
-scale = Vector2( 0.96796, 1.76896 )
+position = Vector2( 371.978, 598.347 )
+scale = Vector2( 0.143622, 0.160611 )
 frames = SubResource( 1 )
 frame = 1
+speed_scale = 4.0
 playing = true

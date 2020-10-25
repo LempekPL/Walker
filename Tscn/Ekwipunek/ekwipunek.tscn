@@ -1,8 +1,8 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Scripts/Ekwipunek/PrzyciskiEkw1.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Ekwipunek/inventory.gd" type="Script" id=2]
-[ext_resource path="res://resources/Main/background.png" type="Texture" id=3]
+[ext_resource path="res://resources/Main/ekwipunek.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Ekwipunek/PrzyciskiEkw2.gd" type="Script" id=4]
 [ext_resource path="res://Tscn/Main/SwipeDetec.tscn" type="PackedScene" id=5]
 [ext_resource path="res://resources/miniBackground.png" type="Texture" id=6]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Scripts/Ekwipunek/X.gd" type="Script" id=9]
 [ext_resource path="res://Scripts/Ekwipunek/ubierz.gd" type="Script" id=10]
 [ext_resource path="res://Scripts/Ekwipunek/zmianascenyekwi.gd" type="Script" id=11]
+[ext_resource path="res://Tscn/Main/Player.tscn" type="PackedScene" id=12]
 
 [sub_resource type="DynamicFont" id=1]
 size = 33
@@ -43,10 +44,18 @@ font_data = ExtResource( 8 )
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 11 )
 
+[node name="Player" parent="." instance=ExtResource( 12 )]
+position = Vector2( 21.0971, -319.972 )
+
 [node name="background" type="Sprite" parent="."]
+position = Vector2( 1.75806, 5.27426 )
+scale = Vector2( 1.19632, 1.24551 )
 z_index = -1
 texture = ExtResource( 3 )
 centered = false
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 margin_left = 8.0
