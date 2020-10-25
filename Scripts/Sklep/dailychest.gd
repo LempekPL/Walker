@@ -31,9 +31,25 @@ func _ready():
 	pass
 
 func _process(delta):
+	var time = OS.get_datetime()
+	var file = File.new()
+	file.open("user://player/stuff.json", File.READ)
+	var day = JSON.parse(file.get_as_text()).result
+	file.close()
+	if(int(day['data'])-int(time['day']) > 0):
+		file = File.new()
+		file.open("user://player/daily.json", File.READ)
+		var data = JSON.parse(file.get_as_text()).result
+		file.close()
+		var dir = Directory.new()
+		dir.remove("user://player/daily.json")
+		file = File.new()
+		file.open("user://player/daily.json", File.WRITE)
+		file.store_string(to_json(data))
+		file.close()
+		count += 1
 	if(count < 1):
 		self.disabled = true
-	var time = OS.get_time()
 	hour = time.hour
 	minutes = time.minute
 	seconds = time.second
@@ -41,7 +57,7 @@ func _process(delta):
 	
 	if(leftHour == 0 && leftMinutes == 0 && leftSeconds == 1 && i == 0):
 		self.disabled = false
-		var file = File.new()
+		file = File.new()
 		file.open("user://player/daily.json", File.READ)
 		var data = JSON.parse(file.get_as_text()).result
 		data[0]['isDaily'] = true
