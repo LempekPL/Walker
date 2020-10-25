@@ -26,9 +26,9 @@ func _ready():
 		if rand2 == rand3 || rand1 == rand3:
 			rand3 = rng.randi_range(0, jsonL.size()-1)
 		var a = ["","",""]
-		a[0] = jsonL[1].text.replace("#RAND#", rng.randi_range(1, 10))
-		a[1] = jsonL[3].text.replace("#RAND#", rng.randi_range(1, 10))
-		a[2] = jsonL[2].text.replace("#RAND#", rng.randi_range(1, 10))
+		a[0] = jsonL[rand1].text.replace("#RAND#", rng.randi_range(1, 10))
+		a[1] = jsonL[rand2].text.replace("#RAND#", rng.randi_range(1, 10))
+		a[2] = jsonL[rand3].text.replace("#RAND#", rng.randi_range(1, 10))
 		Ndata = { "quests": [
 			a[0],
 			a[1],

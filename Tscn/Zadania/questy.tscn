@@ -154,7 +154,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="VBoxContainer/TextureRect3"]
+[node name="Button2" type="Button" parent="VBoxContainer/TextureRect3"]
 margin_left = 540.0
 margin_top = 30.0
 margin_right = 640.0
@@ -192,7 +192,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="VBoxContainer/TextureRect4"]
+[node name="Button3" type="Button" parent="VBoxContainer/TextureRect4"]
 margin_left = 540.0
 margin_top = 30.0
 margin_right = 640.0
@@ -208,6 +208,6 @@ __meta__ = {
 margin_right = 558.0
 margin_bottom = 255.0
 [connection signal="pressed" from="VBoxContainer/TextureRect2/Button" to="Popup" method="_on_Button_pressed"]
-[connection signal="pressed" from="VBoxContainer/TextureRect3/Button" to="Popup" method="_on_Button_pressed"]
-[connection signal="pressed" from="VBoxContainer/TextureRect4/Button" to="Popup" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/TextureRect3/Button2" to="Popup" method="_on_Button2_pressed"]
+[connection signal="pressed" from="VBoxContainer/TextureRect4/Button3" to="Popup" method="_on_Button3_pressed"]
 [connection signal="swiped" from="SwipeDetector" to="." method="_on_SwipeDetector_swiped"]
