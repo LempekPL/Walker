@@ -50,6 +50,8 @@ func _process(delta):
 		file.close()
 		count += 1
 		flag2 = false
+	if(int(day['data'])-int(time['day']) == 0):
+		flag = true
 	if(count < 1):
 		self.disabled = true
 	hour = time.hour
